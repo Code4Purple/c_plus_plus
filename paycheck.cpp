@@ -28,6 +28,7 @@ int main()
         if (userInput == "pay_raise" || userInput == "payraise")
         {
             cout << endl;
+
             // Array to store data
             double pay_raise[18] = {};
 
