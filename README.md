@@ -1,17 +1,22 @@
 # c-codeBase
 Somewhere to practice C++ and other C base programming language.
 
-# Linux Code Use:
 
-## C++ Code Library
-apt install g++
+# C++ Basic Library Commands
+	    		       			
+	                         |##Linux Mint|
+-----------------------------------|-------------------------------------------------------------------
+             Commands                   		        Commands Definition
+-----------------------------------|-------------------------------------------------------------------
+g++ --version     			gets the version of the package installed for g++ complier
+apt install g++   			installs g++ complier for C++ 
+g++ "FileName".cpp -o "FileName"        complies the code into a .exe file
+./"FileName"                            runs the .exe file
 
-## Complie the Code
-g++ "FileName".cpp -o "FileName
-
-## Run the Code
-./"FileName"
-
-#Windows
-
-##
+			                  |##Windows|
+-----------------------------------|-------------------------------------------------------------------
+             Commands                                   Commands Definition
+-----------------------------------|-------------------------------------------------------------------
+g++ --version                           gets the version of the package installed for g++ complier
+g++ "FileName".cpp			complies the .cpp to a .exe file
+"FileName".exe				Runs the .exe file 
