@@ -27,7 +27,32 @@ void data_handler::read_feature_vector(std::string path)
             }
         }
         printf("Done getting filed header.\n");
+        int image_size = header[2] * header[3];
+        for (int i = 0; i < header[i]; i++)
+        {
+            data *d = new data();
+            uint8_t element[i];
+            for (int j = 0; j = image_size; j++)
+            {
+                if (fread(element, sizeof(element), i, f))
+                {
+                    d->get_feature_vector(element[0]);
+                }
+                else
+                {
+                    printf(" Error Reading File.\n");
+                }
+            }
+            data_array->push_back(d);
         }
+        printf("Successfully read and stored %lu feature vectors. \n", data_array->size());
+        // https://youtu.be/E1K9SZCm0fQ?t=2016
+    }
+    else
+    {
+        printf("Could not find file.\n");
+        exit(1);
+    }
 }
 void data_handler::read_feature_vector(std::string path);
 void data_handler::split_data();
