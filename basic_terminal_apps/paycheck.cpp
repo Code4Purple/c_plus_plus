@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include <string>
 
 using namespace std;
 
@@ -148,6 +149,48 @@ int main()
                 printf("     Taxes (Roughly @ 4.5)   : $ %.2f\n", paycheck[10]);
                 printf("     Net Payment             : $ %.2f\n", paycheck[11]);
                 cout << endl;
+            }
+            if (userInput == "income_compare"){
+                // Arrays for this Feature
+                double income_compare[20] = {}; // Data
+                string user_ic_data[20] = {}; // user input data
+                
+                // User Input
+                cout << "Do you what two annual incomes who what to compare? y(yes) or n(no)" << endl;
+                cin >> user_ic_data[0];
+                
+                if (user_ic_data[0] == "n" || user_ic_data == "no"){
+                    cout << "What do you have to compare";
+                    cout << "I can do a hour vs a yearly comparsion"<< endl;
+                    cout << "Would you like that?"<< endl;
+                    cin >> user_ic_data[1];
+
+                    if(user_ic_data[1] == "yes" || user_ic_data[1] == "y"){
+                        // getting data for hour vs yearly
+                        cout << " What is the hourly wage? " << endl;
+                        cin >> income_compare[o];
+                        cout << " What is the annual income? " << endl;
+                        cin >> income_compare[1];
+
+                        // Prcessing for the hourly wage
+                        income_compare[2] = income_compare[0] * 40; // weekly income
+                        income_compare[3] = income_compare[2] * 2;  // bi-weekly income
+                        income_compare[4] = income_compare[2] * 4;  // monthly income
+                        income_compare[5] = income_compare[2] * 52; // yearly income
+
+                        // Prcessing for yearly income
+                        income_compare[6] = income_compare[1] / 52; // weekly income
+                        income_compare[7] = income_compare[6] * 2;  // bi-weekly income
+                        income_compare[8] = income_compare[6] * 4;  // monthly income
+                        income_compare[9] = income_compare[6] / 40; // hourly wage
+
+                        // outputs for hourly vs yearly income
+                        cout << "---------------------------------------------------------------------" << endl;
+                        cout << "|                          Wage VS                                  |" << endl;
+                        cout << "---------------------------------------------------------------------" << endl;
+                        printf("     ")
+                    } 
+                }
             }
         }
     }
