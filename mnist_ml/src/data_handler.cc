@@ -26,12 +26,12 @@ void data_handler::read_feature_vector(std::string path)
                 header[i] = convert_to_little_endian(bytes);
             }
         }
-        printf("Done getting filed header.\n");
+        printf("Done getting Input Filed Header.\n");
         int image_size = header[2] * header[3];
         for (int i = 0; i < header[i]; i++)
         {
             data *d = new data();
-            uint8_t element[i];
+            uint8_t element[1];
             for (int j = 0; j = image_size; j++)
             {
                 if (fread(element, sizeof(element), i, f))
@@ -46,7 +46,6 @@ void data_handler::read_feature_vector(std::string path)
             data_array->push_back(d);
         }
         printf("Successfully read and stored %lu feature vectors. \n", data_array->size());
-        // https://youtu.be/E1K9SZCm0fQ?t=2016
     }
     else
     {
@@ -54,9 +53,109 @@ void data_handler::read_feature_vector(std::string path)
         exit(1);
     }
 }
-void data_handler::read_feature_vector(std::string path);
-void data_handler::split_data();
-void data_handler::count_classes();
+void data_handler::read_feature_vector(std::string path)
+{
+    uint32_t header[2]; // |MAGIC|NUM IMAGES
+    unsigned char bytes[2];
+    FILE *f = fopen(path.c_str(), "r");
+    if (f)
+    {
+        for (int i = 0; i < 2; i++)
+        {
+            if (fread(bytes, sizeof(bytes), i, f))
+            {
+                header[i] = convert_to_little_endian(bytes);
+            }
+        }
+        printf("Done getting Label Filed Header.\n");
+        for (int i = 0; i < header[i]; i++)
+        {
+
+            uint8_t element[1];
+
+            if (fread(element, sizeof(element), i, f))
+            {
+                data_array->at(i)->set_label(element[0]);
+            }
+            else
+            {
+                printf(" Error Reading File.\n");
+            }
+        }
+        printf("Successfully read and stored label. \n", data_array->size());
+    }
+    else
+    {
+        printf("Could not find file.\n");
+        exit(1);
+    }
+}
+void data_handler::split_data()
+{
+    std::unordered_set<int> used_indexes;
+    int train_size = data_array->size() * TRAIN_SET_PERCENT;
+    int test_size = data_array->size() * TEST_SET_PERCENT;
+    int valid_size = data_array->size() * VALIDATION_PERCENT;
+
+    // Training Data
+
+    int count = 0;
+    while (count < train_size)
+    {
+        int read_index = rand() % data_array->size(); // 0 & data_array->size() - 1
+        if (used_indexes.find(rand_index) == used_indexes.end())
+        {
+            training_data->push_back(data_array->at(rand_index));
+            used_indexes.insert(rand_index);
+        }
+    }
+
+    // Test Data
+
+    int count = 0;
+    while (count < test_size)
+    {
+        int read_index = rand() % data_array->size(); // 0 & data_array->size() - 1
+        if (used_indexes.find(rand_index) == used_indexes.end())
+        {
+            test_data->push_back(data_array->at(rand_index));
+            used_indexes.insert(rand_index);
+        }
+    }
+
+    // validation data
+
+    int count = 0;
+    while (count < valid_size)
+    {
+        int read_index = rand() % data_array->size(); // 0 & data_array->size() - 1
+        if (used_indexes.find(rand_index) == used_indexes.end())
+        {
+            validation_data->push_back(data_array->at(rand_index));
+            used_indexes.insert(rand_index);
+        }
+    }
+    printf(" Tranning Data Size   : %lu.\n", training_data->size());
+    printf(" Test Data Size       : %lu.\n", test_data->size());
+    printf(" Validation Data Size : %lu.\n", validation_data->size());
+}
+
+void data_handler::count_classes()
+{
+    int count = 0;
+    for (unsigned i = 0; i < data_array->size(); i++)
+    {
+        if (class_map.find(data_array->at(i)->get_label() == class.map.end()))
+        {
+            class_map[data_array->at(i)->get_label()] = count;
+            data_array->at(i)->set_enumerated_label(count);
+            count++;
+        }
+    }
+    num_classes = count;
+    printf("Successfully Extracted %d Unique Classes.\n", num_classes);
+    // https://youtu.be/E1K9SZCm0fQ
+}
 
 uint8_t data_handler::convert_to_little_endian(const unsigned char *bytes);
 

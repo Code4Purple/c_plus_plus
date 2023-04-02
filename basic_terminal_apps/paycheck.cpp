@@ -150,25 +150,28 @@ int main()
                 printf("     Net Payment             : $ %.2f\n", paycheck[11]);
                 cout << endl;
             }
-            if (userInput == "income_compare"){
+            if (userInput == "income_compare")
+            {
                 // Arrays for this Feature
                 double income_compare[20] = {}; // Data
-                string user_ic_data[20] = {}; // user input data
-                
+                string user_ic_data[20] = {};   // user input data
+
                 // User Input
                 cout << "Do you what two annual incomes who what to compare? y(yes) or n(no)" << endl;
                 cin >> user_ic_data[0];
-                
-                if (user_ic_data[0] == "n" || user_ic_data == "no"){
+
+                if (user_ic_data[0] == "n" || user_ic_data[0] == "no")
+                {
                     cout << "What do you have to compare";
-                    cout << "I can do a hour vs a yearly comparsion"<< endl;
-                    cout << "Would you like that?"<< endl;
+                    cout << "I can do a hour vs a yearly comparsion" << endl;
+                    cout << "Would you like that?" << endl;
                     cin >> user_ic_data[1];
 
-                    if(user_ic_data[1] == "yes" || user_ic_data[1] == "y"){
+                    if (user_ic_data[1] == "yes" || user_ic_data[1] == "y")
+                    {
                         // getting data for hour vs yearly
                         cout << " What is the hourly wage? " << endl;
-                        cin >> income_compare[o];
+                        cin >> income_compare[0];
                         cout << " What is the annual income? " << endl;
                         cin >> income_compare[1];
 
@@ -186,10 +189,21 @@ int main()
 
                         // outputs for hourly vs yearly income
                         cout << "---------------------------------------------------------------------" << endl;
-                        cout << "|                          Wage VS                                  |" << endl;
+                        cout << "|                              Wage VS                              |" << endl;
                         cout << "---------------------------------------------------------------------" << endl;
-                        printf("     ")
-                    } 
+                        printf("                    | $ %.2f Hourly Wage Breakdown |                  ", income_compare[0]);
+                        printf("      The hourly wage                                 : $ %.2f", income_compare[0]);
+                        printf("      The hourly wage collected in a week             : $ %.2f", income_compare[2]);
+                        printf("      The hourly wage collected every 2 weeks         : $ %.2f", income_compare[3]);
+                        printf("      The hourly wage collected within a month        : $ %.2f", income_compare[4]);
+                        printf("      The hourly wage collected for a year            : $ %.2f", income_compare[5]);
+                        printf("                    | $ %.2f Annual Wage Breakdown |                  ", income_compare[1]);
+                        printf("      The annual wage collected as a hourly wage      : $ %.2f", income_compare[9]);
+                        printf("      The annual wage collected as a weekly income    : $ %.2f", income_compare[6]);
+                        printf("      The annual wage collected as a bi-weekly income : $ %.2f", income_compare[7]);
+                        printf("      The annual wage collected as a monthly income   : $ %.2f", income_compare[8]);
+                        printf("      The annual wage                                 : $ %.2f", income_compare[1]);
+                    }
                 }
             }
         }
