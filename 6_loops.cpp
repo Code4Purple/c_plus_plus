@@ -16,7 +16,7 @@ int main()
     bool isTrue = true;
     bool isFalse = false;
 
-    printf("Booleans when printed out will always be %lu for True or %lu for False.\n", isTrue, isFalse);
+    printf("Booleans when printed out will always be %d for True or %d for False.\n", isTrue, isFalse);
 
     /*
         Conditions
@@ -41,5 +41,24 @@ int main()
     {
         cout << "x < y" << endl;
     }
-    // https://www.w3schools.com/cpp/cpp_switch.asp
+
+    // switchs
+    int day = 1;
+    switch (day)
+    {
+    case 1:
+        cout << "Monday" << endl;
+
+        break;
+
+    default:
+        break;
+    }
+
+    // while loops
+    while (day < 5)
+    {
+        cout << day << endl;
+        day++;
+    }
 }
