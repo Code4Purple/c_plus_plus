@@ -6,10 +6,15 @@ int main()
 {
 
     /*
-        Booleans - some word people switch between while coding in their minds to help them understand it
-            YES / NO
-            ON / OFF
-            TRUE / FALSE
+        6_loops topics:
+            Booleans
+            Conditions
+            Switchs
+            while loops
+            do while loops
+            for loops
+            for - each loops
+            breaks & continues
     */
 
     // Booleans
@@ -76,5 +81,47 @@ int main()
         i++;
     } while (i < 6);
 
-    // https://www.w3schools.com/cpp/cpp_for_loop.asp
+    // For loop
+    cout << "Basic for loop" << endl;
+    for (int k = 0; k < 10; k++)
+    {
+        cout << k << endl;
+    }
+
+    // Nested For loops
+    cout << "Nested For Loop" << endl;
+    for (int p = 0; p <= 2; p++)
+    {
+        cout << "Outer: " << p << "\n"; // executes 2 times
+
+        for (int o = 0; o <= 3; o++)
+        {
+            cout << "Inner: " << o << "\n"; // excutes 6 times (2 * 3)
+        }
+    }
+
+    // for-each loop
+    int listNumbers[11] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    cout << "For each Loop" << endl;
+    for (int t : listNumbers)
+    {
+        cout << t << "\n";
+    }
+
+    // Breaks and Continue
+    cout << "Breaks & Continue" << endl;
+    for (int t : listNumbers)
+    {
+        cout << "Normal Output : " << t << endl;
+        if (t == 5)
+        {
+            cout << "Continues after : " << t << endl;
+            continue;
+        }
+        if (t == 9)
+        {
+            cout << "Breaks after : " << t << endl;
+            break;
+        }
+    }
 }
