@@ -56,9 +56,25 @@ int main()
     }
 
     // while loops
+    cout << "while loop" << endl;
     while (day < 5)
     {
         cout << day << endl;
         day++;
     }
+
+    // do while loops
+    /* The example below uses a do/while loop.
+    The loop will always be executed at least once, even if the condition is false,
+    because the code block is executed before the condition is tested: */
+
+    int i = 0;
+    cout << "Do while Loop" << endl;
+    do
+    {
+        cout << i << endl;
+        i++;
+    } while (i < 6);
+
+    // https://www.w3schools.com/cpp/cpp_for_loop.asp
 }
