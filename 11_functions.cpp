@@ -34,9 +34,16 @@ void countTo(int i)
 // Defualt Function
 void defaultFunction(string country = "USA")
 {
-    cout << country << " ";
+    cout << "Defualt Function" << endl;
+    cout << country << " " << endl;
+};
+
+// Multiple Parameters
+void muilipleFun(string name, int age)
+{
     cout << endl;
-    cout << endl;
+    cout << "Muiliply Parameters Function ---> ";
+    cout << name << " is " << age << endl;
 };
 
 int main()
@@ -46,6 +53,7 @@ int main()
     countTo(100);               // Setting the int value3
     defaultFunction("Canada");  // Function with a call pass
     defaultFunction();          // defaulting to USA since no call was pass into it
+    muilipleFun("Bennie", 24);  // Calling the muiliple input function
     return 0;
 }
 
@@ -56,4 +64,4 @@ void myStringFunction(string firstName)
     cout << endl;
 };
 
-// https://www.w3schools.com/cpp/cpp_function_default.asp
+// https://www.w3schools.com/cpp/cpp_function_multiple.asp
