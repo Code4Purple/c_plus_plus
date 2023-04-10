@@ -77,5 +77,3 @@ void myStringFunction(string firstName)
     cout << "Function passing a string value for it's parameter. ---> " << firstName << " Kowalski." << endl;
     cout << endl;
 };
-
-// https://www.w3schools.com/cpp/cpp_oop.asp
