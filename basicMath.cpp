@@ -73,5 +73,6 @@ int main()
         cin >> userInputY;
         SubTable(userInputX, userInputY);
     }
+
     return 0;
 }
