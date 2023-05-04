@@ -46,6 +46,28 @@
 					f(n) = n / 3
 					0(f(n)) = 0(n)
 
+	Dynamtic and Static Arrays
+		a static array is a fixed length container containing
+		n elements indexable from range [0, 0-1].
+			indexable - each index in the array can be referenced with a number
+
+							*Complexity*
+					|		Static Array		|		Dynamic Array
+		Access					0(1)						0(1)
+		Search					0(n)						0(n)
+		Insertion				n/a							0(n)
+		Appending				n/a							0(1)
+		Deletion				n/a							0(n)
 
 */
-// https://youtu.be/RBSGKlAvoiM?t=694
+
+#include <iostream>
+
+using namespace std;
+
+int array[2];
+
+int main()
+{
+	array
+}
