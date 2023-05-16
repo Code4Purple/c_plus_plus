@@ -69,5 +69,4 @@ int array[2];
 
 int main()
 {
-	array
 }
