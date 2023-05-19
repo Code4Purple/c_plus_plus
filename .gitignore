@@ -1,4 +1,6 @@
-*.exe
+*.ipch
 *.vscode
-(*).out
-filename.txt
+/wxWidgets/GUI_Syntax/windowCreation/Debug
+/wxWidgets/GUI_Syntax/windowCreation/x64
+/wxWidgets/WXWIN
+(*).exe
