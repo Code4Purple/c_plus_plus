@@ -4,8 +4,9 @@
 
 wxIMPLEMENT_APP(App);
 
-bool App::OnInit() {
-	MainFrame* mainFrame = new MainFrame("C++GUI");
+bool App::OnInit()
+{
+	MainFrame *mainFrame = new MainFrame("C++ GUI Window Creation");
 	mainFrame->SetClientSize(1280, 720);
 	mainFrame->Center();
 	mainFrame->Show();

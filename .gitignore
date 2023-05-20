@@ -1,5 +1,8 @@
 *.ipch
-*.vscode
+/wxWidgets/WXWIN
+
 /wxWidgets/GUI_Syntax/windowCreation/Debug
 /wxWidgets/GUI_Syntax/windowCreation/x64
-/wxWidgets/WXWIN
+
+/wxWidgets/GUI_Syntax/controls/Debug
+/wxWidgets/GUI_Syntax/controls/x64

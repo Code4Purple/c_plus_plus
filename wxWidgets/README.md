@@ -12,7 +12,7 @@ and name it WXWIN
 
 All Platforms:
 Create a C++ file
-Go to C++ Directories and Include : $(WXWIN)\include & $(WXWIN)\include\msvc
+Go to C++ Directories and Include : $(WXWIN)\include; $(WXWIN)\include\msvc
 Then switch (Linker, System) change console ouput to windows output
 
 win32 Platform:
