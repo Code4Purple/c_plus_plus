@@ -1,8 +1,12 @@
 *.ipch
 /wxWidgets/WXWIN
 
+/wxWidgets/.vs
+
 /wxWidgets/GUI_Syntax/windowCreation/Debug
 /wxWidgets/GUI_Syntax/windowCreation/x64
+/wxWidgets/GUI_Syntax/windowCreation/.vs
 
 /wxWidgets/GUI_Syntax/controls/Debug
 /wxWidgets/GUI_Syntax/controls/x64
+/wxWidgets/GUI_Syntax/controls/.vs
