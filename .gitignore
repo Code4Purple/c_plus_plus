@@ -3,10 +3,14 @@
 
 /wxWidgets/.vs
 
-/wxWidgets/GUI_Syntax/windowCreation/Debug
-/wxWidgets/GUI_Syntax/windowCreation/x64
-/wxWidgets/GUI_Syntax/windowCreation/.vs
+/wxWidgets/GUI_Syntax/1_windowCreation/Debug
+/wxWidgets/GUI_Syntax/1_windowCreation/x64
+/wxWidgets/GUI_Syntax/1_windowCreation/.vs
 
-/wxWidgets/GUI_Syntax/controls/Debug
-/wxWidgets/GUI_Syntax/controls/x64
-/wxWidgets/GUI_Syntax/controls/.vs
+/wxWidgets/GUI_Syntax/2_controls/Debug
+/wxWidgets/GUI_Syntax/2_controls/x64
+/wxWidgets/GUI_Syntax/2_controls/.vs
+
+/wxWidgets/GUI_Syntax/3_styles/Debug
+/wxWidgets/GUI_Syntax/3_styles/controls/x64
+/wxWidgets/GUI_Syntax/3_styles/controls/.vs
