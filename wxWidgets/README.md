@@ -23,4 +23,4 @@ the same spot you changed the win32 it will be empty under the x64 all you have 
 is add this : $(WXWIN)\lib\vc_x64_lib
 
 
-Bookmark: https://youtu.be/_3PYFzMbY3k
+Bookmark: https://youtu.be/MRTrN0THsaA
