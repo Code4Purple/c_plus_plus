@@ -6,21 +6,27 @@ MainFrame::MainFrame(const wxString &title) : wxFrame(nullptr, wxID_ANY, title)
 {
 	// Parent Panel allows to use one feature without having more in the UI
 	wxPanel *panel = new wxPanel(this);
+	
 	// Button Feature for the UI
 	wxButton *button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35));
+	
 	// Check Box Feature for UI
-	wxCheckBox *checkBox = new wxCheckBox(panel, wxID_ANY, "CheckBox", wxPoint(550, 55));
+	wxCheckBox *checkBox = new wxCheckBox(panel, wxID_ANY, "Check Box", wxPoint(550, 55));
+	
 	// Output Text without the Edit from the user
 	wxStaticText *staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable", wxPoint(120, 150));
+	
 	// Output to Text for the user to change -> Input from user
 	wxTextCtrl *textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCTRL - editable", wxPoint(500, 145), wxSize(200, -1));
+	
 	// General Slider to select a degree or percent on a scale
 	wxSlider *slider = new wxSlider(panel, wxID_ANY, 25, 0, 100, wxPoint(100, 250), wxSize(200, -1));
+	
 	// Gauge Feature -> Loading Bar or Process Bar
 	wxGauge *gauge = new wxGauge(panel, wxID_ANY, 100, wxPoint(500, 255), wxSize(200, -1));
-	gauge->SetValue(25); // Value for the gauge to fill out of 100%
+	gauge->SetValue(5); // Value for the gauge to fill out of 100%
 
-	// Array List for the other Features
+	// Array List for the Listed Features
 	// You can make a normal array without the WXWIN Library
 	wxArrayString choices;
 	choices.Add("Item A");
