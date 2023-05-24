@@ -8,7 +8,7 @@ bool App::OnInit()
 {
 
 	// Creating & Titling the Appliction
-	MainFrame* mainFrame = new MainFrame("C++ GUI Controls");
+	MainFrame* mainFrame = new MainFrame("C++ GUI - Static Evbents");
 	// Size of the intail window
 	mainFrame->SetClientSize(800, 600);
 	// Where it starts at on your monitor
