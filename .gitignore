@@ -1,5 +1,6 @@
 *.ipch
 /wxWidgets/WXWIN
+/.vscode
 
 /wxWidgets/.vs
 
@@ -12,5 +13,9 @@
 /wxWidgets/GUI_Syntax/2_controls/.vs
 
 /wxWidgets/GUI_Syntax/3_styles/Debug
-/wxWidgets/GUI_Syntax/3_styles/controls/x64
-/wxWidgets/GUI_Syntax/3_styles/controls/.vs
+/wxWidgets/GUI_Syntax/3_styles/x64
+/wxWidgets/GUI_Syntax/3_styles/.vs
+
+/wxWidgets/GUI_Syntax/4_events/Debug
+/wxWidgets/GUI_Syntax/4_events/x64
+/wxWidgets/GUI_Syntax/4_events/.vs
