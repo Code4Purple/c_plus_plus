@@ -8,13 +8,16 @@ MainFrame::MainFrame(const wxString &title) : wxFrame(nullptr, wxID_ANY, title)
 	wxPanel *panel = new wxPanel(this);
 
 	// Button Feature for the UI
-	wxButton *button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35));
+	// wxButton *button = new wxButton(panel, wxID_ANY, "Button", wxPoint(150, 50), wxSize(100, 35));
+	wxButton *button = new wxButton(panel, wxID_ANY, "Button", wxMM_TEXT(1.0, 1.0), wxSize(100, 35));
 
 	// Check Box Feature for UI
-	wxCheckBox *checkBox = new wxCheckBox(panel, wxID_ANY, "Check Box", wxPoint(550, 55));
+	// wxCheckBox *checkBox = new wxCheckBox(panel, wxID_ANY, "Check Box", wxPoint(550, 55));
+	wxCheckBox *checkBox = new wxCheckBox(panel, wxID_ANY, "Check Box", wxMM_TEXT(6.0, 1.0));
 
 	// Output Text without the Edit from the user
-	wxStaticText *staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable", wxPoint(120, 150));
+	// wxStaticText *staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable", wxPoint(120, 150));
+	wxStaticText *staticText = new wxStaticText(panel, wxID_ANY, "StaticText - NOT editable", wxMM_TEXT(11.0, 1.0));
 
 	// Output to Text for the user to change -> Input from user
 	wxTextCtrl *textCtrl = new wxTextCtrl(panel, wxID_ANY, "TextCTRL - editable", wxPoint(500, 145), wxSize(200, -1));
