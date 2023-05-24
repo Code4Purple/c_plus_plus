@@ -24,3 +24,5 @@ is add this : $(WXWIN)\lib\vc_x64_lib
 
 
 Bookmark: https://youtu.be/MRTrN0THsaA
+
+Book for xwWidgets: https://www.wxwidgets.org/docs/book/Cross-Platform%20GUI%20Programming%20with%20wxWidgets.pdf
