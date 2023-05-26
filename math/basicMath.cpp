@@ -41,13 +41,24 @@ void SubTable(int x, int y)
 };
 void HelpMenu(string userInput)
 {
-    cout << "help menu" << endl;
-    cout << "type -> --exit <- to leave the help menu" << endl;
+    string helpMenu[8] = {};
+    helpMenu[0] = "---------------------------------------------------------------------";
+    helpMenu[1] = "                             Help Menu";
+    helpMenu[2] = "---------------------------------------------------------------------";
+    helpMenu[3] = "--exit       ->  exits out of any menus or appliction";
+    helpMenu[4] = "--help       ->  gives you the help menu";
+    helpMenu[5] = "timesTable   ->  allows you to pull up the Muliplication Table menu";
+    helpMenu[6] = "addTable     ->  allows you to pull up the Addiction Table menu";
+    helpMenu[7] = "subTable     ->  allows you to pull up the Subtraction Table menu";
     while (userInput == "--help")
     {
+        for (int h = 0; h < 8; h++)
+        {
+            cout << helpMenu[h] << endl;
+        }
+
         cin >> userInput;
 
-        cout << "type -> --exit <- to leave the help menu" << endl;
         if (userInput == "exit" || userInput == "--exit")
         {
             break;
@@ -61,10 +72,11 @@ int main()
     int userInputX;
     int userInputY;
 
-    cout << "Welcome to the Math Tables Appliction" << endl;
-    cout << "We Can provide you with Muliplication_Table, Addiction_Table , "
-         << "and Subtraction_Table." << endl;
-    cout << "We do provide a help table if you need with the command --help." << endl;
+    string array[4] = {};
+    array[0] = ("Welcome to the Math Tables Appliction.");
+    array[1] = ("We Can provide you with Muliplication_Table, Addiction_Table , and Subtraction_Table.");
+
+    cout << array[0] << endl;
 
     while (userInput == "--exit" || userInput == "exit" || startApp == "true")
     {
@@ -76,6 +88,11 @@ int main()
         if (userInput == "--help")
         {
             HelpMenu(userInput);
+        }
+        if (userInput == "--exit")
+        {
+            cout << "...exited the Table Appliction" << endl;
+            break;
         }
         if (userInput == "Multiplication_Table" || userInput == "timesTable")
         {
