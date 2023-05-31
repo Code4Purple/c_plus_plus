@@ -14,61 +14,86 @@ struct
 
 fstream MySaveFile;
 fstream MyTextFile;
-int i = 0;
+// int i = 0;
 string userInput;
 
 void add()
 {
-    MySaveFile.open("invites.data", ios::out | ios::app);
-    do
+    int i = 0;
+    char fileName[20];
+    cout << "Enter the Name of File that would like to create or add to: ";
+    cin >> fileName;
+    MySaveFile.open(fileName, ios::out | ios::app);
+    if (MySaveFile.is_open())
     {
-        cout << "What is the name of the recipient? " << endl;
-        cin.getline(invites.name, sizeof(invites.name));
-        cout << "What is the address of the recipient? " << endl;
-        cin.getline(invites.address, sizeof(invites.address));
-        cout << "Is the recipient under family or friends? " << endl;
-        cin.getline(invites.tag, sizeof(invites.tag));
-        MySaveFile << "Recipient's Name         : " << invites.name << endl;
-        MySaveFile << "Recipient's Address      : " << invites.address << endl;
-        MySaveFile << "Recipient's Relationship : " << invites.tag << endl;
-        MySaveFile << " " << endl;
+        do
+        {
+            cin.ignore();
+            cout << "What is the name of the recipient? " << endl;
+            cin.getline(invites.name, sizeof(invites.name));
+            cout << "What is the address of the recipient? " << endl;
+            cin.getline(invites.address, sizeof(invites.address));
+            cout << "Is the recipient under family or friends? " << endl;
+            cin.getline(invites.tag, sizeof(invites.tag));
+            MySaveFile << invites.name << endl;
+            MySaveFile << invites.address << endl;
+            MySaveFile << invites.tag << endl;
+            MySaveFile << " " << endl;
 
-        cout << "Do you have anymore Recipients to write down" << endl;
-        cin >> userInput;
-        if (userInput != "yes" || userInput != "no")
-        {
-            cout << "yes or no" << endl;
+            cout << "Do you have anymore Recipients to write down" << endl;
             cin >> userInput;
-        }
-        if (userInput == "yes")
-        {
-            cin.sync();
-            i++;
-        }
-        if (userInput == "no")
-        {
-            void close();
-            break;
-        }
-    } while (i < 151);
+            if (userInput == "yes")
+            {
+                // cin.sync();
+                i++;
+            }
+            if (userInput == "no")
+            {
+                // cin.ignore();
+                MySaveFile.close();
+                printf("closed file %s \n ", fileName);
+                break;
+            }
+        } while (i < 151);
+    }
+    else
+    {
+        printf("/n Failed to open file %s", fileName);
+    }
 }
 
 void read()
 {
+    char fileName[20];
+    cout << "Enter the Name of File that would like to read from: ";
+    cin >> fileName;
     string MyDataStream;
-    MySaveFile.open("invites.data", ios::in);
-    while (getline(MySaveFile, MyDataStream))
+    MySaveFile.open(fileName, ios::in);
+    if (MySaveFile.is_open())
     {
-        cout << MyDataStream << endl;
+        while (getline(MySaveFile, MyDataStream))
+        {
+            cout << MyDataStream << endl;
+        }
+        void close();
+        printf("Succusfully Read the %s file \n", fileName);
     }
-    void close();
+    else
+    {
+        printf("Failed to read %s \n", fileName);
+    }
 }
-void print()
+void copy()
 {
     string data;
-    ifstream MySaveFile{
-        "invites.data"};
-    ofstream MyTextFile{"printFile.text"};
+    char fileName[20];
+    cout << "Enter the Name of File you would like to copy from: ";
+    cin >> fileName;
+    ifstream MySaveFile{fileName};
+    char fileName2[20];
+    cout << "What file would you like to copy to";
+    cin >> fileName2;
+    ofstream MyTextFile{fileName2};
     if (MySaveFile && MyTextFile)
     {
         while (getline(MySaveFile, data))
@@ -79,28 +104,66 @@ void print()
     }
     else
     {
-        cout << "Cannot Read File" << endl;
+        cout << "Cannot Copy File" << endl;
     }
     MySaveFile.close();
     MyTextFile.close();
+    printf("Copied %s to %s \n", fileName, fileName2);
 }
 void remove()
 {
     int status;
     char fileName[20];
-    cout << "Enter the Name of File: ";
+    cout << "Enter the Name of File you would like to remove: ";
     cin >> fileName;
     status = remove(fileName);
     if (status == 0)
-        cout << "\nFile Deleted Successfully!";
+    {
+        printf("%s Deleted Successfully! \n", fileName);
+    }
     else
-        cout << "\nError Occurred!";
-    cout << endl;
+    {
+        printf("Unable to delete %s", fileName);
+    }
 }
 int main()
 {
-    // add();
-    read();
-    // remove();
+    int main = 0;
+    cout << "Welcome to the Wedding Invites App." << endl;
+    cout << "You can use the functions of... "
+         << "remove, "
+         << "add, "
+         << "read, "
+         << "copy" << endl;
+    while (main < 100)
+    {
+        cout << "What function would you like to use? ";
+        cin >> userInput;
+        if (userInput == "remove")
+        {
+            remove();
+            main++;
+        }
+        if (userInput == "add")
+        {
+            add();
+            main++;
+        }
+        if (userInput == "read")
+        {
+            read();
+            main++;
+        }
+        if (userInput == "copy")
+        {
+            copy();
+            main++;
+        }
+        if (userInput == "exit")
+        {
+            cout << "closing app" << endl;
+            break;
+        }
+    }
     return 0;
 }
