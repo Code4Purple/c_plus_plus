@@ -7,33 +7,18 @@ using namespace std;
 
 int main()
 {
-    ifstream invitesData;
-    ofstream friendsData;
-    ofstream familyData;
-
-    invitesData.open("ID.txt", ios::in);
-    friendsData.open("FD.txt", ios::out | ios::trunc);
-    familyData.open("Fam.txt", ios::out | ios::trunc);
+    ifstream invitesData{"ID.txt"};
 
     string line;
-    stringstream ss;
-    ss.str(line);
-    string item;
-    while (getline(ss, item, ':'))
+    while (getline(invitesData, line))
     {
-
-        if (line.length() > 0)
+        stringstream ss;
+        ss.str(line);
+        string item;
+        while (getline(ss, item, ':'))
         {
-            if (item == "family")
-            {
-                if (friendsData)
-                {
-                    friendsData.close();
-                }
-                familyData.open("Fam.txt", ios::out | ios::trunc);
-                continue;
-            }
-            if (item == "friends")
+            // if (line.length() > 0)
+            if (item == "family" || item == "friends")
             {
                 continue;
             }
