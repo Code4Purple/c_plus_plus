@@ -1,7 +1,9 @@
-#include <iostream>
-#include <fstream>
-#include <array>
-#include <stdio.h>
+#include <iostream> // cout endl;
+#include <fstream>  // file editor
+// #include <stdio.h>
+// #include <map>     // map
+// #include <iomanip> // ws
+// #include <sstream> // stringstream
 
 using namespace std;
 
@@ -14,6 +16,7 @@ struct
 
 fstream MySaveFile;
 fstream MyTextFile;
+
 // int i = 0;
 string userInput;
 
@@ -24,6 +27,7 @@ void add()
     cout << "Enter the Name of File that would like to create or add to: ";
     cin >> fileName;
     MySaveFile.open(fileName, ios::out | ios::app);
+
     if (MySaveFile.is_open())
     {
         do
@@ -35,9 +39,9 @@ void add()
             cin.getline(invites.address, sizeof(invites.address));
             cout << "Is the recipient under family or friends? " << endl;
             cin.getline(invites.tag, sizeof(invites.tag));
+            MySaveFile << invites.tag << endl;
             MySaveFile << invites.name << endl;
             MySaveFile << invites.address << endl;
-            MySaveFile << invites.tag << endl;
             MySaveFile << " " << endl;
 
             cout << "Do you have anymore Recipients to write down" << endl;
@@ -51,7 +55,7 @@ void add()
             {
                 // cin.ignore();
                 MySaveFile.close();
-                printf("closed file %s \n ", fileName);
+                printf("FIle %s has been closed\n ", fileName);
                 break;
             }
         } while (i < 151);
@@ -76,7 +80,7 @@ void read()
             cout << MyDataStream << endl;
         }
         void close();
-        printf("Succusfully Read the %s file \n", fileName);
+        printf("Finished reading %s \n", fileName);
     }
     else
     {
@@ -91,7 +95,7 @@ void copy()
     cin >> fileName;
     ifstream MySaveFile{fileName};
     char fileName2[20];
-    cout << "What file would you like to copy to";
+    cout << "What file would you like to copy to: ";
     cin >> fileName2;
     ofstream MyTextFile{fileName2};
     if (MySaveFile && MyTextFile)
@@ -100,31 +104,45 @@ void copy()
         {
             MyTextFile << data << "\n";
         }
-        cout << "Done Text File Print..." << endl;
+        // cout << "Done Text File Print..." << endl;
+        printf("Copied %s to %s \n", fileName, fileName2);
     }
     else
     {
-        cout << "Cannot Copy File" << endl;
+        printf("Cannot Copy File %s to %s", fileName, fileName2);
     }
     MySaveFile.close();
     MyTextFile.close();
-    printf("Copied %s to %s \n", fileName, fileName2);
+    // printf("Copied %s to %s \n", fileName, fileName2);
 }
 void remove()
 {
     int status;
     char fileName[20];
-    cout << "Enter the Name of File you would like to remove: ";
+    cout << "Enter the Name of the file you would like to remove: ";
     cin >> fileName;
     status = remove(fileName);
     if (status == 0)
     {
-        printf("%s Deleted Successfully! \n", fileName);
+        printf("\n %s Deleted Successfully! \n", fileName);
     }
     else
     {
-        printf("Unable to delete %s", fileName);
+        printf("\n Error : %s is invaild  \n", fileName);
     }
+}
+void splitInvites()
+{
+}
+// User Functions
+void list()
+{
+    cout << "Commands available to use are "
+         << "remove, "
+         << "add, "
+         << "read, "
+         << "copy, "
+         << "exit" << endl;
 }
 int main()
 {
@@ -159,10 +177,20 @@ int main()
             copy();
             main++;
         }
+        if (userInput == "list")
+        {
+            list();
+            main++;
+        }
         if (userInput == "exit")
         {
             cout << "closing app" << endl;
             break;
+        }
+        if (userInput == "beta")
+        {
+            splitInvites();
+            main++;
         }
     }
     return 0;
