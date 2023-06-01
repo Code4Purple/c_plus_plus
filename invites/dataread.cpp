@@ -7,10 +7,12 @@ using namespace std;
 
 int main()
 {
-    ifstream invitesData{"ID.txt"};
+    ifstream genData{"ID.txt"};
+    ofstream friData{"fri.text"};
+    ofstream famData{"fam.txt"};
 
     string line;
-    while (getline(invitesData, line))
+    while (getline(genData, line))
     {
         stringstream ss;
         ss.str(line);
@@ -18,11 +20,14 @@ int main()
         while (getline(ss, item, ':'))
         {
             // if (line.length() > 0)
-            if (item == "family" || item == "friends")
+            if (item == "friends")
             {
-                continue;
+                friData << line << endl;
+                // cout << line << endl;
             }
-            cout << item << endl;
         }
+
+        // cout << item << endl;
     }
+    return 0;
 }
