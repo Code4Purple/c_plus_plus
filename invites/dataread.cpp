@@ -56,7 +56,7 @@ void friendsSort()
     DataStream2.close();
     if (DataStream2.is_open())
     {
-        printf("Error -> %s.close() FAILED \n", fileName2);
+        printf("Error -> %s is close() FAILED \n", fileName2);
     }
     else
     {
@@ -65,14 +65,14 @@ void friendsSort()
     DataStream1.close();
     if (DataStream1.is_open())
     {
-        printf("Error -> %s.close() FAILED \n", fileName);
+        printf("Error -> %s is close() FAILED \n", fileName);
     }
     else
     {
-        printf("%s.close() -> PASSED", fileName);
+        printf("%s is close() -> PASSED", fileName);
     }
 }
-void friendHS()
+void friendsLabel()
 {
     // making the temp data into the human readable files
     char fileName[20] = "friends.temp";
@@ -119,33 +119,29 @@ void friendHS()
     DataStream2.close();
     if (DataStream2.is_open())
     {
-        printf("Error -> %s.close() FAILED \n", fileName2);
+        printf("Error -> %s is close() FAILED \n", fileName2);
     }
     else
     {
-        printf("%s.close() -> PASSED\n", fileName2);
+        printf("%s is close() -> PASSED\n", fileName2);
     }
     DataStream1.close();
     if (DataStream1.is_open())
     {
-        printf("Error -> %s.close() FAILED \n", fileName);
+        printf("Error -> %s is close() FAILED \n", fileName);
     }
     else
     {
-        printf("%s.close() -> PASSED", fileName);
+        printf("%s is close() -> PASSED", fileName);
     }
 }
 
 int main()
 {
-    // friendsSort();
-    // friendHS();
-    / making the temp data into the human readable files char fileName[20] = "friends.temp";
-    char fileName2[20] = "friends_list.temp";
-    // Open data Streams to read and write // start of friends document creation
+    char fileName[20] = "friends_list.temp";
+    char fileName2[20] = "friends.text";
     DataStream1.open(fileName, ios::in);
     DataStream2.open(fileName2, ios::out | ios::trunc);
-    // Making sure these are the stream are open to be able start store
     if (DataStream1.is_open())
     {
         printf("%s is open() -> PASSED \n", fileName);
@@ -154,32 +150,21 @@ int main()
             printf("%s is open() -> PASSED \n", fileName2);
             while (getline(DataStream1, line))
             {
-
-                stringstream ss;
-                ss.str(line);
-                string item;
-                while (getline(ss, item, ':'))
+                for (int i = 0; i < 2; i++)
                 {
-                    // if (line.length() > 0)
-                    if (item == "friends")
-                    {
-                        // << line << endl;
-                        // printf("Data -> %s \n", line);
-                        continue;
-                    }
-                    DataStream2 << item << endl;
-                    cout << "Data -> " << item << endl;
+                    cout << line << endl;
                 }
+                cout << " " << endl;
             }
         }
         else
         {
-            printf(" ERROR -> Data Stream %s FAILED \n", fileName2);
+            printf("Error Data-stream 2 %s -> FAILED", fileName2);
         }
     }
     else
     {
-        printf(" ERROR -> Data Stream %s FAILED \n", fileName);
+        printf("Error Data-stream 1 %s -> FAILED", fileName);
     }
     DataStream2.close();
     if (DataStream2.is_open())
@@ -188,16 +173,15 @@ int main()
     }
     else
     {
-        printf("%s.close() -> PASSED\n", fileName2);
+        printf("%s is close() -> PASSED\n", fileName2);
     }
     DataStream1.close();
     if (DataStream1.is_open())
     {
-        printf("Error -> %s.close() FAILED \n", fileName);
+        printf("Error -> %s is close() FAILED \n", fileName);
     }
     else
     {
-        printf("%s.close() -> PASSED", fileName);
+        printf("%s is close() -> PASSED", fileName);
     }
-}
 }
