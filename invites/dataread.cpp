@@ -142,6 +142,8 @@ int main()
     char fileName2[20] = "friends.text";
     DataStream1.open(fileName, ios::in);
     DataStream2.open(fileName2, ios::out | ios::trunc);
+
+    // string *collection = new string[wordsCollection];
     if (DataStream1.is_open())
     {
         printf("%s is open() -> PASSED \n", fileName);
@@ -150,11 +152,6 @@ int main()
             printf("%s is open() -> PASSED \n", fileName2);
             while (getline(DataStream1, line))
             {
-                for (int i = 0; i < 2; i++)
-                {
-                    cout << line << endl;
-                }
-                cout << " " << endl;
             }
         }
         else
