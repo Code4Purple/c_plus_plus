@@ -4,6 +4,8 @@
 // #include <map>     // map
 // #include <iomanip> // ws
 // #include <sstream> // stringstream
+#include "friends.cpp"
+#include "family.cpp"
 
 using namespace std;
 
@@ -37,12 +39,12 @@ void add()
             cin.getline(invites.name, sizeof(invites.name));
             cout << "What is the address of the recipient? " << endl;
             cin.getline(invites.address, sizeof(invites.address));
-            cout << "Is the recipient under family or friends? " << endl;
+            cout << "Is the recipient under family or friend? " << endl;
             cin.getline(invites.tag, sizeof(invites.tag));
-            MySaveFile << invites.tag << endl;
-            MySaveFile << invites.name << endl;
-            MySaveFile << invites.address << endl;
-            MySaveFile << " " << endl;
+            MySaveFile << invites.tag << ":";
+            MySaveFile << invites.name << ":";
+            MySaveFile << invites.address << ":";
+            MySaveFile << "space" << endl;
 
             cout << "Do you have anymore Recipients to write down" << endl;
             cin >> userInput;
@@ -118,68 +120,97 @@ void copy()
 void remove()
 {
     int status;
+    int i = 0;
     char fileName[20];
-    cout << "Enter the Name of the file you would like to remove: ";
-    cin >> fileName;
-    status = remove(fileName);
-    if (status == 0)
+    while (i < 11)
     {
-        printf("\n %s Deleted Successfully! \n", fileName);
+        cout << "Enter the Name of the file you would like to remove: ";
+        cin >> fileName;
+        status = remove(fileName);
+        if (status == 0)
+        {
+            printf("\n %s Deleted Successfully! \n", fileName);
+        }
+        else
+        {
+            printf("\n Error : %s is invaild  \n", fileName);
+        }
+        cout << "Do you have anymore files to delete? ";
+        cin >> userInput;
+        if (userInput == "yes")
+        {
+            i++;
+        }
+        if (userInput == "no")
+        {
+            break;
+        }
+        else
+        {
+            printf("Error Max Loop");
+        }
     }
-    else
-    {
-        printf("\n Error : %s is invaild  \n", fileName);
-    }
-}
-void splitInvites()
-{
 }
 // User Functions
 void list()
 {
-    cout << "Commands available to use are "
+    cout << "Commands available to use are... "
          << "remove, "
          << "add, "
          << "read, "
          << "copy, "
+         << "sort"
          << "exit" << endl;
+}
+
+void await()
+{
+    for (int wait = 0; wait < 2147483647; wait++)
+    {
+    }
 }
 int main()
 {
     int main = 0;
     cout << "Welcome to the Wedding Invites App." << endl;
-    cout << "You can use the functions of... "
-         << "remove, "
-         << "add, "
-         << "read, "
-         << "copy" << endl;
+    list();
     while (main < 100)
     {
         cout << "What function would you like to use? ";
         cin >> userInput;
         if (userInput == "remove")
         {
+            await();
             remove();
+            await();
             main++;
         }
         if (userInput == "add")
         {
+            await();
             add();
+            await();
             main++;
         }
         if (userInput == "read")
         {
+            await();
             read();
+            await();
             main++;
         }
         if (userInput == "copy")
         {
+            await();
             copy();
+            await();
             main++;
         }
         if (userInput == "list")
         {
+            await();
             list();
+            await();
             main++;
         }
         if (userInput == "exit")
@@ -187,9 +218,32 @@ int main()
             cout << "closing app" << endl;
             break;
         }
-        if (userInput == "beta")
+        if (userInput == "sort")
         {
-            splitInvites();
+            friendsSort();
+            await();
+            friendsLabel();
+            await();
+            friendsDoc();
+            await();
+            await();
+            await();
+            familySort();
+            await();
+            familyLabel();
+            await();
+            familyDoc();
+            await();
+            await();
+            await();
+            friendsClean();
+            await();
+            await();
+            await();
+            familyClean();
+            await();
+            await();
+            await();
             main++;
         }
     }

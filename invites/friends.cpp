@@ -13,9 +13,9 @@ string line;
 
 void friendsSort()
 {
-    char fileName[20] = "ID.txt";
-    // cout << "Enter the Name of File that would like to sort from to make a friends list: ";
-    // cin >> fileName;
+    char fileName[20];
+    cout << "Enter the Name of the File that would like to sort from to make a friends list: ";
+    cin >> fileName;
     char fileName2[20] = "friends.temp ";
     // Open data Streams to read and write // start of friends store 1st
     DataStream1.open(fileName, ios::in);
@@ -37,10 +37,10 @@ void friendsSort()
                 while (getline(ss, item, ':'))
                 {
                     // if (line.length() > 0)
-                    if (item == "friends")
+                    if (item == "friend" || item == "friends")
                     {
-                        DataStream2 << line << endl;
                         cout << "Data -> " << line << endl;
+                        DataStream2 << line << endl;
                     }
                 }
             }
@@ -97,14 +97,20 @@ void friendsLabel()
                 while (getline(ss, item, ':'))
                 {
                     // if (line.length() > 0)
-                    if (item == "friends")
+                    if (item == "friends" || item == "friend")
                     {
                         // << line << endl;
                         // printf("Data -> %s \n", line);
                         continue;
                     }
-                    DataStream2 << item << endl;
+                    if (item == "space")
+                    {
+
+                        DataStream2 << " " << endl;
+                        continue;
+                    }
                     cout << "Data -> " << item << endl;
+                    DataStream2 << item << endl;
                 }
             }
         }
@@ -133,11 +139,10 @@ void friendsLabel()
     }
     else
     {
-        printf("%s is close() -> PASSED", fileName);
+        printf("%s is close() -> PASSED \n", fileName);
     }
 }
-
-int main()
+void friendsDoc()
 {
     char fileName[20] = "friends_list.temp";
     char fileName2[20] = "friends.text";
@@ -191,5 +196,92 @@ int main()
     else
     {
         printf("%s is close() -> PASSED \n", fileName);
+    }
+}
+void friendsClean()
+{
+    int status;
+    char fileName[20] = "friends.temp";
+    char fileName2[20] = "friends_list.temp";
+    DataStream1.open(fileName, ios::in);
+    vector<string> list = {};
+    // string *collection = new string[wordsCollection];
+    if (DataStream1.is_open())
+    {
+        printf("%s is open() -> PASSED \n", fileName);
+
+        printf("%s is open() -> PASSED \n", fileName2);
+
+        while (getline(DataStream1, line))
+        {
+            list.push_back(line);
+        }
+        cout << fileName << " -> "
+             << "size " << list.size() << endl;
+    }
+    else
+    {
+        printf("Error Data-stream %s -> FAILED", fileName);
+    }
+    DataStream1.close();
+    if (DataStream1.is_open())
+    {
+        printf("Error -> %s is close() FAILED \n", fileName);
+    }
+    else
+    {
+        printf("%s is close() -> PASSED \n", fileName);
+    }
+
+    DataStream1.open(fileName2, ios::in);
+    // string *collection = new string[wordsCollection];
+    if (DataStream1.is_open())
+    {
+        printf("%s is open() -> PASSED \n", fileName);
+
+        printf("%s is open() -> PASSED \n", fileName2);
+
+        while (getline(DataStream1, line))
+        {
+            list.push_back(line);
+        }
+        cout << fileName << " -> "
+             << "size " << list.size() << endl;
+        printf("printing %d lines -> %s \n", list.size(), fileName);
+        for (int i = 0; i < list.size(); i++)
+        {
+            cout << list[i] << "\n";
+        }
+    }
+    else
+    {
+        printf("Error Data-stream %s -> FAILED", fileName);
+    }
+    DataStream1.close();
+    if (DataStream1.is_open())
+    {
+        printf("Error -> %s is close() FAILED \n", fileName);
+    }
+    else
+    {
+        printf("%s is close() -> PASSED \n", fileName);
+    }
+    status = remove(fileName);
+    if (status == 0)
+    {
+        printf(" %s Deleted Successfully! \n", fileName);
+    }
+    else
+    {
+        printf(" Error : %s is invaild  \n", fileName);
+    }
+    status = remove(fileName2);
+    if (status == 0)
+    {
+        printf(" %s Deleted Successfully! \n", fileName);
+    }
+    else
+    {
+        printf(" Error : %s is invaild  \n", fileName);
     }
 }
