@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 #include <sstream> // stringstream
 
 using namespace std;
@@ -142,7 +143,8 @@ int main()
     char fileName2[20] = "friends.text";
     DataStream1.open(fileName, ios::in);
     DataStream2.open(fileName2, ios::out | ios::trunc);
-
+    int count = 0;
+    vector<string> list = {};
     // string *collection = new string[wordsCollection];
     if (DataStream1.is_open())
     {
@@ -150,8 +152,17 @@ int main()
         if (DataStream2.is_open())
         {
             printf("%s is open() -> PASSED \n", fileName2);
+
             while (getline(DataStream1, line))
             {
+                list.push_back(line);
+            }
+            cout << "size " << list.size() << endl;
+            printf("printing %d lines -> %s \n", list.size(), fileName2);
+
+            for (int i = 0; i < list.size(); i++)
+            {
+                DataStream2 << list[i] << "\n";
             }
         }
         else
@@ -179,6 +190,6 @@ int main()
     }
     else
     {
-        printf("%s is close() -> PASSED", fileName);
+        printf("%s is close() -> PASSED \n", fileName);
     }
 }
