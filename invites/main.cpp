@@ -159,7 +159,7 @@ void list()
          << "add, "
          << "read, "
          << "copy, "
-         << "sort"
+         << "sort, "
          << "exit" << endl;
 }
 
@@ -172,12 +172,18 @@ void await()
 int main()
 {
     int main = 0;
+    await();
     cout << "Welcome to the Wedding Invites App." << endl;
+    await();
+    await();
     list();
+    await();
     while (main < 100)
     {
         cout << "What function would you like to use? ";
+        await();
         cin >> userInput;
+        await();
         if (userInput == "remove")
         {
             await();
