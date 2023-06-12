@@ -156,7 +156,7 @@ void list()
 {
     cout << "Commands available to use are... "
          << "remove, "
-         << "add, "
+         << "write, "
          << "read, "
          << "copy, "
          << "sort, "
@@ -191,7 +191,7 @@ int main()
             await();
             main++;
         }
-        if (userInput == "add")
+        if (userInput == "write")
         {
             await();
             add();
