@@ -145,7 +145,7 @@ void familyLabel()
 void familyDoc()
 {
     char fileName[20] = "family_list.temp";
-    char fileName2[20] = "family.text";
+    char fileName2[20] = "family.txt";
     DataStream3.open(fileName, ios::in);
     DataStream4.open(fileName2, ios::out | ios::trunc);
     int count = 0;

@@ -145,7 +145,7 @@ void friendsLabel()
 void friendsDoc()
 {
     char fileName[20] = "friends_list.temp";
-    char fileName2[20] = "friends.text";
+    char fileName2[20] = "friends.txt";
     DataStream1.open(fileName, ios::in);
     DataStream2.open(fileName2, ios::out | ios::trunc);
     int count = 0;

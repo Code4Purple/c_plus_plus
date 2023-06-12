@@ -8,6 +8,7 @@
 #include "family.cpp"
 
 using namespace std;
+void await();
 
 struct
 {
@@ -22,13 +23,19 @@ fstream MyTextFile;
 // int i = 0;
 string userInput;
 
+void question()
+{
+    cout << "Do you have anymore Recipients to write down? ";
+}
+
 void add()
 {
     int i = 0;
     char fileName[20];
     cout << "Enter the Name of File that would like to create or add to: ";
     cin >> fileName;
-    MySaveFile.open(fileName, ios::out | ios::app);
+    MySaveFile.open(fileName, ios::out | ios::in | ios::app);
+    vector<string> InputList = {};
 
     if (MySaveFile.is_open())
     {
@@ -37,20 +44,19 @@ void add()
             cin.ignore();
             cout << "What is the name of the recipient? " << endl;
             cin.getline(invites.name, sizeof(invites.name));
+            MySaveFile << invites.tag << ":";
             cout << "What is the address of the recipient? " << endl;
             cin.getline(invites.address, sizeof(invites.address));
+            MySaveFile << invites.name << ":";
             cout << "Is the recipient under family or friend? " << endl;
             cin.getline(invites.tag, sizeof(invites.tag));
-            MySaveFile << invites.tag << ":";
-            MySaveFile << invites.name << ":";
             MySaveFile << invites.address << ":";
             MySaveFile << "space" << endl;
 
-            cout << "Do you have anymore Recipients to write down" << endl;
+            question();
             cin >> userInput;
             if (userInput == "yes")
             {
-                // cin.sync();
                 i++;
             }
             if (userInput == "no")
@@ -60,6 +66,7 @@ void add()
                 printf("FIle %s has been closed\n ", fileName);
                 break;
             }
+
         } while (i < 151);
     }
     else
@@ -73,31 +80,39 @@ void read()
     char fileName[20];
     cout << "Enter the Name of File that would like to read from: ";
     cin >> fileName;
-    string MyDataStream;
+    vector<string> list = {};
     MySaveFile.open(fileName, ios::in);
     if (MySaveFile.is_open())
     {
-        while (getline(MySaveFile, MyDataStream))
+        while (getline(MySaveFile, line))
         {
-            cout << MyDataStream << endl;
+            list.push_back(line);
         }
-        void close();
-        printf("Finished reading %s \n", fileName);
+        MySaveFile.close();
     }
     else
     {
         printf("Failed to read %s \n", fileName);
     }
+    cout << fileName << " -> "
+         << "size " << list.size() << endl;
+    await();
+    for (int i = 0; i < list.size(); i++)
+    {
+        cout << list[i] << "\n";
+        await();
+    }
+    printf("Finished reading %s \n", fileName);
 }
 void copy()
 {
     string data;
     char fileName[20];
-    cout << "Enter the Name of File you would like to copy from: ";
+    cout << "Enter the Name of File you would like to copy from? ";
     cin >> fileName;
     ifstream MySaveFile{fileName};
     char fileName2[20];
-    cout << "What file would you like to copy to: ";
+    cout << "What file would you like to copy to? ";
     cin >> fileName2;
     ofstream MyTextFile{fileName2};
     if (MySaveFile && MyTextFile)
@@ -124,7 +139,7 @@ void remove()
     char fileName[20];
     while (i < 11)
     {
-        cout << "Enter the Name of the file you would like to remove: ";
+        cout << "Enter the Name of the file you would like to remove? ";
         cin >> fileName;
         status = remove(fileName);
         if (status == 0)
@@ -160,68 +175,73 @@ void list()
          << "read, "
          << "copy, "
          << "sort, "
-         << "exit" << endl;
+         << "exit"
+         << "." << endl;
 }
 
 void await()
 {
-    for (int wait = 0; wait < 2147483647; wait++)
+    for (int wait = 0; wait < 715827882; wait++)
     {
     }
 }
+
 int main()
 {
+    cin.ignore();
     int main = 0;
-    await();
     cout << "Welcome to the Wedding Invites App." << endl;
     await();
-    await();
     list();
-    await();
     while (main < 100)
     {
         cout << "What function would you like to use? ";
-        await();
         cin >> userInput;
-        await();
         if (userInput == "remove")
         {
-            await();
             remove();
             await();
             main++;
         }
         if (userInput == "write")
         {
-            await();
+
             add();
             await();
             main++;
         }
         if (userInput == "read")
         {
-            await();
+
             read();
             await();
             main++;
         }
         if (userInput == "copy")
         {
-            await();
+
             copy();
             await();
             main++;
         }
         if (userInput == "list")
         {
-            await();
+
             list();
             await();
             main++;
         }
         if (userInput == "exit")
         {
+
             cout << "closing app" << endl;
+            MySaveFile.close();
+            MyTextFile.close();
+            DataStream1.close();
+            DataStream2.close();
+            DataStream3.close();
+            DataStream4.close();
+            await();
             break;
         }
         if (userInput == "sort")
