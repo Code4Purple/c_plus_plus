@@ -44,12 +44,14 @@ void add()
             cin.ignore();
             cout << "What is the name of the recipient? " << endl;
             cin.getline(invites.name, sizeof(invites.name));
-            MySaveFile << invites.tag << ":";
+            // MySaveFile << invites.tag << ":";
             cout << "What is the address of the recipient? " << endl;
             cin.getline(invites.address, sizeof(invites.address));
-            MySaveFile << invites.name << ":";
+            // MySaveFile << invites.name << ":";
             cout << "Is the recipient under family or friend? " << endl;
             cin.getline(invites.tag, sizeof(invites.tag));
+            MySaveFile << invites.tag << ":";
+            MySaveFile << invites.name << ":";
             MySaveFile << invites.address << ":";
             MySaveFile << "space" << endl;
 
@@ -191,10 +193,10 @@ int main()
     cin.ignore();
     int main = 0;
     cout << "Welcome to the Wedding Invites App." << endl;
-    await();
     list();
     while (main < 100)
     {
+        await();
         cout << "What function would you like to use? ";
         cin >> userInput;
         if (userInput == "remove")
@@ -254,15 +256,15 @@ int main()
             await();
             await();
             await();
+            friendsClean();
+            await();
+            await();
+            await();
             familySort();
             await();
             familyLabel();
             await();
             familyDoc();
-            await();
-            await();
-            await();
-            friendsClean();
             await();
             await();
             await();
