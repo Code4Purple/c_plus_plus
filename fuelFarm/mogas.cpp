@@ -26,6 +26,11 @@ void print()
     }
 }
 
+void search(int x)
+{
+}
+
 int main()
 {
+    print();
 }
