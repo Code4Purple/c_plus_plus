@@ -23,15 +23,17 @@ int main(){
     
 
     cout << "Data for Char & String together -> " << name << " " << lastName << endl;
+    cout << endl;
     cout << "                           * Note *                            " << endl; 
     cout << "You can also you the Char data type as an array of letters as well." << endl;
     cout << "For example -> First letter of the first name is ---> " << name[0] << endl;
    
 
     bool isRaining = true;
-    cout << "  Bool DataTypes " << endl;
-    cout << "  Without boolalpha --> "<< isRaining << endl;
-    cout << "  With boolalpha    --> "<< boolalpha << isRaining << endl;
+    cout << endl;
+    cout << "Bool DataTypes " << endl;
+    cout << "Without boolalpha --> "<< isRaining << endl;
+    cout << "With boolalpha    --> "<< boolalpha << isRaining << endl;
 
 
     return 0;
