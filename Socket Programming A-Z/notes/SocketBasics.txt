@@ -1,0 +1,71 @@
+				What is a Socket? 
+It is a communication of two nodes over the internet network or you can say 
+communication between two processes.
+
+Out of which one node on n/w which is listening on a particular port and having
+ip address is called as Server while other will send connection request is 
+called the client.
+
+				*Important Note*
+Each Processes should create their own socket for communication.
+
+Two Processes can communicate with each other only when their socket have same
+address domain as well as socket type.
+
+				Address Domains
+	a. Unix Domain
+1. Two Processes sharing common file system will communicate.
+
+2. Here address of Sockets is a character string which entry in file system.
+	
+	b. Internet Domain
+1. Two Processes run on different host machine communicate over internet.
+
+2. Here address of socket is internet address of host machine
+
+Note: Each computer on internet have address of 32bit called IP address.
+	
+				Socket Types
+	a. Stream Socket
+1. It uses TCP Protocol
+2. Communicates as continuous stream of characters.
+
+	b. Datagram Socket
+1. It uses UDP Protocol.
+2. Entire message is read at once.
+
+				Communication Protocol
+1. UDP (USer Datagram Protocol)(AF_INET/SOCK_DGRAM)
+	a. Send & Receive messages up to 8KB
+	b. Unreliable: messages may be lost or reordered
+	c. Connectionless
+
+2. TCP (Transmission COntrol Protocol)(AF_INET/SOCK_STREAM)
+	a. Send/Receive byte streams of arbitrary length (like a pipe)
+	b. All Bytes delivered are correct and delivered in order
+	c. Masks transient packet loss
+	d. Connection setup/maintenance: other end is notified if one end
+closes or resets the connection, or if the connection breaks.
+
+				Servers - Client N/w Methods
+Servers and Clients are different socket network applications and so have 
+different behaviours.
+
+But they have general model for creating a streaming TCP/IP Server and Client.
+
+Server Network (N/w) Methods
+	1. Initialize WSA (only for Windows)
+	2. Create a socket
+	3. Bind a socket
+	4. Listen on the socket
+	5. Accept a connection
+	6. Send and Receive data.
+	7. Disconnect
+
+Client n/w Methods
+	1. Initialize WSA (Only for Windows)
+	2. Create a socket
+	3. Connect to the server
+	4. send and receive data
+	5. Disconnect
+	
