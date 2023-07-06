@@ -1,10 +1,10 @@
 #include "data.h"
 
 data::data(){
-feature_vector = new std::vector<uint8_t>;
+    feature_vector = new std::vector<uint8_t>;
 }
 data::~data(){
- //nothing written here
+    //nothing written here
 }
 
 void data::set_feature_vector(std::vector<uint8_t> *vect){

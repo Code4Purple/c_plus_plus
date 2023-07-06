@@ -9,6 +9,7 @@ class data {
     std::vector<uint8_t> * feature_vector;
     uint8_t label;
     int enum_label;
+    double distance;
 
     public:
     data();

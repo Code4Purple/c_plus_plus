@@ -116,6 +116,104 @@ depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+#=============================================================================
+# Target rules for targets named libraries
+
+# Build rule for target.
+libraries: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libraries
+.PHONY : libraries
+
+# fast build rule for target.
+libraries/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/build
+.PHONY : libraries/fast
+
+#=============================================================================
+# Target rules for targets named main
+
+# Build rule for target.
+main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
+.PHONY : main
+
+# fast build rule for target.
+main/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
+
+src/data.obj: src/data.cpp.obj
+.PHONY : src/data.obj
+
+# target to build an object file
+src/data.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data.cpp.obj
+.PHONY : src/data.cpp.obj
+
+src/data.i: src/data.cpp.i
+.PHONY : src/data.i
+
+# target to preprocess a source file
+src/data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data.cpp.i
+.PHONY : src/data.cpp.i
+
+src/data.s: src/data.cpp.s
+.PHONY : src/data.s
+
+# target to generate assembly for a file
+src/data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data.cpp.s
+.PHONY : src/data.cpp.s
+
+src/data_handler.obj: src/data_handler.cpp.obj
+.PHONY : src/data_handler.obj
+
+# target to build an object file
+src/data_handler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data_handler.cpp.obj
+.PHONY : src/data_handler.cpp.obj
+
+src/data_handler.i: src/data_handler.cpp.i
+.PHONY : src/data_handler.i
+
+# target to preprocess a source file
+src/data_handler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data_handler.cpp.i
+.PHONY : src/data_handler.cpp.i
+
+src/data_handler.s: src/data_handler.cpp.s
+.PHONY : src/data_handler.s
+
+# target to generate assembly for a file
+src/data_handler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/libraries.dir/build.make CMakeFiles/libraries.dir/src/data_handler.cpp.s
+.PHONY : src/data_handler.cpp.s
+
+src/main.obj: src/main.cpp.obj
+.PHONY : src/main.obj
+
+# target to build an object file
+src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.obj
+.PHONY : src/main.cpp.obj
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -124,6 +222,17 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... libraries"
+	@echo "... main"
+	@echo "... src/data.obj"
+	@echo "... src/data.i"
+	@echo "... src/data.s"
+	@echo "... src/data_handler.obj"
+	@echo "... src/data_handler.i"
+	@echo "... src/data_handler.s"
+	@echo "... src/main.obj"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
