@@ -1,2 +1,0 @@
-C:/MinGW/bin/ar.exe qc liblibraries.a CMakeFiles/libraries.dir/src/data.cpp.obj CMakeFiles/libraries.dir/src/data_handler.cpp.obj
-C:/MinGW/bin/ranlib.exe liblibraries.a

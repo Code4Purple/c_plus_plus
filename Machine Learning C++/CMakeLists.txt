@@ -4,9 +4,12 @@ project(ML_Hand_Numbers LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_BUILD_TYPE UNIX MAKEFILES)
 
 set(NAME "Bennie Kowalski")
 message("This project has been created by ${NAME}.")
+message("My 1st Machine Language Code Porject.")
+
 
 add_library(libraries 
             src/data.cpp 
