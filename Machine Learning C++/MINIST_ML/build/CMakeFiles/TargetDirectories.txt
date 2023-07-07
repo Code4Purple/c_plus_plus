@@ -1,0 +1,4 @@
+C:/Users/1poke/Desktop/c_plus_plus/Machine Learning C++/MINIST_ML/build/CMakeFiles/libraries.dir
+C:/Users/1poke/Desktop/c_plus_plus/Machine Learning C++/MINIST_ML/build/CMakeFiles/main.dir
+C:/Users/1poke/Desktop/c_plus_plus/Machine Learning C++/MINIST_ML/build/CMakeFiles/edit_cache.dir
+C:/Users/1poke/Desktop/c_plus_plus/Machine Learning C++/MINIST_ML/build/CMakeFiles/rebuild_cache.dir
