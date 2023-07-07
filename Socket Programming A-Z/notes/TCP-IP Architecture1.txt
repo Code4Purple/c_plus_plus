@@ -1,0 +1,91 @@
+				TCP/IP Architecture
+	OSI Model (Open System Interconnect) (Network Reference Model)
+It Gives overview of entire network system.
+
+It will present you with simplified essential commponents and describes
+how these components interact with each other through common network framework.
+
+OSI Model also simplifies problem of n/w technician to easily troubleshoot 
+their problem referring it.
+
+	It consist of 7 Layers 
+		1. Application
+			A. End User Layer 
+			B. HTTP,FTP, IRC, SSH, DNS
+		2. Presentation
+			A. Syntax Layer
+			B. SSL, SSH, IMAP, FTP, MPEG, JPEG
+		3. Session
+			A. Synch & Send to port
+			B. API's, Sockets, WinSock
+		4. Transport
+			A. End-to-end Connections
+			B. TCP, UDP
+		5. Network
+			A. Packets
+			B. IP, ICMP, IPSec, IGMP
+		6. Data Link	
+			A. Frames
+			B. Ethernet. PPP, Switch, Bridge
+		7. Physical
+			A. Physical Structure
+			B. Coax, Fiber, Wireless, Hubs, Repeaters 
+
+	1. Application Layer
+It provides user interface; email application
+
+	2. Presentation Layer
+All Data coversion required for application takes place here.
+
+It formats the data, compress/decompress, encrypt/decrypt the data
+
+Here data encryption character set conversion occurs; jpeg, png etc
+
+	3. Session Layer
+It opens, control, close sessions with remote host.
+
+Virtual connection established; transport connectionless without n/w communication
+	
+		** Examples of Session Layer
+	* Email Application where files need to be transferred to remote host.
+	* At pre-established interval, receiver will send sender how much 
+data is transferred.if the transport connection is lost, still virtual 
+connection exist.
+	* Once session layer receives new transport connection, it resumes sending 
+data from where it earlier stopped.
+	* Here opening, controlling and closing sessions done by transport layer.
+
+	4. Transport Layer
+It transfer data and provides end to end connection between host.
+
+Connection can be reliable(connection) or unreliable(connectionless).
+	
+With the help from the netowork layer, it packages, addresses and sends data 
+which it received form seesion layer, example: TCP or UDP.
+
+	5. Network Layer
+It routes, frame, re-assemble packets of data.
+
+Its main purpose to address packets so that each packet will find its way through
+inter-network of bridges and router. Example: IP
+
+	6. Data Link Layer
+it is network driver, it controls network card.
+
+it manages competitive request as 2 or more network layer uses single network card.
+
+here physical addressing of n/w connection takes place.
+
+it consist of most commonly used n/w device example: switch
+		
+		*** Consist of two sublayers
+	1. MAC (Media access control) sublayer: it provides device n/w interaction.
+	2. LLC (Logical Link Control) sublayer: it provides multiplexing and adressing.
+	
+	Multiplexing -> is when it allows multiple n/w protocol to co-exist
+on multiple point network and be transported over same n/w medium.
+		Example: MAC Source and Destination addresses, ethernet frame.
+
+	7. Physical Layer
+It is a network card. Anything not in the cyber world. Network Cables count in the Physical Layer.
+

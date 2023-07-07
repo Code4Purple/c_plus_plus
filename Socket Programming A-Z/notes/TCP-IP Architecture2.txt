@@ -1,0 +1,27 @@
+				Real World Example
+Lets consider if someone need to order some food say by calling a particular
+restauant and placing an order.
+
+1st -> Application Layer:
+	Consider here, customer using phone here instread of using the internet 
+to order food is a simlar task.
+	Protocol associated: HTTP, HTTPS, Telnet, FTP, SSH, SMTP, POP3 etc.
+
+2nd -> Presentation Layer:
+	Command received from application layer is coverted to universal 
+well known network format.
+	Syncing to example, Customer need to communicate with food delivery 
+person in common language which both parties know.
+	Protocol associated: JPEG, TIFF, GIF, HTML, ASCII etc.
+
+3rd -> Session Layer:
+	In order to transfer packet to destination, this layer should open,
+control and close session between end user application processes.
+	Syncing with example, Customer should make a call to deliver person and 
+he should receive a call so that communication takes place of order details.
+	Protocol associated: RPC SQL NFS, X Windows
+
+4th -> Transport Layer:
+	It not only ensures how data gets to be transmitted but also provides 
+fireWall Security and validation.
+	 
