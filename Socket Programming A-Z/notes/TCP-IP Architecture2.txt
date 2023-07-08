@@ -24,4 +24,51 @@ he should receive a call so that communication takes place of order details.
 4th -> Transport Layer:
 	It not only ensures how data gets to be transmitted but also provides 
 fireWall Security and validation.
-	 
+	It provides quality control ; suspicious packets will not be allowed
+to transfer to through the firewall.
+	So Syncing with example, suspiciopus food wont be allowed to be delivered.
+		It consists of 2 types
+			TCP: Connection Oriented
+	Reliable, if some packets are lost than resending takes place.
+	Examples: HTTP, FTP, SMTP
+			UDP: Connectionless Oriented
+	Un-reliable wherein if packets are lost and they will not be resending
+the data to the client. It also avoids distraction in live commmunication.
+	Example: Live Multiplayer Gameing.
+
+5th -> Network Layer:
+	It provides best path to route packets.
+	Here, routing, fragmentation and reassembling of packets take place.
+	Syncing with Example: Delivery person using google map to find the 
+shorest path to get to custmer.
+				3 Steps:
+Logical Addressing: These are virtual addresses which will take packets to 
+route through n/w reach destination using IPv4 or IPv6 protocol.
+
+Data Encapsulation: Here Router will encapsulate data with the 
+header, source and destination addresses.
+
+Fragmentation & Reassembling: 
+	Here if the data is too long than it is defragmented (from differnet 
+location. Non-contiguous location) into sizeable chunk to be transmitted.
+	Protocol Used: 
+Routing information protocol(RIP), Open shorest path first (OSPF)
+
+6th Data Link Layer:
+	It ensures that data transmitted is without error.
+	
+	It consist 2 layers 
+		Logical Link Control (LLC)  
+		Media access control (MAC)
+	Which will provide successful transmission.
+	
+	Here mac physical address will define destination address for packets
+to reach.
+	Syncing with Example: 
+Destinaion Physical address should be known to reach food to customer
+	Protocol Used: 
+		Ethernet, point to point protocol
+
+7th Physical Layer:
+	Network components; network card, cables.
+Here is where he custumor waits for the food.
