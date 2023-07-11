@@ -3,9 +3,8 @@
 
 #include <vector>
 #include <iostream>
-//using namespace std; 
 
-class data {
+class data{
     std::vector<uint8_t> * feature_vector;
     uint8_t label;
     int enum_label;
@@ -23,7 +22,7 @@ class data {
 
     int get_feature_vector_size();
     uint8_t get_label();
-    uint8_t get_enmerated_label();
+    uint8_t get_enumerated_label();
 
     std::vector<uint8_t> *get_feature_vector();
 };
