@@ -12,6 +12,8 @@
 
 int main(){
     
+    printf("\n        Arithmetic Operators Outputs\n");
+
     int a = 10;
     int b = 3;
     int sum = a + b;

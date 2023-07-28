@@ -4,12 +4,12 @@ int main(){
 
     int myInt;
     myInt = 15;
-    cout << "Data for myInt -> " << myInt << endl;
+    cout << "Example of a Int Value -> " << myInt << endl;
     
 
     double myDouble;
     myDouble = 3.1456;
-    cout << "Data for myDouble -> " << myDouble << endl;
+    cout << "Example of a Double Value -> " << myDouble << endl;
     
 
     char name[10];
