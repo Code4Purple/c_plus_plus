@@ -21,6 +21,7 @@ int main(){
     int product = a * b;
     int quotient = a / b;
     int remainder = a % b;
+     
 
     printf("Addition or Sum of              %d & %d = %d \n", a , b ,sum);
     printf("Subtraction or Difference of    %d & %d = %d \n", a , b ,difference);
