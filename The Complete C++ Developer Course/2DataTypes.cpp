@@ -1,7 +1,7 @@
 #include "include.h"
 
 int main(){
-
+    cout << "       Data Types" << endl;
     int myInt;
     myInt = 15;
     cout << "Example of a Int Value -> " << myInt << endl;
