@@ -1,10 +1,13 @@
 #include <iostream>
 
 int main(){
-    printf("\n      Project: Odd & Evens\n");
-
+    
     int count = 0;  
-    int max = 50;
+    int max;
+    
+    printf("\n      Project: Odd & Evens\n");
+    printf("Enter a number you would like to sort the odds and even from: ");
+    std::cin >> max;
 
     printf("\nSorting even and odds out of %d",max);
     do{
