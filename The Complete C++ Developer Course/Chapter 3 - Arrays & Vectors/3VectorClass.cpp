@@ -43,8 +43,12 @@ int main(){
     anotherVec.insert(anotherVec.begin(), "Danny");
 
     std::cout << "New Front: " << anotherVec.front() << ", " ;
-    std::cout << "New Back : " << anotherVec.back() << std::endl;
-
+    std::cout << "New Back: " << anotherVec.back() << std::endl;
+    std::cout << "The new names vector list: ";
+    for(std::string val : anotherVec){
+        std::cout << val << " ";
+    }
+    std::cout << "   <- Size of Array is " << anotherVec.size();
 
     return 0;
 }
