@@ -3,6 +3,7 @@
 int sumArray(int myArray[], int arraySize);
 
 int main(){
+    printf("\n      Sum of Built-in Array\n");
     int myArray[]{2,4,6,8,10,12,14,16,18,20};
     int sum = sumArray(myArray, 10);
 
