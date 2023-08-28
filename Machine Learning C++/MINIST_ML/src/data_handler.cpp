@@ -60,9 +60,13 @@ void data_handler::read_feature_labels(std::string path){
             uint8_t element[1];
             if(fread(element, sizeof(element), 1, f)){
                 data_array->at(i)->set_label(element[0]);
-                // Bookmark // https://www.udemy.com/course/machine-learning-in-cpp/learn/lecture/34330060#overview
+            } else{
+                std::cout << "ERROR -> Reading from file." << std::endl;
+                exit(1);
             }
         }
+        std::cout << "Successfully" << std::endl;
+        //https://www.udemy.com/course/machine-learning-in-cpp/learn/lecture/34330060#overview
     }
 }
 void data_handler::split_data();
