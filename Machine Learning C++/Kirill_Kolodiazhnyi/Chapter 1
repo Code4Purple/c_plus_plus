@@ -1,0 +1,21 @@
+# Chapter 1
+
+There are different ways to solve tasks within in computers.
+    1. To define a explicit algorithm to complete a tasks
+    2. Use Implicit strategies based on mathemtical and statistical methods.
+
+Machine Learning is one methods that uses mathemtical & statistical approaches to solve tasks.
+    The Idea is to approaches to human level intelligence with the birth of artificial intelligence(AI).
+
+In general ML (Machine Learning) approaches the idea of 
+    1. Searching patterns in a given datasets as their basis.
+    For example: the dataset is the user's feed and what they like to read 
+               ->the system then checks the user's activity based  on the last dataset of recommendations then ->updates the model to provide more of the type of data in feed to give them new rcomendations
+
+**Customer Relationship (CRM)** - These systems for ML models are used to analyze sales team activity, to help them to process the most important requests first.
+
+**Business Intelligence (BI)** - These systems are used for analytics to find essential data points.
+
+**Human Resource (HR)** - These Systems are used ML models to analyze their employees' characteristics in order to identify the most effective ones and use this information when searching applicants for open positions.
+
+** Page 45 Bookmark **

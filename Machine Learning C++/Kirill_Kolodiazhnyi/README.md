@@ -5,5 +5,6 @@
 
 
 ### PreFace 
-    Machince Learning is a popular approach to solve different kinds of problems. ML allows you to deal with various tasks without knowing a direct algorithm to solve them. The Key feature of ML algorithms is their ability to learn solutions by using a set of tranning samples, or even without them. Nowadays, ML is a widespread approach used in various areas of industry.
-    Examples of areas where ML outperforms classical direct algorithms include computer vision, natural language processing, and recommender systems. 
+    Machince Learning  -> is a popular approach to solve different kinds of problems. ML allows you to deal with various tasks without knowing a direct algorithm to solve them. The Key feature of ML algorithms is their ability to learn solutions by using a set of tranning samples, or even without them. Nowadays, ML is a widespread approach used in various areas of industry.
+    
+    Examples : of areas where ML outperforms classical direct algorithms include computer vision, natural language processing, and recommender systems. 
