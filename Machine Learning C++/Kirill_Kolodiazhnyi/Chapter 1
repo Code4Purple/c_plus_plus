@@ -18,4 +18,16 @@ In general ML (Machine Learning) approaches the idea of
 
 **Human Resource (HR)** - These Systems are used ML models to analyze their employees' characteristics in order to identify the most effective ones and use this information when searching applicants for open positions.
 
-** Page 45 Bookmark **
+## Following Topics (Covered)
+    1. Understanding the fundamentals of ML
+    2. An Overview of linear algebra
+    3. An Overview of a linear regression example
+
+## Understanding the Fundamentals of ML
+    Basic ML Model
+        1. Set Parameters for the Next two Stages
+        2. Set Tranning Data - Process
+        3. Set Evaluation Process
+        4. Loss Function - Used to penalize the model to make it better at the set task  
+
+**Page 48 - Bookmark**
