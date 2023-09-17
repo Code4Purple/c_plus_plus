@@ -1,0 +1,99 @@
+# Chapter 1
+
+## General Pre-Chapter Topics 
+There are different ways to solve tasks within in computers.
+    1. To define a explicit algorithm to complete a tasks
+    2. Use Implicit strategies based on mathemtical and statistical methods.
+
+Machine Learning is one methods that uses mathemtical & statistical approaches to solve tasks.
+    The Idea is to approaches to human level intelligence with the birth of artificial intelligence(AI).
+
+In general ML (Machine Learning) approaches the idea of 
+    1. Searching patterns in a given datasets as their basis.
+    For example: the dataset is the user's feed and what they like to read 
+               ->the system then checks the user's activity based  on the last dataset of recommendations then ->updates the model to provide more of the type of data in feed to give them new rcomendations
+
+**Customer Relationship (CRM)** - These systems for ML models are used to analyze sales team activity, to help them to process the most important requests first.
+
+**Business Intelligence (BI)** - These systems are used for analytics to find essential data points.
+
+**Human Resource (HR)** - These Systems are used ML models to analyze their employees' characteristics in order to identify the most effective ones and use this information when searching applicants for open positions.
+
+## Following Topics (Covered)
+    1. Understanding the fundamentals of ML
+    2. An Overview of linear algebra
+    3. An Overview of a linear regression example
+
+## Understanding the Fundamentals of ML
+    Basic ML Model
+        1. Set Parameters for the Next two Stages
+        2. Set Tranning Data - Process
+        3. Set Evaluation Process
+        4. Loss Function - Used to penalize the model to make it better at the set task  
+
+## Venturing into the Techniques of ML
+    We can divide ML approaches into two techniques, as follows:
+        -> Supervised Learning 
+            is an approach based on the use of labeled data. Labeled data is a set of known data samples with corresponding known target outputs.
+        Such a kind of data is used to build a model that can predict future outputs. 
+
+            This Technique : 
+                Usally takes a limited set of labeled data and build models that can make reasonable predictions for new data.
+                We can spilt supervised learning algorithms into two main parts, 
+                    1. Classification Models
+                        Predict some finite and distinct types of categories :
+                            This could be a label that identifies if an email is spam or not, or
+                            Whether an image contains a human face or not.
+
+                        These Classifications models are applied in speech and text recognition, object identification on images, credit scoring, and others.
+                            Typical algorithms for creating classification models :
+                                1.  Support Vector Machine (SVM)
+                                2.  Decision Tree Approaches
+                                3.  K-nearest neighbors (KNN)
+                                4.  Logistic Regression
+                                5.  Native Bayes
+                                6.  Neural Networks 
+
+
+                    2. Regression Models
+                        These models predict continuous responses such as changes in temperature or values of currency exchange rates.
+                            Examples of this: 
+                                algorithmic trading
+                                forcasting of electricity load
+                                revenue predicition
+                        
+                        Creating a regression model usually makes sense if the output of the given labeled data is real numbers.
+                            Tyical algorithms for creating regression models :
+                                1.  Linear Regressions
+                                2.  Multivariate Regressions
+                                3.  Polynomial regression models
+                                4.  Stepwise regression
+                        
+                        We can use decison tree techniques and neural networks to create regression models too.
+
+
+        -> Unsupervised Learning 
+            is an approach that deos not require labeled data and can search hidden patterns and structures in an arbitrary kind of data.
+
+            This Technique :
+                This alogrithm *do not* use labeled datasets.
+                This creates models that use intrinsic relations in data to find hidden patterns that they can use for making predictions. The most well-known unsupervised learning is a technique is *clustering.
+
+                    Clustering Technique : 
+                        This involves dividing a given set of data in a limited number of groups according to some intrinsic properties of data items.
+                            This gets applied in... 
+                                market researches, 
+                                different types of exploratory analysis, 
+                                deoxyribonucleic acid (DNA) , .
+                                image segmentation 
+                                & object detection.
+
+                            Typical Algorithms...
+                                1. K-means
+                                2. k-medoids
+                                3. gaussian mixture models
+                                4. hierarchical clustering
+                                5. hidden markov models
+** page 52 **
+
+
