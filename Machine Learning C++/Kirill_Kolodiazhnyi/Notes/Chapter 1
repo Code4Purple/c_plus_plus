@@ -94,6 +94,55 @@ In general ML (Machine Learning) approaches the idea of
                                 3. gaussian mixture models
                                 4. hierarchical clustering
                                 5. hidden markov models
-**page 52**
+
+## Dealing With ML Models
+    Parmeters that are extrenal to the model are usually called *hyperparameters*.
+
+    Internal Parameters have the following characteristics:
+        1. They are neccessary for making predictions.
+        2. They define the quality of the model on the given problem.
+        3. We can learn them from training data.
+        4. Usually, they are a part of the model
+
+    if the model contains a fixed number of internal parameters, it is called parametric. Otherwise, we can classify it as non-parametric.
+
+    Examples of internal parameters are as follows:
+        1. Weights of artificial neural networks (ANNs)
+        2. Support Vectors values for SVM models
+        3. Polynomial coefficients for linear regression or logistic regression
+        
+    On the other hand, hyperparameters have the following characteristics:
+        1. They are used to configure algorithms that estimate model parameters.
+        2. The practitioner usually specifies them.
+        3. Their estimation is often based on using heuristics.
+        4. They are specific to a concrete modeling problem.
+
+    Practitioners use rules of thumb, copying values from similar projects, as well as special techniques such as grid search for hyperparameter
+    estimation.
+
+    Hyperparameters as follows: 
+        1. C & Sigma parameters used in the SVM algorithm for a classification quality configuration.
+        2. The Learning rate parameter that is used in the neural network training process to configure algorithm convergence.
+        3. The k value that is used in the KNN algorithm to configure the number of neighbors.
+    
+## Model Parameter Estimation
+    A function that evaluates how well a model predicts on the data is called a loss function.
+
+    Examples of a loss function's factors:
+        1. Specifics of the given problem for example, if it is a regression or a classification model
+        2. Ease of calculating derivatives
+        3. Percentage of outliers in the dataset
+
+    In ML the term optimizer is used to define an algorithm that connects a loss function and a technique for updating model parameters in response to the values of the loss function.
 
 
+## An overview of Linear Algebra
+    Examples of Libraries of Linear Algebra : 
+        Cuda 
+        OpenCL
+        cuBLAS
+
+
+## Learning the Concepts of Linear Algebra
+
+**PAGE 58**
