@@ -1,9 +1,15 @@
-https://www.udemy.com/
+# Project File Topics
 
-cmake .. -G "Unix Makefiles" --> make files in windows
+## Basic Overview
+C++ Syntax
+The Complete C++ Developer Course
 
-g++ -std=c++17 -I ./include ./src -o beta
+## Machine Learning  
+Hands on Learning with Kirill_Kolodiazhnyi
+MINIST_ML
 
+## Backend - Server
+Socket Programming A-z
 
-commands
-    cmake..
+## GUI 
+wxWidgets + .gitignore
