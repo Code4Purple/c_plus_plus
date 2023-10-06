@@ -1,15 +1,15 @@
 # Project File Topics
 
 ## Basic Overview
-C++ Syntax
-The Complete C++ Developer Course
+1. C++ Syntax
+2. The Complete C++ Developer Course
 
 ## Machine Learning  
-Hands on Learning with Kirill_Kolodiazhnyi
-MINIST_ML
+1. Hands on Learning with Kirill_Kolodiazhnyi
+2. MINIST_ML
 
 ## Backend - Server
-Socket Programming A-z
+1. Socket Programming A-z
 
 ## GUI 
-wxWidgets + .gitignore
+1. wxWidgets + .gitignore
