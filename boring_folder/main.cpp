@@ -26,9 +26,9 @@ int main(){
     std::cout << "Gathering Data..." << std::endl;
     maxInt();
     std::cout << "Got all data gathered! " << std::endl;
-    std::cout << "Size of Vector @ end : " << counting.size() << std::endl;
     printData();
-
+    std::cout << "Size of Vector @ end : " << counting.size()-1 << std::endl;
+  
 
 }
  
