@@ -10,11 +10,6 @@ void maxInt(){
         counting.push_back(i);
     }
 };
-void maxDouble(){
-    for(double i = 00.00; i < user_max_size + 1; i += .10){
-        counting.push_back(i);
-    }
-};
 
 void printData(){
     std::cout << "Printing the data..." << std::endl;
@@ -27,13 +22,13 @@ void printData(){
 int main(){
     std::cout << "How for do want to count? " << std::endl;
     std::cin >> user_max_size;
+    std::cout << "Size of Vector @ start : " << counting.size() << std::endl;
     std::cout << "Gathering Data..." << std::endl;
-    std::cout << "Size of Vector : " << counting.size() << std::endl;
     maxInt();
-    //maxDouble();
     std::cout << "Got all data gathered! " << std::endl;
-    std::cout << "Size of Vector : " << counting.size() << std::endl;
+    std::cout << "Size of Vector @ end : " << counting.size() << std::endl;
     printData();
 
 
 }
+ 
