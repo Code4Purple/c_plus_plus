@@ -40,12 +40,17 @@ int main(){
 
     myHouse.setNumStories(2);
     myHouse.setNumWindows(6);
-    myHouse.getColor("red");
+    myHouse.setColor("pink");
 
     yourHouse.setNumStories(3);
     yourHouse.setNumWindows(10);
-    yourHouse.getColor("blue");
+    yourHouse.setColor("blue");
 
-    printf("My house is %s & it has %d stories with %d windows.", myHouse.getColor() ,myHouse.getNumStories(), myHouse.getNumWindows());
-    printf("Your house is %s & it has %d stories with %d windows." , yourHouse.getColor(), yourHouse.getNumStories(), yourHouse.getNumWindows());
+    // My House print out
+    cout << "   My house is " << myHouse.getColor() << " ";
+    printf("& it has %d stories with %d windows.\n" ,myHouse.getNumStories(), myHouse.getNumWindows());
+
+    // Your house print out
+    cout << " Your house is " << yourHouse.getColor() << " ";
+    printf("& it has %d stories with %d windows.\n" ,yourHouse.getNumStories(), yourHouse.getNumWindows());
 }
