@@ -35,9 +35,11 @@ class House{
 
 int main(){
     
+    // Setting Classes to a Name
     House myHouse;
     House yourHouse;
 
+    // Setting Data
     myHouse.setNumStories(2);
     myHouse.setNumWindows(6);
     myHouse.setColor("pink");
@@ -47,10 +49,10 @@ int main(){
     yourHouse.setColor("blue");
 
     // My House print out
-    cout << "   My house is " << myHouse.getColor() << " ";
+    cout << "\n   My house is " << myHouse.getColor() << " ";
     printf("& it has %d stories with %d windows.\n" ,myHouse.getNumStories(), myHouse.getNumWindows());
 
     // Your house print out
-    cout << " Your house is " << yourHouse.getColor() << " ";
-    printf("& it has %d stories with %d windows.\n" ,yourHouse.getNumStories(), yourHouse.getNumWindows());
+    cout << "\nYour house is " << yourHouse.getColor() << " ";
+    printf("& it has %d stories with %d windows.\n\n" ,yourHouse.getNumStories(), yourHouse.getNumWindows());
 }
