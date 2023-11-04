@@ -49,10 +49,10 @@ int main(){
     yourHouse.setColor("blue");
 
     // My House print out
-    cout << "\n   My house is " << myHouse.getColor() << " ";
+    cout << "\n   My house is " << myHouse.getColor() << " "; // Had to use two different print outs due to the basic prinf statement not giving the sting value to the console
     printf("& it has %d stories with %d windows.\n" ,myHouse.getNumStories(), myHouse.getNumWindows());
 
     // Your house print out
-    cout << "\nYour house is " << yourHouse.getColor() << " ";
+    cout << "\nYour house is " << yourHouse.getColor() << " "; // Had to use two different print outs due to the basic prinf statement not giving the sting value to the console
     printf("& it has %d stories with %d windows.\n\n" ,yourHouse.getNumStories(), yourHouse.getNumWindows());
 }
