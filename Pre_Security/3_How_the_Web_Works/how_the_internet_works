@@ -1,0 +1,17 @@
+----------------------------------------------------------------------
+
+    The Process Behind the Browser to get a Website Loaded
+
+-----------------------------------------------------------------------
+
+1. Request < Website name > in your browser
+2. Check Local Cache for IP Address
+3. Check your rescursive DNA Server for Address
+4. Query root server to find authoritative DNS Server
+5. Authoritative DNS server adivises the IP address for the Website
+6. Request passes though a Web Application Firewall
+7. Request Passes through a load balancer
+8.  Connect to Webserver on port 80 or 443
+9.  Web Server receives the GET request
+10. Web Application Talks to Database
+11. Your Browser renders the HTML into a viewable website
