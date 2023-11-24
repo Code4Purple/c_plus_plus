@@ -1,0 +1,31 @@
+## Accessing your Linux Machine Using SSH (Deploy)
+
+### What is SSH & How does it work?
+
+Secure Shell or SSH simply is a protocol between devices in an encrypted form. 
+Using cryptography, any input we send in a human-readable format is encrypted for travelling over a network -- where it is then unencrypted once it reaches the remote machine.
+
+You can learn about the various types of encryption on a TryHackMe room. But for now, we only need to understand that:
+      SSH allows us to remotely execute commands on another device remotely.
+      Any data sent between the devices is encrypted when it is sent over a network such as the Internet
+
+### Using SSH to login to your linux machine
+
+The syntax to use SSH is very simple. We only need to provide two things:
+
+1. The IP address of the remote machine
+2. Correct credentials to a valid account to login with on the remote machine
+
+## More Commands
+
+man < command > ; man ls   -> brings up the manual on how to use the ls command
+ls -a                      -> gives light to hidden folders
+
+touch <file name >         -> Creats file 
+mkdir                      -> Makes Directory ( Folder )
+cp                         -> Copy a file or folder
+mv                         -> Move a file or folder
+rm                         -> Remove a file or folder
+file                       -> Determine the type of file
+
+rm -r                      -> Allows you to remove folders
