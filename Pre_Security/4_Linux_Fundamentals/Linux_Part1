@@ -1,0 +1,131 @@
+## Intro to Doc
+
+Welcome to the first part of the "Linux Fundamentals" room series. You're most likely using a Windows or Mac machine, both are different in visual design and how they operate. 
+Just like Windows, iOS and MacOS, Linux is just another operating system and one of the most popular in the world powering smart cars, android devices, supercomputers, home appliances, 
+enterprise servers, and more.
+
+We'll be covering some of the history behind Linux and then eventually starting your journey of being a Linux-wizard! This room will have you:
+    Running your very first commands in an interactive Linux machine in your browser
+    Teaching you some essential commands used to interact with the file system
+    Introduce you to how users and groups work on Linux (and what this means for us as penetration testers)
+
+##  Where is Linux Used?
+
+It's fair to say that Linux is a lot more intimidating to approach than Operating System's (OSs) such as Windows. Both variants have their own advantages and disadvantages. 
+For example, Linux is considerably much more lightweight and you'd be surprised to know that there's a good chance you've used Linux in some form or another every day! 
+Linux powers things such as:
+    Websites that you visit
+    Car entertainment/control panels
+    Point of Sale (PoS) systems such as checkout tills and registers in shops
+    Critical infrastructures such as traffic light controllers or industrial sensors
+
+## Flavours of Linux
+
+The name "Linux" is actually an umbrella term for multiple OS's that are based on UNIX (another operating system). 
+Thanks to UNIX being open-source, variants of Linux comes in all shapes and sizes - suited best for what the system is being used for.
+
+For example, Ubuntu & Debian are some of the more commonplace distributions of Linux because it is so extensible. 
+I.e. you can run Ubuntu as a server (such as websites & web applications) or as a fully-fledged desktop. For this series, we're going to be using Ubuntu.
+
+    Ubuntu Server can run on systems with only 512MB of RAM
+
+Similar to how you have different versions Windows (7, 8 and 10), there are many different versions/distributions of Linux.
+
+## Some Commands in Limux
+
+As we previously discussed, a large selling point of using OSs such as Ubuntu is how lightweight they can be. This, of course, doesn't come without its disadvantages, where for example, 
+often there is no GUI (Graphical User Interface) or what is also known as a desktop environment that we can use to interact with the machine (unless it has been installed). 
+A large part of interacting with these systems is using the "Terminal".
+
+The "Terminal" is purely text-based and is intimidating at first. However, if we break down some of the commands, after some time, you quickly become familiar with using the terminal!
+
+We need to be able to do basic functions like navigate to files, output their contents and make files! The commands to do so are self-explanatory (once you know what they are of course...)
+
+Let's get started with two of the first commands which I have broken down in the table below:
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+      Command                    ->                Description
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
+        
+        echo                     ->              Output any text that we provide
+
+        whoami                   ->              Find out what user we're currently logged in as!
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Interacting with the Filesystem!
+
+So far we've only covered the "echo" and "whoami" commands. 
+Not all that useful when you consider things that we need to do - including navigating the filesystem, read and write to it as well.
+
+In this task, we're going to be learning the commands so that we can do just that. Just like the previous task, 
+I'll display the commands in the table in the next heading & show examples of these commands being used.
+
+As I previously stated, being able to navigate the machine that you are logged into without relying on a desktop environment is pretty important. 
+After all, what's the point of logging in if we can't go anywhere?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        Command             ->            Description                            |                Tips on use cases  
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            ls              ->          listing                                  |              You can list a directory contents by using command ls < name of directory > without cd into it. 
+
+            cd              ->          change directory                         |              
+
+            cat             ->          concatenate                              |              You can print out contents of file without navigating to it; cat /home/ubuntu/Docs/todo.text
+
+            pwd             ->          print working directory                  |              This prints out the current directory path to the file
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## Searching for Files
+
+Although it doesn't seem like it so far, one of the redeeming features of Linux is truly how efficient you can be with it. 
+With that said, you can only be as efficient as you are familiar with it of course. As you interact with OSs such as Ubuntu over time, essential commands like those we've already covered 
+will start to become muscle-memory.
+
+One fantastic way to show just how efficient you can be with systems like this is using a set of commands to quickly search for files across the entire system that our user has access to. 
+No need to consistently use cd and ls to find out what is where. Instead, we can use commands such as find to automate things like this for us!
+
+This is where Linux starts to become a bit more intimidating to approach -- but we'll break this down and ease you into it.
+
+### Using Find
+
+The find command is fantastic in the sense that it can be used both very simply or rather complex depending upon what it is you want to do exactly. 
+However, let's stick to the fundamentals first.
+
+Take the snippet below; we can see a list of directories available to us:
+      1. Desktop  
+      2. Documents
+      3. Pictures
+      4. folder1
+
+Now, of course, directories can contain even more directories within themselves. It becomes a headache when we're having to look through every single one just to try and 
+look for specific files. We can use find to do just this for us!
+
+Let's start simple and assume that we already know the name of the file we're looking for — but can't remember where it is exactly! In this case, we're looking for "passwords.txt"
+
+If we remember the filename, we can simply use find -name passwords.txt where the command will look through every folder in our current directory for that specific file like so:
+
+"Find" has managed to find the file — it turns out it is located in folder1/passwords.txt — sweet. But let's say that we don't know the name of the file, or want to search for 
+every file that has an extension such as ".txt". Find let's us do that too!
+
+We can simply use what's known as a wildcard (*) to search for anything that has .txt at the end. In our case, we want to find every .txt file that's in our current directory. 
+We will construct a command such as find -name *.txt . Where "Find" has been able to find every .txt file and has then given us the location of each one:
+
+Find has managed to find:
+
+      "passwords.txt" located within "folder1"
+      "todo.txt" located within "Documents"
+
+That wasn't so tough, huh!
+
+### Using Grep
+
+Another great utility that is a great one to learn about is the use of grep. The grep command allows us to search the contents of files for specific values that we are looking for.
+Take for example, the access log of a web server. In this case, the access.log of a web server has 244 entries.
+
