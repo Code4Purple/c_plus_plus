@@ -1,0 +1,14 @@
+You must login into the AttackBox again
+
+steps
+	
+	1. Start the Attack Box    --- take the longest to load
+	2. go to task two and start the ssh machine 
+	3. Once the AttackBox has loaded then you must go to terminal
+	4. use command : ssh tryhackme@< ip address on the ssh machine >
+	5. the password is : tryhackme
+	6. yes to fingerprint
+
+	it may effect you but we had to switch to user2 and the password 
+	for it is user2 as well just be mindful of that.
+	
