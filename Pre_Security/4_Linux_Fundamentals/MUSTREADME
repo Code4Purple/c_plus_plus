@@ -12,3 +12,8 @@ steps
 	it may effect you but we had to switch to user2 and the password 
 	for it is user2 as well just be mindful of that.
 	
+
+	Part 3 Credentials
+		IP Address: MACHINE_IP
+		Username: tryhackme
+		Password: tryhackme
