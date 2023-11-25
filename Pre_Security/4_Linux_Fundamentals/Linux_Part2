@@ -29,3 +29,4 @@ rm                         -> Remove a file or folder
 file                       -> Determine the type of file
 
 rm -r                      -> Allows you to remove folders
+
