@@ -14,6 +14,6 @@ steps
 	
 
 	Part 3 Credentials
-		IP Address: MACHINE_IP
+		IP Address: 10.10.12.161
 		Username: tryhackme
 		Password: tryhackme
