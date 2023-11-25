@@ -18,6 +18,12 @@ SIGTERM                        ->    Kills the process, but allows it to do some
 SIGKILL                        ->    Kill the process - doesn't do any cleanup after the fact
 SIGSTOp                        ->    Stop/suspend a process
 
+systemctl [option] [service]   ->    you either - stop, start, enable , disable -> then just add the service you want to run 
+
+fg                             ->    any process that is in the background can brought forward with this command
+
+
+
                        * Our Machine to Remote Machine *
 Example of scp :  scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
 What it means  :  command - file name on our machine - user on remote @ ip address - : where to store the file and what the file will be on the remote system.
