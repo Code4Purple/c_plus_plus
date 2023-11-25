@@ -19,14 +19,38 @@ The syntax to use SSH is very simple. We only need to provide two things:
 ## More Commands
 
 man < command > ; man ls   -> brings up the manual on how to use the ls command
-ls -a                      -> gives light to hidden folders
+< command > -- help        -> gives you the menu for that command 
+ls -a or --all             -> gives light to hidden folders
+ls -lh                     -> gives a list of permisions of all files in the directory
 
-touch <file name >         -> Creats file 
+
 mkdir                      -> Makes Directory ( Folder )
-cp                         -> Copy a file or folder
-mv                         -> Move a file or folder
-rm                         -> Remove a file or folder
-file                       -> Determine the type of file
 
-rm -r                      -> Allows you to remove folders
+touch <file name >            -> Creats file 
+cp                            -> Copy a file or folder
+mv                            -> Move a file or folder
 
+rm                            -> Remove a file 
+rm -r                         -> Allows you to remove folders
+
+file                          -> Determine the type of file
+cat  <file name>              -> prints out the contents of a file
+
+su <user name>                -> Switchs users within the system
+su <user name> *-l or login*  -> allows you to inherit alot more properties of the 
+                                 new user like environment variables and the likes
+
+sudo < Command >              -> Gives root permission to the commnad
+sudo apt -install             -> allows you to install a package like git for example
+
+
+## Briefly: The Differences Between Users & Groups
+
+We briefly explored this in Linux fundamentals part 1 (namely, the differences between a regular user and a system user). The great thing about Linux is that permissions can be so granular, that whilst a user technically owns a file, if the permissions have been set, then a group of users can also have either the same or a different set of permissions to the exact same file without affecting the file owner itself.
+
+Let's put this into a real-world context; the system user that runs a web server must have permissions to read and write files for an effective web application. However, companies such as web hosting companies will have to want to allow their customers to upload their own files for their website without being the webserver system user -- compromising the security of every other customer. 
+
+We'll learn the commands necessary to switch between users below.
+
+
+## Common Directories 
