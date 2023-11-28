@@ -3,21 +3,43 @@
 
 		Commands 				Description
 
+	man < command > ; man ls        -> brings up the manual on how to use the ls command
+	
+	< command > -- help        	-> gives you the menu for that command 
+	
 	echo				Output any text that we provide
 
 	whoami				Find ouut what user we're currently logged in as 
 
-	ls 				list what is in a directory like files and folder
+	ls 			   	-> list what is in a directory like files and folder
+	ls -a or --all             	-> gives light to hidden folders
+	ls -lh                     	-> gives a list of permisions of all files in the directory
 
-	cd 				change directory
+	cd 			      -> change directory
 
-	cat 				can print out contents of a file into the console
+	cat 			      -> can print out contents of a file into the console
 
-	pwd				Prints out current file location 
+	pwd			      -> Prints out current file location 
 
-	find -name *<file ending>	print out every file with that ending like .txt for example
+	find -name *<file ending>     -> print out every file with that ending like .txt for example
 
-	
+	mkdir                         -> Makes Directory ( Folder )
+
+	touch <file name >            -> Creats file 
+	cp                            -> Copy a file or folder
+	mv                            -> Move a file or folder
+
+	rm                            -> Remove a file 
+	rm -r                         -> Allows you to remove folders
+
+	file                          -> Determine the type of file
+	cat  <file name>              -> prints out the contents of a file
+
+	su <user name>                -> Switchs users within the system
+	su <user name> *-l or login*  -> allows you to inherit alot more properties of the new user like environment variables and the likes
+
+	sudo < Command >              -> Gives root permission to the command
+	sudo apt -install             -> allows you to install a package like git for example
 
 
 		Symbol / Operator			Description
