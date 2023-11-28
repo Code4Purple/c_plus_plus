@@ -1,0 +1,32 @@
+						
+## Commands for Linux
+
+		Commands 				Description
+
+	echo				Output any text that we provide
+
+	whoami				Find ouut what user we're currently logged in as 
+
+	ls 				list what is in a directory like files and folder
+
+	cd 				change directory
+
+	cat 				can print out contents of a file into the console
+
+	pwd				Prints out current file location 
+
+	find -name *<file ending>	print out every file with that ending like .txt for example
+
+	
+
+
+		Symbol / Operator			Description
+		
+			&			This Operator allows you to run commands in the background of your terminal
+			
+			&&			This Operator allows you to combine multiple commands together in one line of your terminal.
+			
+			>			This operator is a redirector - meaning that we can tkae the output from a command ( such as using cat to output a file ) and direct it elsewhere.
+				
+			>>			This operator deos the same function of the > operator but appends the output rather than replacing it.
+		
