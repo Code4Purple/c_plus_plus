@@ -1,0 +1,37 @@
+
+
+## Windows Editions
+
+Biggest difference between -> Pro vs Home
+    Pro has the Bitlocker vs home which it deos not 
+**Windows 10 will be support until October 14th, 2025**
+
+## Desktop (GUI)
+
+What we see in the desktop view....
+    The Desktop
+    Start Menu
+    Search Box (Cortana)
+    Task View
+    Taskbar
+    Toolbars
+    Notification Area
+
+## The File System
+
+The file system used in modern versions of Windows is the New Technology File System or simply NTFS(1).
+
+Before NTFS, there was FAT16/FAT32 (File Allocation Table) and HPFS (High Performance File System). 
+
+You still see FAT partitions in use today. For example, you typically see FAT partitions in USB devices, MicroSD cards, etc. but traditionally not on personal Windows computers/laptops or Windows servers.
+
+NTFS is known as a journaling file system. In case of a failure, the file system can automatically repair the folders/files on disk using information stored in a log file. This function is not possible with FAT.   
+
+NTFS addresses many of the limitations of the previous file systems; such as: 
+
+    Supports files larger than 4GB
+    Set specific permissions on folders and files
+    Folder and file compression
+    Encryption (Encryption File System or EFS)
+
+If you're running Windows, what is the file system your Windows installation is using? You can check the Properties (right-click) of the drive your operating system is installed on, typically the C drive (C:\).
