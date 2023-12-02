@@ -169,4 +169,20 @@ Double-click the program, and you'll see the UAC prompt. Notice that the built-i
 
 After some time, if a password is not entered, the UAC prompt disappears, and the program does not install. 
 
-This feature reduces the likelihood of malware successfully compromising your system. You can read more about UAC here(7).
+This feature reduces the likelihood of malware successfully compromising your system. You can read more about UAC here(6).
+
+## Task Manager
+
+The last subject that will be touched on in this module is the Task Manager.
+
+The Task Manager provides information about the applications and processes currently running on the system. Other information is also available, such as how much CPU and RAM are being utilized, which falls under Performance. 
+
+You can access the Task Manager by right-clicking the taskbar. 
+
+Task Manager will open in Simple View and won't show much information. 
+
+Click on More details, and the view changes.
+
+
+
+
