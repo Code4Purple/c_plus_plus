@@ -32,7 +32,7 @@ NTFS addresses many of the limitations of the previous file systems; such as:
     Supports files larger than 4GB
     Set specific permissions on folders and files
     Folder and file compression
-    Encryption (Encryption File System or EFS)
+    Encryption (Encryption File System(1.5) or EFS)
 
 If you're running Windows, what is the file system your Windows installation is using? You can check the Properties (right-click) of the drive your operating system is installed on, typically the C drive (C:\).
 
