@@ -1,0 +1,14 @@
+Prime 16.41
+Ring 4.99 
+Hulu 27.35
+Hims 79.00
+Github-Ai 10.00
+ITProTV 59.00
+Sallie-Mae 240.71
+Car 230.00
+Comcast 80.00
+Life(Insurance) 24.37
+Health(Insurance) 9.18
+Car(Insurance) 313.10
+Rent 1456
+Water 110.93
