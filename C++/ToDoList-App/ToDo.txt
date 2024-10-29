@@ -68,3 +68,31 @@ Security Architecture
 20. Backups
 21. Power
 
+Security Operations
+1. Examining Security Baselines and Hardening 
+2. Examining Security For Mobile Devices
+3. Examining Wireless Security
+4. Examining Application Security
+5. Examining Asset Management 
+6. Identifying Vulnerabilities
+7. Examining Vulnerability Analysis
+8. Vulnerability Response, Remediation and Reporting
+9. Examining Security Monitoring and Alerting
+10. Examining Firewalls and Intrusion Detection Devices
+11. Examining Web Filtering
+12. Examining Email Security
+13. Examining Endpoint Detection and Response (EDR)
+14. Examining Secure Network Protocols and Services
+15. Examining Operating System Security
+16. Examining Password Security
+17. Examining Single Sign-on
+18. Examining User Onboarding and Offboarding
+19. Examining Identify and Access Management
+20. Examining Privileged Identity Management
+21. Examining Automation and Scripting Uses
+22. Examining the Incident Response Process and Activities
+23. Examining Digital Forensics Activities
+24. Examining Investigation Data Sources and Log Data
+
+
+
