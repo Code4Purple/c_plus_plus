@@ -1,0 +1,19 @@
+#include <iostream>
+#include <optional>
+
+using namespace std;
+
+void myFunction(optional<string> name = nullopt){
+	if(name == nullopt){
+		cout << "I wish I knew your name!" << endl;
+	}
+	else{
+		cout << "Hello " << name.value() << "!" << endl;
+	}
+}
+
+int main(){
+	myFunction();
+	myFunction("PBD");
+	return 0;
+}
