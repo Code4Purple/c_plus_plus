@@ -26,6 +26,21 @@ void statusOfInkLevel(int InkLevelPercent){
     cout << "Ink Level: " << InkLevelPercent << endl;
 }
 
+int abilty_to_write(int InkLevelPercent, string WordsContent){
+    
+    int words_length = WordsContent.length();
+    int abilty_to_write = InkLevelPercent - words_length;
+
+    if(abilty_to_write <= 0){
+        cout << "Oops! Out of ink!" << endl;
+        return -1;
+    }
+    else{
+        cout << "I can write!" << endl;
+        return 1;
+    }
+}
+
 int main(){
 
     // Use use the Pen Class put some process to show the function working with the above methods
@@ -39,14 +54,17 @@ int main(){
     workingPen.InkLevelPercent = 100;
 
     for (int i = 0; i < 10; i++){
-        if(statusOfInkLevel <= 0){
+        string pharse = "Hello, World!\n";
+        
+        if(abilty_to_write(workingPen.InkLevelPercent, pharse) == -1){
             workingPen.run_out_of_ink();
+            statusOfInkLevel(workingPen.InkLevelPercent);
             break;
         }
         else{
-            workingPen.write_on_paper("Hello, World!");
             statusOfInkLevel(workingPen.InkLevelPercent);
-        }
+            workingPen.write_on_paper(pharse);
+        };
     }
 
     return 0;
