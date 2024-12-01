@@ -13,6 +13,15 @@
 
 int8_t b[1760], z[1760];
 
+void hideCursor() {
+  HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+  CONSOLE_CURSOR_INFO info;
+  info.dwSize = 100;
+  info.bVisible = FALSE;
+  SetConsoleCursorInfo(consoleHandle, &info);
+}
+
+
 int main() {
   int sA=1024,cA=0,sB=1024,cB=0,_;
   for (;;) {
@@ -51,6 +60,7 @@ int main() {
     R(5, 7, cA, sA);
     R(5, 8, cB, sB);
     Sleep(15);
+    hideCursor();
     printf("\x1b[23A");
   }
 }
