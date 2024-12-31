@@ -57,14 +57,14 @@ void calculateForSurface(float cubeX, float cubeY, float cubeZ, int ch) {
     }
 }
 
-
+/*
 void hideCursor() {
   HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
   CONSOLE_CURSOR_INFO info;
   info.dwSize = 100;
   info.bVisible = FALSE;
   SetConsoleCursorInfo(consoleHandle, &info);
-} 
+} */
 
 int main(){
     printf("\x1b[2J]");
@@ -87,8 +87,8 @@ int main(){
         A += 0.005;
         B += 0.005;
         usleep(1000);
-        //Sleep(10);
-        hideCursor();
+        //Sleep(100);
+        //hideCursor();
     }
 
     return 0;
