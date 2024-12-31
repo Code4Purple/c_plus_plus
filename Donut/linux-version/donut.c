@@ -50,6 +50,8 @@ int main() {
       }
       R(9, 7, cj, sj)  // rotate j
     }
+    //std::cout << "Starting..." << endl;
+    //std:cout << "CTRl + C - to end program"
     for (int k = 0; 1761 > k; k++)
       putchar(k % 80 ? b[k] : 10);
     R(5, 7, cA, sA);
