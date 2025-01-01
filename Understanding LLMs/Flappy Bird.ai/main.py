@@ -40,11 +40,11 @@ def main():
                 config.pipes.remove(pipe)
             if pipe.passed:
                 config.pipes.remove(pipe)
-
+        
         # Player
         population.update_live_players()
         
-        clock.tick(60)
+        clock.tick(60) # needs to be 60
         pygame.display.flip()
 
 main()
