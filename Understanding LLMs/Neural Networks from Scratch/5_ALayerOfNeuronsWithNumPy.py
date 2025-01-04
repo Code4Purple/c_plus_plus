@@ -26,3 +26,5 @@ example, we used that property to pass a matrix, which was a list of neuron weig
 vector of inputs and get a list of dot products — neuron outputs.
 
 '''
+
+# Bookmark: PG 44 - A Batch of Data
