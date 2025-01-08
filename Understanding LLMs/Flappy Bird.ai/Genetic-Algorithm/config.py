@@ -10,6 +10,6 @@ pipes = []
 
 
 # Window Customization
-title = pygame.display.set_caption("Flappy Bird.ai")
+title = pygame.display.set_caption("Flappy Bird.ai - Genetic Algorithm")
 image = pygame.image.load("icon.png")
 icon = pygame.display.set_icon(image)
