@@ -30,4 +30,5 @@ y = train_data[1:block_size+1]
 for t in range(block_size):
     context = x[:t+1]
     target = y[t]
-    print(f"when input is {context} the target: {target}")
+    #print(f"when input is {context} the target: {target}")
+
