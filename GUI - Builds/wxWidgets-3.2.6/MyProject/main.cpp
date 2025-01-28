@@ -1,36 +1,43 @@
+// main.cpp
 #include <wx/wx.h>
 
+// Define a new application type
 class MyApp : public wxApp {
 public:
     virtual bool OnInit();
 };
 
+// Define a new frame type
 class MyFrame : public wxFrame {
 public:
     MyFrame(const wxString& title);
 
+    void OnButtonClicked(wxCommandEvent& event);
+
 private:
-    void OnQuit(wxCommandEvent& event);
+    wxButton* m_button;
 };
 
+// Implement the application
 wxIMPLEMENT_APP(MyApp);
 
 bool MyApp::OnInit() {
-    MyFrame *frame = new MyFrame("Hello wxWidgets");
+    MyFrame* frame = new MyFrame("Basic wxWidgets App");
     frame->Show(true);
     return true;
 }
 
-MyFrame::MyFrame(const wxString& title) : wxFrame(NULL, wxID_ANY, title) {
-    wxMenu *menuFile = new wxMenu;
-    menuFile->Append(wxID_EXIT);
-    wxMenuBar *menuBar = new wxMenuBar;
-    menuBar->Append(menuFile, "&File");
-    SetMenuBar(menuBar);
+MyFrame::MyFrame(const wxString& title)
+    : wxFrame(NULL, wxID_ANY, title, wxDefaultPosition, wxSize(400, 300)) {
 
-    Bind(wxEVT_MENU, &MyFrame::OnQuit, this, wxID_EXIT);
+    // Create a panel to hold the button
+    wxPanel* panel = new wxPanel(this, wxID_ANY);
+
+    // Create a button and bind it to the event handler
+    m_button = new wxButton(panel, wxID_ANY, "Click Me", wxPoint(150, 100));
+    m_button->Bind(wxEVT_BUTTON, &MyFrame::OnButtonClicked, this);
 }
 
-void MyFrame::OnQuit(wxCommandEvent& WXUNUSED(event)) {
-    Close(true);
+void MyFrame::OnButtonClicked(wxCommandEvent& event) {
+    wxMessageBox("Button clicked!", "Info", wxOK | wxICON_INFORMATION);
 }
