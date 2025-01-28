@@ -1,8 +1,8 @@
 [
 {
-  "directory": "/home/kowalski/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/build",
-  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/my_project.dir/main.cpp.o -c \"/home/kowalski/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/main.cpp\"",
-  "file": "/home/kowalski/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/main.cpp",
-  "output": "CMakeFiles/my_project.dir/main.cpp.o"
+  "directory": "C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/build",
+  "command": "C:\\Users\\1poke\\AppData\\Local\\Microsoft\\WinGet\\Packages\\MartinStorsjo.LLVM-MinGW.MSVCRT_Microsoft.Winget.Source_8wekyb3d8bbwe\\llvm-mingw-20241217-msvcrt-x86_64\\bin\\clang++.exe   -g -std=gnu++17 -o CMakeFiles\\my_project.dir\\main.cpp.obj -c \"C:\\Users\\1poke\\Desktop\\c_plus_plus\\GUI - Builds\\wxWidgets-3.2.6\\Basic-CMake-Run\\main.cpp\"",
+  "file": "C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/main.cpp",
+  "output": "CMakeFiles/my_project.dir/main.cpp.obj"
 }
 ]

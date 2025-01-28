@@ -8,8 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kowalski/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/main.cpp" "CMakeFiles/my_project.dir/main.cpp.o" "gcc" "CMakeFiles/my_project.dir/main.cpp.o.d"
-  "" "my_project" "gcc" "CMakeFiles/my_project.dir/link.d"
+  "C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/wxWidgets-3.2.6/Basic-CMake-Run/main.cpp" "CMakeFiles/my_project.dir/main.cpp.obj" "gcc" "CMakeFiles/my_project.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
