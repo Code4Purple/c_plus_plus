@@ -1900,9 +1900,6 @@ wxUSE_ZLIB:STRING=sys
 //Value Computed by CMake
 wxWidgets_BINARY_DIR:STATIC=/home/kowalski/Desktop/wxWidgets/lib
 
-//Location of wxWidgets library configuration provider binary (wx-config).
-wxWidgets_CONFIG_EXECUTABLE:FILEPATH=wxWidgets_CONFIG_EXECUTABLE-NOTFOUND
-
 //Value Computed by CMake
 wxWidgets_IS_TOP_LEVEL:STATIC=OFF
 
