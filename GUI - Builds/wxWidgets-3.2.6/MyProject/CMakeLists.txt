@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
    project(MyProject)
 
    # Set the path to the wxWidgets source directory
-   set(wxWidgets_ROOT_DIR "/path/to/wxWidgets")
+   set(wxWidgets_ROOT_DIR "/home/kowalski/Desktop/wxWidgets/")
    set(wxWidgets_LIB_DIR "${wxWidgets_ROOT_DIR}/lib")
 
    # Add wxWidgets to the project
