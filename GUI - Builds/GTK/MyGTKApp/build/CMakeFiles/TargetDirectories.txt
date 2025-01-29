@@ -1,3 +1,0 @@
-/home/kowalski/Desktop/c_plus_plus/GUI - Builds/GTK/MyGTKApp/build/CMakeFiles/MyGtkmmApp.dir
-/home/kowalski/Desktop/c_plus_plus/GUI - Builds/GTK/MyGTKApp/build/CMakeFiles/edit_cache.dir
-/home/kowalski/Desktop/c_plus_plus/GUI - Builds/GTK/MyGTKApp/build/CMakeFiles/rebuild_cache.dir
