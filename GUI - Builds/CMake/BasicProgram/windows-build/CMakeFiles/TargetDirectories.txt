@@ -1,0 +1,3 @@
+C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/CMake/BasicProgram/windows-build/CMakeFiles/BasicProgram.dir
+C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/CMake/BasicProgram/windows-build/CMakeFiles/edit_cache.dir
+C:/Users/1poke/Desktop/c_plus_plus/GUI - Builds/CMake/BasicProgram/windows-build/CMakeFiles/rebuild_cache.dir

@@ -1,6 +1,0 @@
-set(CMAKE_RC_COMPILER "C:/Users/1poke/AppData/Local/Microsoft/WinGet/Packages/MartinStorsjo.LLVM-MinGW.MSVCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/llvm-mingw-20241217-msvcrt-x86_64/bin/windres.exe")
-set(CMAKE_RC_COMPILER_ARG1 "")
-set(CMAKE_RC_COMPILER_LOADED 1)
-set(CMAKE_RC_SOURCE_FILE_EXTENSIONS rc;RC)
-set(CMAKE_RC_OUTPUT_EXTENSION .obj)
-set(CMAKE_RC_COMPILER_ENV_VAR "RC")

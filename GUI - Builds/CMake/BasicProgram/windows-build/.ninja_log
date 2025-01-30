@@ -1,0 +1,13 @@
+# ninja log v6
+5	566	7599178697750716	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+568	779	7599178703373595	BasicProgram.exe	abc51415ce4feeb2
+5	510	7599179523549535	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+511	686	7599179528602555	BasicProgram.exe	abc51415ce4feeb2
+5	509	7599179776719242	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+510	678	7599179781764523	BasicProgram.exe	abc51415ce4feeb2
+6	505	7599180079908905	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+506	670	7599180084913871	BasicProgram.exe	abc51415ce4feeb2
+5	505	7599180226941495	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+505	670	7599180231936026	BasicProgram.exe	abc51415ce4feeb2
+6	505	7599180496420684	CMakeFiles/BasicProgram.dir/main.cpp.obj	f57610cee6c348eb
+506	670	7599180501426077	BasicProgram.exe	abc51415ce4feeb2
