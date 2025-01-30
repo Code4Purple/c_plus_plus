@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/kowalski/Desktop/c_plus_plus/GUI - Builds/GTK/MyGTKApp/main.cpp" "CMakeFiles/MyGtkmmApp.dir/main.cpp.o" "gcc" "CMakeFiles/MyGtkmmApp.dir/main.cpp.o.d"
+  "/home/kowalski/Desktop/GTK-3.0/MyGTKApp/main.cpp" "CMakeFiles/MyGtkmmApp.dir/main.cpp.o" "gcc" "CMakeFiles/MyGtkmmApp.dir/main.cpp.o.d"
   "" "MyGtkmmApp" "gcc" "CMakeFiles/MyGtkmmApp.dir/link.d"
   )
 

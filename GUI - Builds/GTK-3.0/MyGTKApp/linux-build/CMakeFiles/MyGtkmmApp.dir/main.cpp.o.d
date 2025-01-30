@@ -1,5 +1,5 @@
 CMakeFiles/MyGtkmmApp.dir/main.cpp.o: \
- /home/kowalski/Desktop/c_plus_plus/GUI\ -\ Builds/GTK/MyGTKApp/main.cpp \
+ /home/kowalski/Desktop/GTK-3.0/MyGTKApp/main.cpp \
  /usr/include/stdc-predef.h /usr/include/gtkmm-3.0/gtkmm.h \
  /usr/include/glibmm-2.4/glibmm.h \
  /usr/lib/glibmm-2.4/include/glibmmconfig.h \
@@ -1466,4 +1466,4 @@ CMakeFiles/MyGtkmmApp.dir/main.cpp.o: \
  /usr/include/gtkmm-3.0/gtkmm/viewport.h \
  /usr/include/gtkmm-3.0/gtkmm/volumebutton.h \
  /usr/include/c++/14.2.1/iostream \
- /home/kowalski/Desktop/c_plus_plus/GUI\ -\ Builds/GTK/MyGTKApp/window.cpp
+ /home/kowalski/Desktop/GTK-3.0/MyGTKApp/window.cpp
