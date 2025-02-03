@@ -1,5 +1,7 @@
 #include <gtkmm.h>
 
+// include diffeerent parts of the window
+
 
 class MyWindow : public Gtk::Window {
 public:
@@ -8,35 +10,49 @@ public:
 };
 
 MyWindow::MyWindow() {
-    // Set window title and size
-    //set_title("My Play App to Learn GTK");
-    set_default_size(800, 600);
+    // Title of App's Window
+    set_title("Learning GTK-3.0 with C++");
+    // Icon of App's Window - With Error Handling
+    try {
+        set_icon_from_file("/home/kowalski/Desktop/c_plus_plus/GUI - Builds/GTK-3.0/MyGTKApp/c++.png");
+    } catch (const Glib::FileError& ex) {
+        std::cerr << "FileError: " << ex.what() << std::endl;
+    } catch (const Gdk::PixbufError& ex) {
+        std::cerr << "PixbufError: " << ex.what() << std::endl;
+    }
 
-    // Create a header bar
-    auto header_bar = Gtk::make_managed<Gtk::HeaderBar>();
-    header_bar->set_title("My Play App to Learn GTK");
-    header_bar->set_show_close_button(true);
-    set_titlebar(*header_bar);
+    
+    
+    // Resize of Window
+    int horizontal = 600;
+    int vertical = 800;
+    set_default_size(vertical, horizontal);
+    
+    show_all_children();
 
-    // Set background color
-    auto screen = Gdk::Screen::get_default();
-    auto css_provider = Gtk::CssProvider::create();
-    css_provider->load_from_data(
-        //"window { background-color: #3498db; }"             // Change this to your desired color (hex version)   -- window background color
-        "window {background-color: rgb(0, 0, 0);}"        // Change this to your desired color (rgb version)   -- window background color
-        //"headerbar { background-color: rgb(0, 0, 0); }" // Title bar background color (red)
-        "headerbar .title {color: white;}" // Title bar text color (white)
-        //"headerbar .text {color: white;}" // Title bar text color (white)
-    );
-    auto style_context = Gtk::StyleContext::create();
-    style_context->add_provider_for_screen(screen, css_provider, GTK_STYLE_PROVIDER_PRIORITY_USER);
+    // Position of Window
+    signal_realize().connect([this]() {
 
-    // Add a widget to the window to ensure the header bar is displayed
-    auto label = Gtk::make_managed<Gtk::Label>("Hello, GTKmm Label!");
-    add(*label);
-    label->show();
+        // Top Right Position of Window
+        //move(Gdk::Screen::get_default()->get_width() - get_width(), 0);
+
+        // Top Left Position of Window
+        //move(0, 0);
+        
+        // Bottom Right Position of Window
+        //move(Gdk::Screen::get_default()->get_width() - get_width(), Gdk::Screen::get_default()->get_height() - get_height());
+
+        // Bottom Left Position of Window
+        //move(0, Gdk::Screen::get_default()->get_height() - get_height());
+
+        // Center Position of Window
+        set_position(Gtk::WIN_POS_CENTER);
+    }); 
+
+    
+    
+
+
 }
-
-
 
 MyWindow::~MyWindow() {}
