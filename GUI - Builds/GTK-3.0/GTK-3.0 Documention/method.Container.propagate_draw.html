@@ -1,0 +1,309 @@
+<!--
+SPDX-FileCopyrightText: GTK Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gtk.Container.propagate_draw</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="gtk-logo.svg"/>
+  <meta property="og:image:alt" content="Gtk-3.0"/>
+  
+
+  
+  <meta priority="og:title" content="Gtk.Container.propagate_draw"/>
+  <meta priority="og:description" content="Reference for Gtk.Container.propagate_draw"/>
+  <meta name="twitter:title" content="Gtk.Container.propagate_draw"/>
+  <meta name="twitter:description" content="Reference for Gtk.Container.propagate_draw"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Gtk" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="gtk-logo.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gtk</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 3.24</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a href="class.Container.html">Container</a>
+  </div>
+</div>
+<div class="section">
+  <h5>Methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Container.add.html">add</a>
+  
+    <a class="method" href="method.Container.add_with_properties.html">add_with_properties</a>
+  
+    <a class="method" href="method.Container.check_resize.html">check_resize</a>
+  
+    <a class="method" href="method.Container.child_get.html">child_get</a>
+  
+    <a class="method" href="method.Container.child_get_property.html">child_get_property</a>
+  
+    <a class="method" href="method.Container.child_get_valist.html">child_get_valist</a>
+  
+    <a class="method" href="method.Container.child_notify.html">child_notify</a>
+  
+    <a class="method" href="method.Container.child_notify_by_pspec.html">child_notify_by_pspec</a>
+  
+    <a class="method" href="method.Container.child_set.html">child_set</a>
+  
+    <a class="method" href="method.Container.child_set_property.html">child_set_property</a>
+  
+    <a class="method" href="method.Container.child_set_valist.html">child_set_valist</a>
+  
+    <a class="method" href="method.Container.child_type.html">child_type</a>
+  
+    <a class="method" href="method.Container.forall.html">forall</a>
+  
+    <a class="method" href="method.Container.foreach.html">foreach</a>
+  
+    <a class="method" href="method.Container.get_border_width.html">get_border_width</a>
+  
+    <a class="method" href="method.Container.get_children.html">get_children</a>
+  
+    <a class="method" href="method.Container.get_focus_chain.html">get_focus_chain</a>
+  
+    <a class="method" href="method.Container.get_focus_child.html">get_focus_child</a>
+  
+    <a class="method" href="method.Container.get_focus_hadjustment.html">get_focus_hadjustment</a>
+  
+    <a class="method" href="method.Container.get_focus_vadjustment.html">get_focus_vadjustment</a>
+  
+    <a class="method" href="method.Container.get_path_for_child.html">get_path_for_child</a>
+  
+    <a class="method" href="method.Container.get_resize_mode.html">get_resize_mode</a>
+  
+    <a class="method current" href="method.Container.propagate_draw.html">propagate_draw</a>
+  
+    <a class="method" href="method.Container.remove.html">remove</a>
+  
+    <a class="method" href="method.Container.resize_children.html">resize_children</a>
+  
+    <a class="method" href="method.Container.set_border_width.html">set_border_width</a>
+  
+    <a class="method" href="method.Container.set_focus_chain.html">set_focus_chain</a>
+  
+    <a class="method" href="method.Container.set_focus_child.html">set_focus_child</a>
+  
+    <a class="method" href="method.Container.set_focus_hadjustment.html">set_focus_hadjustment</a>
+  
+    <a class="method" href="method.Container.set_focus_vadjustment.html">set_focus_vadjustment</a>
+  
+    <a class="method" href="method.Container.set_reallocate_redraws.html">set_reallocate_redraws</a>
+  
+    <a class="method" href="method.Container.set_resize_mode.html">set_resize_mode</a>
+  
+    <a class="method" href="method.Container.unset_focus_chain.html">unset_focus_chain</a>
+  
+  </div>
+</div>
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.2</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Method</h3>
+    <h1><a href="index.html">Gtk</a><span class="sep"></span><a href="class.Container.html">Container</a><span class="sep"></span>propagate_draw</h1>
+  </header>
+
+  <section>
+    <div class="docblock">
+      <p></p>
+    </div>
+
+    <div class="declaration toggle-wrapper">
+      <h4 style="display:flex;" id="declaration">
+        Declaration
+        <a class="anchor" href="method.Container.propagate_draw.html#declaration"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkcontainer.h#L172">[src]</a>
+        
+      </h4>
+
+      <div class="docblock c-decl">
+        <pre><code><div class="highlight"><pre><span></span><span class="kt">void</span>
+<span class="n">gtk_container_propagate_draw</span><span class="w"> </span><span class="p">(</span>
+<span class="w">  </span><span class="n">GtkContainer</span><span class="o">*</span><span class="w"> </span><span class="n">container</span><span class="p">,</span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="o">*</span><span class="w"> </span><span class="n">child</span><span class="p">,</span>
+<span class="w">  </span><span class="n">cairo_t</span><span class="o">*</span><span class="w"> </span><span class="n">cr</span>
+<span class="p">)</span>
+</pre></div>
+</code></pre>
+      </div>
+    </div>
+
+    <div class="description toggle-wrapper">
+      <h4 style="display:flex;" id="description">
+        Description
+        <a class="anchor" href="method.Container.propagate_draw.html#description"></a>
+        
+        <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkcontainer.c#L3774">[src]</a>
+        
+      </h4>
+
+      <div class="docblock">
+        <p>When a container receives a call to the draw function, it must send
+synthetic <code>GtkWidget::draw</code> calls to all children that don’t have their
+own <code>GdkWindows</code>. This function provides a convenient way of doing this.
+A container, when it receives a call to its <code>GtkWidget::draw</code> function,
+calls <code>gtk_container_propagate_draw()</code> once for each child, passing in
+the <code>cr</code> the container&nbsp;received.</p>
+<p><code>gtk_container_propagate_draw()</code> takes care of translating the origin of <code>cr</code>,
+and deciding whether the draw needs to be sent to the child. It is a
+convenient and optimized way of getting the same effect as calling
+<code>gtk_widget_draw()</code> on the child&nbsp;directly.</p>
+<p>In most cases, a container can simply either inherit the
+<code>GtkWidget::draw</code> implementation from <code>GtkContainer</code>, or do some drawing
+and then chain to the ::draw implementation from <code>GtkContainer</code>.</p>
+      </div>
+
+      <div class="docblock">
+        
+        
+        
+        
+        
+        
+        
+      </div>
+
+      
+    </div>
+
+    
+    <div class="parameters toggle-wrapper">
+      <h4 id="parameters">
+        Parameters
+        <a href="method.Container.propagate_draw.html#parameters" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <dl class="arguments">
+          
+
+          
+          <dt class="arg-name"><code>child</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="class.Widget.html"><code>GtkWidget</code></a></p>
+            <p>A child of <code>container</code>.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the method.</td></tr>
+            
+            </table>
+          </dd>
+          
+          <dt class="arg-name"><code>cr</code></dt>
+          <dd class="arg-description">
+            <p><em>Type:</em>&nbsp;<a href="javascript:void(0)" data-link="struct.Context.html" data-namespace="cairo" class="external"><code>cairo_t</code></a></p>
+            <p>Cairo context as passed to the container. If you want to use <code>cr</code>
+  in container’s draw function, consider using <code>cairo_save()</code> and
+  <code>cairo_restore()</code> before calling this&nbsp;function.</p>
+            <table>
+            
+            
+            
+            
+            
+            
+            
+            <tr><td title="transfer: none">The data is owned by the caller of the method.</td></tr>
+            
+            </table>
+          </dd>
+          
+
+          
+        </dl>
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

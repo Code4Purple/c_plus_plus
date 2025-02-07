@@ -1,0 +1,1354 @@
+<!--
+SPDX-FileCopyrightText: GTK Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gtk.UIManager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="gtk-logo.svg"/>
+  <meta property="og:image:alt" content="Gtk-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gtk.UIManager"/>
+  <meta property="og:description" content="Reference for Gtk.UIManager"/>
+  <meta name="twitter:title" content="Gtk.UIManager"/>
+  <meta name="twitter:description" content="Reference for Gtk.UIManager"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Gtk" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="gtk-logo.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gtk</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 3.24</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.UIManager.html#description">UIManager</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.UIManager.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.UIManager.add_ui.html">add_ui</a>
+  
+    <a class="method" href="method.UIManager.add_ui_from_file.html">add_ui_from_file</a>
+  
+    <a class="method" href="method.UIManager.add_ui_from_resource.html">add_ui_from_resource</a>
+  
+    <a class="method" href="method.UIManager.add_ui_from_string.html">add_ui_from_string</a>
+  
+    <a class="method" href="method.UIManager.ensure_update.html">ensure_update</a>
+  
+    <a class="method" href="method.UIManager.get_accel_group.html">get_accel_group</a>
+  
+    <a class="method" href="method.UIManager.get_action.html">get_action</a>
+  
+    <a class="method" href="method.UIManager.get_action_groups.html">get_action_groups</a>
+  
+    <a class="method" href="method.UIManager.get_add_tearoffs.html">get_add_tearoffs</a>
+  
+    <a class="method" href="method.UIManager.get_toplevels.html">get_toplevels</a>
+  
+    <a class="method" href="method.UIManager.get_ui.html">get_ui</a>
+  
+    <a class="method" href="method.UIManager.get_widget.html">get_widget</a>
+  
+    <a class="method" href="method.UIManager.insert_action_group.html">insert_action_group</a>
+  
+    <a class="method" href="method.UIManager.new_merge_id.html">new_merge_id</a>
+  
+    <a class="method" href="method.UIManager.remove_action_group.html">remove_action_group</a>
+  
+    <a class="method" href="method.UIManager.remove_ui.html">remove_ui</a>
+  
+    <a class="method" href="method.UIManager.set_add_tearoffs.html">set_add_tearoffs</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.UIManager.add-tearoffs.html">add-tearoffs</a>
+  
+    <a class="property" href="property.UIManager.ui.html">ui</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.UIManager.actions-changed.html">actions-changed</a>
+  
+    <a class="signal" href="signal.UIManager.add-widget.html">add-widget</a>
+  
+    <a class="signal" href="signal.UIManager.connect-proxy.html">connect-proxy</a>
+  
+    <a class="signal" href="signal.UIManager.disconnect-proxy.html">disconnect-proxy</a>
+  
+    <a class="signal" href="signal.UIManager.post-activate.html">post-activate</a>
+  
+    <a class="signal" href="signal.UIManager.pre-activate.html">pre-activate</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.UIManager.actions_changed.html">actions_changed</a>
+  
+    <a class="method" href="vfunc.UIManager.add_widget.html">add_widget</a>
+  
+    <a class="method" href="vfunc.UIManager.connect_proxy.html">connect_proxy</a>
+  
+    <a class="method" href="vfunc.UIManager.disconnect_proxy.html">disconnect_proxy</a>
+  
+    <a class="method" href="vfunc.UIManager.get_action.html">get_action</a>
+  
+    <a class="method" href="vfunc.UIManager.get_widget.html">get_widget</a>
+  
+    <a class="method" href="vfunc.UIManager.post_activate.html">post_activate</a>
+  
+    <a class="method" href="vfunc.UIManager.pre_activate.html">pre_activate</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.2</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Gtk</a><span class="sep" role="presentation"></span>UIManager</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="class.UIManager.html#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/deprecated/gtkuimanager.c#L53">[src]</a>
+          
+        </h4>
+
+        <pre><code>class Gtk.UIManager : GObject.Object
+  implements Gtk.Buildable {
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p>A <code>GtkUIManager</code> constructs a user interface (menus and toolbars) from
+one or more <span class="caps">UI</span> definitions, which reference actions from one or more
+action&nbsp;groups.</p>
+<blockquote>
+<p>GtkUIManager is deprecated since <span class="caps">GTK</span>+ 3.10. To construct user interfaces
+from <span class="caps">XML</span> definitions, you should use <code>GtkBuilder</code>, <code>GMenuModel</code>, et al. To
+work with actions, use <code>GAction</code>, <code>GtkActionable</code> et al. These newer classes
+support richer functionality and integration with various desktop shells.
+It should be possible to migrate most/all functionality from&nbsp;GtkUIManager.</p>
+</blockquote>
+<h1 id="ui-definitions-xml-ui">UI Definitions # {<code>XML</code>-UI}<a class="md-anchor" href="class.UIManager.html#ui-definitions-xml-ui" title="Permanent link"></a></h1>
+<p>The <span class="caps">UI</span> definitions are specified in an <span class="caps">XML</span> format which can be
+roughly described by the following <span class="caps">DTD</span>.</p>
+<blockquote>
+<p>Do not confuse the GtkUIManager <span class="caps">UI</span> Definitions described here with
+the similarly named [GtkBuilder <span class="caps">UI</span> Definitions][<span class="caps">BUILDER</span>-<span class="caps">UI</span>].</p>
+</blockquote>
+<div class="codehilite"><pre><span></span><code>&lt;!ELEMENT ui          (menubar|toolbar|popup|accelerator)* &gt;
+&lt;!ELEMENT menubar     (menuitem|separator|placeholder|menu)* &gt;
+&lt;!ELEMENT menu        (menuitem|separator|placeholder|menu)* &gt;
+&lt;!ELEMENT popup       (menuitem|separator|placeholder|menu)* &gt;
+&lt;!ELEMENT toolbar     (toolitem|separator|placeholder)* &gt;
+&lt;!ELEMENT placeholder (menuitem|toolitem|separator|placeholder|menu)* &gt;
+&lt;!ELEMENT menuitem     EMPTY &gt;
+&lt;!ELEMENT toolitem     (menu?) &gt;
+&lt;!ELEMENT separator    EMPTY &gt;
+&lt;!ELEMENT accelerator  EMPTY &gt;
+&lt;!ATTLIST menubar      name                      #IMPLIED
+                       action                    #IMPLIED &gt;
+&lt;!ATTLIST toolbar      name                      #IMPLIED
+                       action                    #IMPLIED &gt;
+&lt;!ATTLIST popup        name                      #IMPLIED
+                       action                    #IMPLIED
+                       accelerators (true|false) #IMPLIED &gt;
+&lt;!ATTLIST placeholder  name                      #IMPLIED
+                       action                    #IMPLIED &gt;
+&lt;!ATTLIST separator    name                      #IMPLIED
+                       action                    #IMPLIED
+                       expand       (true|false) #IMPLIED &gt;
+&lt;!ATTLIST menu         name                      #IMPLIED
+                       action                    #REQUIRED
+                       position     (top|bot)    #IMPLIED &gt;
+&lt;!ATTLIST menuitem     name                      #IMPLIED
+                       action                    #REQUIRED
+                       position     (top|bot)    #IMPLIED
+                       always-show-image (true|false) #IMPLIED &gt;
+&lt;!ATTLIST toolitem     name                      #IMPLIED
+                       action                    #REQUIRED
+                       position     (top|bot)    #IMPLIED &gt;
+&lt;!ATTLIST accelerator  name                      #IMPLIED
+                       action                    #REQUIRED &gt;
+</code></pre></div>
+
+<p>There are some additional restrictions beyond those specified in the
+<span class="caps">DTD</span>, e.g. every toolitem must have a toolbar in its anchestry and
+every menuitem must have a menubar or popup in its anchestry. Since
+a <code>GMarkupParser</code> is used to parse the <span class="caps">UI</span> description, it must not only
+be valid <span class="caps">XML</span>, but valid&nbsp;markup.</p>
+<p>If a name is not specified, it defaults to the action. If an action is
+not specified either, the element name is used. The name and action
+attributes must not contain “/” characters after parsing (since that
+would mess up path lookup) and must be usable as <span class="caps">XML</span> attributes when
+enclosed in doublequotes, thus they must not “&#8221;” characters or references
+to the &quot;&nbsp;entity.</p>
+<h1 id="a-ui-definition">A UI definition<a class="md-anchor" href="class.UIManager.html#a-ui-definition" title="Permanent link"></a></h1>
+<div class="highlight"><pre><span></span><span class="nt">&lt;ui&gt;</span>
+<span class="w">  </span><span class="nt">&lt;menubar&gt;</span>
+<span class="w">    </span><span class="nt">&lt;menu</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FileMenu&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;FileMenuAction&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;New&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;New2Action&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;placeholder</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;FileMenuAdditions&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/menu&gt;</span>
+<span class="w">    </span><span class="nt">&lt;menu</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;JustifyMenu&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;JustifyMenuAction&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-left&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Centre&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-center&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Right&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-right&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menuitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Fill&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-fill&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/menu&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/menubar&gt;</span>
+<span class="w">  </span><span class="nt">&lt;toolbar</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;toolbar1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;placeholder</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;JustifyToolItems&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;separator/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;toolitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Left&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-left&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;toolitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Centre&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-center&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;toolitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Right&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-right&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;toolitem</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Fill&quot;</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;justify-fill&quot;</span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;separator/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/placeholder&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/toolbar&gt;</span>
+<span class="nt">&lt;/ui&gt;</span>
+</pre></div>
+
+<p>The constructed widget hierarchy is very similar to the element tree
+of the <span class="caps">XML</span>, with the exception that placeholders are merged into their
+parents. The correspondence of <span class="caps">XML</span> elements to widgets should be
+almost&nbsp;obvious:</p>
+<ul>
+<li>menubar</li>
+</ul>
+<p>a <code>GtkMenuBar</code></p>
+<ul>
+<li>toolbar</li>
+</ul>
+<p>a <code>GtkToolbar</code></p>
+<ul>
+<li>popup</li>
+</ul>
+<p>a toplevel <code>GtkMenu</code></p>
+<ul>
+<li>menu</li>
+</ul>
+<p>a <code>GtkMenu</code> attached to a&nbsp;menuitem</p>
+<ul>
+<li>menuitem</li>
+</ul>
+<p>a <code>GtkMenuItem</code> subclass, the exact type depends on the&nbsp;action</p>
+<ul>
+<li>toolitem</li>
+</ul>
+<p>a <code>GtkToolItem</code> subclass, the exact type depends on the
+   action. Note that toolitem elements may contain a menu element,
+   but only if their associated action specifies a
+   <code>GtkMenuToolButton</code> as&nbsp;proxy.</p>
+<ul>
+<li>separator</li>
+</ul>
+<p>a <code>GtkSeparatorMenuItem</code> or <code>GtkSeparatorToolItem</code></p>
+<ul>
+<li>accelerator</li>
+</ul>
+<p>a keyboard&nbsp;accelerator</p>
+<p>The “position” attribute determines where a constructed widget is positioned
+wrt. to its siblings in the partially constructed tree. If it is
+“top”, the widget is prepended, otherwise it is&nbsp;appended.</p>
+<h1 id="ui-merging-ui-merging">UI Merging # {<code>UI</code>-Merging}<a class="md-anchor" href="class.UIManager.html#ui-merging-ui-merging" title="Permanent link"></a></h1>
+<p>The most remarkable feature of <code>GtkUIManager</code> is that it can overlay a set
+of menuitems and toolitems over another one, and demerge them&nbsp;later.</p>
+<p>Merging is done based on the names of the <span class="caps">XML</span> elements. Each element is
+identified by a path which consists of the names of its anchestors, separated
+by slashes. For example, the menuitem named “Left” in the example above
+has the path <code>/ui/menubar/JustifyMenu/Left</code> and the
+toolitem with the same name has path
+<code>/ui/toolbar1/JustifyToolItems/Left</code>.</p>
+<h1 id="accelerators">Accelerators<a class="md-anchor" href="class.UIManager.html#accelerators" title="Permanent link"></a></h1>
+<p>Every action has an accelerator path. Accelerators are installed together
+with menuitem proxies, but they can also be explicitly added with
+<code>&lt;accelerator&gt;</code> elements in the <span class="caps">UI</span> definition. This makes it possible to
+have accelerators for actions even if they have no visible&nbsp;proxies.</p>
+<h1 id="smart-separators-smart-separators">Smart Separators # {<code>Smart</code>-Separators}<a class="md-anchor" href="class.UIManager.html#smart-separators-smart-separators" title="Permanent link"></a></h1>
+<p>The separators created by <code>GtkUIManager</code> are “smart”, i.e. they do not show up
+in the <span class="caps">UI</span> unless they end up between two visible menu or tool items. Separators
+which are located at the very beginning or end of the menu or toolbar
+containing them, or multiple separators next to each other, are hidden. This
+is a useful feature, since the merging of <span class="caps">UI</span> elements from multiple sources
+can make it hard or impossible to determine in advance whether a separator
+will end up in such an unfortunate&nbsp;position.</p>
+<p>For separators in toolbars, you can set <code>expand="true"</code> to
+turn them from a small, visible separator to an expanding, invisible one.
+Toolitems following an expanding separator are effectively&nbsp;right-aligned.</p>
+<h1 id="empty-menus">Empty Menus<a class="md-anchor" href="class.UIManager.html#empty-menus" title="Permanent link"></a></h1>
+<p>Submenus pose similar problems to separators inconnection with merging. It is
+impossible to know in advance whether they will end up empty after merging.
+<code>GtkUIManager</code> offers two ways to treat empty&nbsp;submenus:</p>
+<ul>
+<li>
+<p>make them disappear by hiding the menu item they’re attached&nbsp;to</p>
+</li>
+<li>
+<p>add an insensitive “Empty”&nbsp;item</p>
+</li>
+</ul>
+<p>The behaviour is chosen based on the “hide_if_empty” property of the action
+to which the submenu is&nbsp;associated.</p>
+<h1 id="gtkuimanager-as-gtkbuildable-gtkuimanager-builder-ui">GtkUIManager as GtkBuildable # {<code>GtkUIManager</code>-BUILDER-UI}<a class="md-anchor" href="class.UIManager.html#gtkuimanager-as-gtkbuildable-gtkuimanager-builder-ui" title="Permanent link"></a></h1>
+<p>The GtkUIManager implementation of the GtkBuildable interface accepts
+GtkActionGroup objects as <code>&lt;child&gt;</code> elements in <span class="caps">UI</span>&nbsp;definitions.</p>
+<p>A GtkUIManager <span class="caps">UI</span> definition as described above can be embedded in
+an GtkUIManager <code>&lt;object&gt;</code> element in a GtkBuilder <span class="caps">UI</span>&nbsp;definition.</p>
+<p>The widgets that are constructed by a GtkUIManager can be embedded in
+other parts of the constructed user interface with the help of the
+“constructor” attribute. See the example&nbsp;below.</p>
+<h2 id="an-embedded-gtkuimanager-ui-definition">An embedded GtkUIManager UI definition<a class="md-anchor" href="class.UIManager.html#an-embedded-gtkuimanager-ui-definition" title="Permanent link"></a></h2>
+<div class="highlight"><pre><span></span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkUIManager&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;uiman&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;child&gt;</span>
+<span class="w">    </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkActionGroup&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;actiongroup&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;child&gt;</span>
+<span class="w">        </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkAction&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;label&quot;</span><span class="nt">&gt;</span>_File<span class="nt">&lt;/property&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/object&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/child&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/object&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/child&gt;</span>
+<span class="w">  </span><span class="nt">&lt;ui&gt;</span>
+<span class="w">    </span><span class="nt">&lt;menubar</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;menubar1&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;menu</span><span class="w"> </span><span class="na">action=</span><span class="s">&quot;file&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/menu&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/menubar&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/ui&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkWindow&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;main-window&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="nt">&lt;child&gt;</span>
+<span class="w">    </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkMenuBar&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;menubar1&quot;</span><span class="w"> </span><span class="na">constructor=</span><span class="s">&quot;uiman&quot;</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/child&gt;</span>
+<span class="nt">&lt;/object&gt;</span>
+</pre></div>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+    <div class="toggle-wrapper hierarchy">
+      <h4 id="hierarchy">
+        Hierarchy
+        <a href="class.UIManager.html#hierarchy" class="anchor"></a>
+      </h4>
+      <div class="docblock" alt="Hierarchy for Gtk.UIManager">
+        <!-- Generated by graphviz version 8.1.0 (20230707.0739)
+ -->
+<!-- Title: hierarchy Pages: 1 -->
+<svg width="109pt" height="188pt"
+ viewBox="0.00 0.00 108.75 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>hierarchy</title>
+<!-- this -->
+<g id="node1" class="node">
+<title>this</title>
+<g id="a_node1"><a xlink:title="GtkUIManager">
+<path fill="none" stroke="black" d="M88,-108C88,-108 12.75,-108 12.75,-108 6.75,-108 0.75,-102 0.75,-96 0.75,-96 0.75,-84 0.75,-84 0.75,-78 6.75,-72 12.75,-72 12.75,-72 88,-72 88,-72 94,-72 100,-78 100,-84 100,-84 100,-96 100,-96 100,-102 94,-108 88,-108"/>
+<text text-anchor="middle" x="50.38" y="-83.83" font-family="Times,serif" font-size="14.00">GtkUIManager</text>
+</a>
+</g>
+</g>
+<!-- implements_0 -->
+<g id="node3" class="node link">
+<title>implements_0</title>
+<g id="a_node3"><a xlink:href="iface.Buildable.html" xlink:title="GtkBuildable">
+<polygon fill="none" stroke="black" points="100.75,-36 0,-36 0,0 100.75,0 100.75,-36"/>
+<text text-anchor="middle" x="50.38" y="-14.45" font-family="sans-serif" font-size="14.00">GtkBuildable</text>
+</a>
+</g>
+</g>
+<!-- this&#45;&#45;implements_0 -->
+<g id="edge2" class="edge">
+<title>this&#45;&#45;implements_0</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M50.38,-71.7C50.38,-60.85 50.38,-46.92 50.38,-36.1"/>
+</g>
+<!-- ancestor_0 -->
+<g id="node2" class="node">
+<title>ancestor_0</title>
+<g id="a_node2"><a xlink:title="GObject.Object">
+<path fill="none" stroke="black" d="M69.25,-180C69.25,-180 31.5,-180 31.5,-180 25.5,-180 19.5,-174 19.5,-168 19.5,-168 19.5,-156 19.5,-156 19.5,-150 25.5,-144 31.5,-144 31.5,-144 69.25,-144 69.25,-144 75.25,-144 81.25,-150 81.25,-156 81.25,-156 81.25,-168 81.25,-168 81.25,-174 75.25,-180 69.25,-180"/>
+<text text-anchor="middle" x="50.38" y="-155.82" font-family="Times,serif" font-size="14.00">GObject</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0&#45;&#45;this -->
+<g id="edge1" class="edge">
+<title>ancestor_0&#45;&#45;this</title>
+<path fill="none" stroke="black" d="M50.38,-143.7C50.38,-132.85 50.38,-118.92 50.38,-108.1"/>
+</g>
+</g>
+</svg>
+
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="class.UIManager.html#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper implements">
+      <h4 id="implements">
+        Implements
+        <a href="class.UIManager.html#implements" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="interface"><a href="iface.Buildable.html" title="Buildable">GtkBuildable</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="class.UIManager.html#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="deprecated">
+          <h6><a href="ctor.UIManager.new.html">gtk_ui_manager_new</a></h6>
+          <div class="docblock">
+            <p>Creates a new ui manager&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="class.UIManager.html#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.add_ui.html">gtk_ui_manager_add_ui</a></h6>
+          <div class="docblock">
+            <p>Adds a <span class="caps">UI</span> element to the current contents of <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.add_ui_from_file.html">gtk_ui_manager_add_ui_from_file</a></h6>
+          <div class="docblock">
+            <p>Parses a file containing a [<span class="caps">UI</span> definition][<span class="caps">XML</span>-<span class="caps">UI</span>] and
+merges it with the current contents of <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.add_ui_from_resource.html">gtk_ui_manager_add_ui_from_resource</a></h6>
+          <div class="docblock">
+            <p>Parses a resource file containing a [<span class="caps">UI</span> definition][<span class="caps">XML</span>-<span class="caps">UI</span>] and
+merges it with the current contents of <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 3.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.add_ui_from_string.html">gtk_ui_manager_add_ui_from_string</a></h6>
+          <div class="docblock">
+            <p>Parses a string containing a [<span class="caps">UI</span> definition][<span class="caps">XML</span>-<span class="caps">UI</span>] and merges it with
+the current contents of <code>manager</code>. An enclosing <code>&lt;ui&gt;</code> element is added if
+it is&nbsp;missing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.ensure_update.html">gtk_ui_manager_ensure_update</a></h6>
+          <div class="docblock">
+            <p>Makes sure that all pending updates to the <span class="caps">UI</span> have been&nbsp;completed.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_accel_group.html">gtk_ui_manager_get_accel_group</a></h6>
+          <div class="docblock">
+            <p>Returns the <code>GtkAccelGroup</code> associated with <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_action.html">gtk_ui_manager_get_action</a></h6>
+          <div class="docblock">
+            <p>Looks up an action by following a path. See <code>gtk_ui_manager_get_widget()</code>
+for more information about&nbsp;paths.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_action_groups.html">gtk_ui_manager_get_action_groups</a></h6>
+          <div class="docblock">
+            <p>Returns the list of action groups associated with <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_add_tearoffs.html">gtk_ui_manager_get_add_tearoffs</a></h6>
+          <div class="docblock">
+            <p>Returns whether menus generated by this <code>GtkUIManager</code>
+will have tearoff menu&nbsp;items.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.4</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_toplevels.html">gtk_ui_manager_get_toplevels</a></h6>
+          <div class="docblock">
+            <p>Obtains a list of all toplevel widgets of the requested&nbsp;types.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_ui.html">gtk_ui_manager_get_ui</a></h6>
+          <div class="docblock">
+            <p>Creates a [<span class="caps">UI</span> definition][<span class="caps">XML</span>-<span class="caps">UI</span>] of the merged <span class="caps">UI</span>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.get_widget.html">gtk_ui_manager_get_widget</a></h6>
+          <div class="docblock">
+            <p>Looks up a widget by following a path.
+The path consists of the names specified in the <span class="caps">XML</span> description of the <span class="caps">UI</span>.
+separated by “/”. Elements which don’t have a name or action attribute in
+the <span class="caps">XML</span> (e.g. <code>&lt;popup&gt;</code>) can be addressed by their <span class="caps">XML</span> element name
+(e.g. &#8220;popup&#8221;). The root element (&#8220;/ui&#8221;) can be omitted in the&nbsp;path.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.insert_action_group.html">gtk_ui_manager_insert_action_group</a></h6>
+          <div class="docblock">
+            <p>Inserts an action group into the list of action groups associated
+with <code>manager</code>. Actions in earlier groups hide actions with the same
+name in later&nbsp;groups.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.new_merge_id.html">gtk_ui_manager_new_merge_id</a></h6>
+          <div class="docblock">
+            <p>Returns an unused merge id, suitable for use with&nbsp;gtk_ui_manager_add_ui().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.remove_action_group.html">gtk_ui_manager_remove_action_group</a></h6>
+          <div class="docblock">
+            <p>Removes an action group from the list of action groups associated
+with <code>manager</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.remove_ui.html">gtk_ui_manager_remove_ui</a></h6>
+          <div class="docblock">
+            <p>Unmerges the part of <code>manager</code><span class="quo">&#8216;</span>s content identified by <code>merge_id</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="method.UIManager.set_add_tearoffs.html">gtk_ui_manager_set_add_tearoffs</a></h6>
+          <div class="docblock">
+            <p>Sets the “add_tearoffs” property, which controls whether menus
+generated by this <code>GtkUIManager</code> will have tearoff menu&nbsp;items.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.4</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods">
+          <h5 style="display:block;">Methods inherited from <a href="iface.Buildable.html">GtkBuildable</a> (10)</h5><div class="docblock">
+          
+            <h6><a href="method.Buildable.add_child.html">gtk_buildable_add_child</a></h6><div class="docblock">
+              <p>Adds a child to <code>buildable</code>. <code>type</code> is an optional string
+describing how the child should be&nbsp;added.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.construct_child.html">gtk_buildable_construct_child</a></h6><div class="docblock">
+              <p>Constructs a child of <code>buildable</code> with the name <code>name</code>.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.custom_finished.html">gtk_buildable_custom_finished</a></h6><div class="docblock">
+              <p>This is similar to <code>gtk_buildable_parser_finished()</code> but is
+called once for each custom tag handled by the <code>buildable</code>.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.custom_tag_end.html">gtk_buildable_custom_tag_end</a></h6><div class="docblock">
+              <p>This is called at the end of each custom element handled by
+the&nbsp;buildable.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.custom_tag_start.html">gtk_buildable_custom_tag_start</a></h6><div class="docblock">
+              <p>This is called for each unknown element under <code>&lt;child&gt;</code>.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.get_internal_child.html">gtk_buildable_get_internal_child</a></h6><div class="docblock">
+              <p>Get the internal child called <code>childname</code> of the <code>buildable</code> object.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.get_name.html">gtk_buildable_get_name</a></h6><div class="docblock">
+              <p>Gets the name of the <code>buildable</code> object.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.parser_finished.html">gtk_buildable_parser_finished</a></h6><div class="docblock">
+              <p>Called when the builder finishes the parsing of a
+[GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>].
+Note that this will be called once for each time
+<code>gtk_builder_add_from_file()</code> or <code>gtk_builder_add_from_string()</code>
+is called on a&nbsp;builder.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.set_buildable_property.html">gtk_buildable_set_buildable_property</a></h6><div class="docblock">
+              <p>Sets the property name <code>name</code> to <code>value</code> on the <code>buildable</code> object.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+            <h6><a href="method.Buildable.set_name.html">gtk_buildable_set_name</a></h6><div class="docblock">
+              <p>Sets the name of the <code>buildable</code> object.</p>
+            </div>
+            <div class="docblock">
+              <p><span class="emblem available">since: 2.12</span></p>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="class.UIManager.html#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="deprecated">
+          <h6><a href="property.UIManager.add-tearoffs.html">Gtk.UIManager:add-tearoffs</a></h6>
+          <div class="docblock">
+            <p>The &#8220;add-tearoffs&#8221; property controls whether generated menus
+have tearoff menu&nbsp;items.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.4</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.UIManager.ui.html">Gtk.UIManager:ui</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+      
+
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="class.UIManager.html#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.actions-changed.html">Gtk.UIManager::actions-changed</a></h6>
+          <div class="docblock">
+            <p>The ::actions-changed signal is emitted whenever the set of actions&nbsp;changes.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.add-widget.html">Gtk.UIManager::add-widget</a></h6>
+          <div class="docblock">
+            <p>The ::add-widget signal is emitted for each generated menubar and toolbar.
+It is not emitted for generated popup menus, which can be obtained by&nbsp;gtk_ui_manager_get_widget().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.connect-proxy.html">Gtk.UIManager::connect-proxy</a></h6>
+          <div class="docblock">
+            <p>The ::connect-proxy signal is emitted after connecting a proxy to
+an action in the&nbsp;group.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.disconnect-proxy.html">Gtk.UIManager::disconnect-proxy</a></h6>
+          <div class="docblock">
+            <p>The ::disconnect-proxy signal is emitted after disconnecting a proxy
+from an action in the&nbsp;group.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.post-activate.html">Gtk.UIManager::post-activate</a></h6>
+          <div class="docblock">
+            <p>The ::post-activate signal is emitted just after the <code>action</code>
+is&nbsp;activated.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="deprecated">
+          <h6><a href="signal.UIManager.pre-activate.html">Gtk.UIManager::pre-activate</a></h6>
+          <div class="docblock">
+            <p>The ::pre-activate signal is emitted just before the <code>action</code>
+is&nbsp;activated.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+        
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="class.UIManager.html#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct GtkUIManagerClass {
+  GObjectClass parent_class;
+  void (* add_widget) (
+    GtkUIManager* manager,
+    GtkWidget* widget
+  );
+  void (* actions_changed) (
+    GtkUIManager* manager
+  );
+  void (* connect_proxy) (
+    GtkUIManager* manager,
+    GtkAction* action,
+    GtkWidget* proxy
+  );
+  void (* disconnect_proxy) (
+    GtkUIManager* manager,
+    GtkAction* action,
+    GtkWidget* proxy
+  );
+  void (* pre_activate) (
+    GtkUIManager* manager,
+    GtkAction* action
+  );
+  void (* post_activate) (
+    GtkUIManager* manager,
+    GtkAction* action
+  );
+  GtkWidget* (* get_widget) (
+    GtkUIManager* manager,
+    const gchar* path
+  );
+  GtkAction* (* get_action) (
+    GtkUIManager* manager,
+    const gchar* path
+  );
+  void (* _gtk_reserved1) (
+void
+  );
+  void (* _gtk_reserved2) (
+void
+  );
+  void (* _gtk_reserved3) (
+void
+  );
+  void (* _gtk_reserved4) (
+void
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: GObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>add_widget: void (* add_widget) (
+    GtkUIManager* manager,
+    GtkWidget* widget
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>actions_changed: void (* actions_changed) (
+    GtkUIManager* manager
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>connect_proxy: void (* connect_proxy) (
+    GtkUIManager* manager,
+    GtkAction* action,
+    GtkWidget* proxy
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>disconnect_proxy: void (* disconnect_proxy) (
+    GtkUIManager* manager,
+    GtkAction* action,
+    GtkWidget* proxy
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>pre_activate: void (* pre_activate) (
+    GtkUIManager* manager,
+    GtkAction* action
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>post_activate: void (* post_activate) (
+    GtkUIManager* manager,
+    GtkAction* action
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_widget: GtkWidget* (* get_widget) (
+    GtkUIManager* manager,
+    const gchar* path
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_action: GtkAction* (* get_action) (
+    GtkUIManager* manager,
+    const gchar* path
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved1: void (* _gtk_reserved1) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved2: void (* _gtk_reserved2) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved3: void (* _gtk_reserved3) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved4: void (* _gtk_reserved4) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="class.UIManager.html#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-actions_changed"><a href="vfunc.UIManager.actions_changed.html">Gtk.UIManagerClass.actions_changed</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-add_widget"><a href="vfunc.UIManager.add_widget.html">Gtk.UIManagerClass.add_widget</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-connect_proxy"><a href="vfunc.UIManager.connect_proxy.html">Gtk.UIManagerClass.connect_proxy</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-disconnect_proxy"><a href="vfunc.UIManager.disconnect_proxy.html">Gtk.UIManagerClass.disconnect_proxy</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="deprecated">
+        <h6 id="vfunc-get_action"><a href="vfunc.UIManager.get_action.html">Gtk.UIManagerClass.get_action</a></h6>
+        <div class="docblock">
+          <p>Looks up an action by following a path. See <code>gtk_ui_manager_get_widget()</code>
+for more information about&nbsp;paths.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="deprecated">
+        <h6 id="vfunc-get_widget"><a href="vfunc.UIManager.get_widget.html">Gtk.UIManagerClass.get_widget</a></h6>
+        <div class="docblock">
+          <p>Looks up a widget by following a path.
+The path consists of the names specified in the <span class="caps">XML</span> description of the <span class="caps">UI</span>.
+separated by “/”. Elements which don’t have a name or action attribute in
+the <span class="caps">XML</span> (e.g. <code>&lt;popup&gt;</code>) can be addressed by their <span class="caps">XML</span> element name
+(e.g. &#8220;popup&#8221;). The root element (&#8220;/ui&#8221;) can be omitted in the&nbsp;path.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem deprecated">deprecated: 3.10</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-post_activate"><a href="vfunc.UIManager.post_activate.html">Gtk.UIManagerClass.post_activate</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6 id="vfunc-pre_activate"><a href="vfunc.UIManager.pre_activate.html">Gtk.UIManagerClass.pre_activate</a></h6>
+        <div class="docblock">
+          No description available.
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="class.UIManager.html#description"><span class="link-text">Description</span></a></li>
+      
+      <ul class="toc-list">
+      
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#ui-definitions-xml-ui"><span class="link-text">UI Definitions # {XML-UI}</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#a-ui-definition"><span class="link-text">A UI definition</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#ui-merging-ui-merging"><span class="link-text">UI Merging # {UI-Merging}</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#accelerators"><span class="link-text">Accelerators</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#smart-separators-smart-separators"><span class="link-text">Smart Separators # {Smart-Separators}</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#empty-menus"><span class="link-text">Empty Menus</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.UIManager.html#gtkuimanager-as-gtkbuildable-gtkuimanager-builder-ui"><span class="link-text">GtkUIManager as GtkBuildable # {GtkUIManager-BUILDER-UI}</span></a></li>
+      
+      
+      </ul>
+      
+      
+      <li class="toc-list-item"><a href="class.UIManager.html#hierarchy"><span class="link-text">Hierarchy</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="class.UIManager.html#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="class.UIManager.html#implements"><span class="link-text">Implements</span></a></li>
+      
+      
+<li class="toc-list-item"><a href="class.UIManager.html#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="class.UIManager.html#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="class.UIManager.html#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="class.UIManager.html#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="class.UIManager.html#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

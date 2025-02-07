@@ -1,0 +1,1486 @@
+<!--
+SPDX-FileCopyrightText: GTK Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gtk.FileChooser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="gtk-logo.svg"/>
+  <meta property="og:image:alt" content="Gtk-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gtk.FileChooser"/>
+  <meta property="og:description" content="Reference for Gtk.FileChooser"/>
+  <meta name="twitter:title" content="Gtk.FileChooser"/>
+  <meta name="twitter:description" content="Reference for Gtk.FileChooser"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Gtk" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="gtk-logo.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gtk</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 3.24</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="iface.FileChooser.html#description">FileChooser</a>
+  </div>
+</div>
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.FileChooser.add_choice.html">add_choice</a>
+  
+    <a class="method" href="method.FileChooser.add_filter.html">add_filter</a>
+  
+    <a class="method" href="method.FileChooser.add_shortcut_folder.html">add_shortcut_folder</a>
+  
+    <a class="method" href="method.FileChooser.add_shortcut_folder_uri.html">add_shortcut_folder_uri</a>
+  
+    <a class="method" href="method.FileChooser.get_action.html">get_action</a>
+  
+    <a class="method" href="method.FileChooser.get_choice.html">get_choice</a>
+  
+    <a class="method" href="method.FileChooser.get_create_folders.html">get_create_folders</a>
+  
+    <a class="method" href="method.FileChooser.get_current_folder.html">get_current_folder</a>
+  
+    <a class="method" href="method.FileChooser.get_current_folder_file.html">get_current_folder_file</a>
+  
+    <a class="method" href="method.FileChooser.get_current_folder_uri.html">get_current_folder_uri</a>
+  
+    <a class="method" href="method.FileChooser.get_current_name.html">get_current_name</a>
+  
+    <a class="method" href="method.FileChooser.get_do_overwrite_confirmation.html">get_do_overwrite_confirmation</a>
+  
+    <a class="method" href="method.FileChooser.get_extra_widget.html">get_extra_widget</a>
+  
+    <a class="method" href="method.FileChooser.get_file.html">get_file</a>
+  
+    <a class="method" href="method.FileChooser.get_filename.html">get_filename</a>
+  
+    <a class="method" href="method.FileChooser.get_filenames.html">get_filenames</a>
+  
+    <a class="method" href="method.FileChooser.get_files.html">get_files</a>
+  
+    <a class="method" href="method.FileChooser.get_filter.html">get_filter</a>
+  
+    <a class="method" href="method.FileChooser.get_local_only.html">get_local_only</a>
+  
+    <a class="method" href="method.FileChooser.get_preview_file.html">get_preview_file</a>
+  
+    <a class="method" href="method.FileChooser.get_preview_filename.html">get_preview_filename</a>
+  
+    <a class="method" href="method.FileChooser.get_preview_uri.html">get_preview_uri</a>
+  
+    <a class="method" href="method.FileChooser.get_preview_widget.html">get_preview_widget</a>
+  
+    <a class="method" href="method.FileChooser.get_preview_widget_active.html">get_preview_widget_active</a>
+  
+    <a class="method" href="method.FileChooser.get_select_multiple.html">get_select_multiple</a>
+  
+    <a class="method" href="method.FileChooser.get_show_hidden.html">get_show_hidden</a>
+  
+    <a class="method" href="method.FileChooser.get_uri.html">get_uri</a>
+  
+    <a class="method" href="method.FileChooser.get_uris.html">get_uris</a>
+  
+    <a class="method" href="method.FileChooser.get_use_preview_label.html">get_use_preview_label</a>
+  
+    <a class="method" href="method.FileChooser.list_filters.html">list_filters</a>
+  
+    <a class="method" href="method.FileChooser.list_shortcut_folder_uris.html">list_shortcut_folder_uris</a>
+  
+    <a class="method" href="method.FileChooser.list_shortcut_folders.html">list_shortcut_folders</a>
+  
+    <a class="method" href="method.FileChooser.remove_choice.html">remove_choice</a>
+  
+    <a class="method" href="method.FileChooser.remove_filter.html">remove_filter</a>
+  
+    <a class="method" href="method.FileChooser.remove_shortcut_folder.html">remove_shortcut_folder</a>
+  
+    <a class="method" href="method.FileChooser.remove_shortcut_folder_uri.html">remove_shortcut_folder_uri</a>
+  
+    <a class="method" href="method.FileChooser.select_all.html">select_all</a>
+  
+    <a class="method" href="method.FileChooser.select_file.html">select_file</a>
+  
+    <a class="method" href="method.FileChooser.select_filename.html">select_filename</a>
+  
+    <a class="method" href="method.FileChooser.select_uri.html">select_uri</a>
+  
+    <a class="method" href="method.FileChooser.set_action.html">set_action</a>
+  
+    <a class="method" href="method.FileChooser.set_choice.html">set_choice</a>
+  
+    <a class="method" href="method.FileChooser.set_create_folders.html">set_create_folders</a>
+  
+    <a class="method" href="method.FileChooser.set_current_folder.html">set_current_folder</a>
+  
+    <a class="method" href="method.FileChooser.set_current_folder_file.html">set_current_folder_file</a>
+  
+    <a class="method" href="method.FileChooser.set_current_folder_uri.html">set_current_folder_uri</a>
+  
+    <a class="method" href="method.FileChooser.set_current_name.html">set_current_name</a>
+  
+    <a class="method" href="method.FileChooser.set_do_overwrite_confirmation.html">set_do_overwrite_confirmation</a>
+  
+    <a class="method" href="method.FileChooser.set_extra_widget.html">set_extra_widget</a>
+  
+    <a class="method" href="method.FileChooser.set_file.html">set_file</a>
+  
+    <a class="method" href="method.FileChooser.set_filename.html">set_filename</a>
+  
+    <a class="method" href="method.FileChooser.set_filter.html">set_filter</a>
+  
+    <a class="method" href="method.FileChooser.set_local_only.html">set_local_only</a>
+  
+    <a class="method" href="method.FileChooser.set_preview_widget.html">set_preview_widget</a>
+  
+    <a class="method" href="method.FileChooser.set_preview_widget_active.html">set_preview_widget_active</a>
+  
+    <a class="method" href="method.FileChooser.set_select_multiple.html">set_select_multiple</a>
+  
+    <a class="method" href="method.FileChooser.set_show_hidden.html">set_show_hidden</a>
+  
+    <a class="method" href="method.FileChooser.set_uri.html">set_uri</a>
+  
+    <a class="method" href="method.FileChooser.set_use_preview_label.html">set_use_preview_label</a>
+  
+    <a class="method" href="method.FileChooser.unselect_all.html">unselect_all</a>
+  
+    <a class="method" href="method.FileChooser.unselect_file.html">unselect_file</a>
+  
+    <a class="method" href="method.FileChooser.unselect_filename.html">unselect_filename</a>
+  
+    <a class="method" href="method.FileChooser.unselect_uri.html">unselect_uri</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.FileChooser.action.html">action</a>
+  
+    <a class="property" href="property.FileChooser.create-folders.html">create-folders</a>
+  
+    <a class="property" href="property.FileChooser.do-overwrite-confirmation.html">do-overwrite-confirmation</a>
+  
+    <a class="property" href="property.FileChooser.extra-widget.html">extra-widget</a>
+  
+    <a class="property" href="property.FileChooser.filter.html">filter</a>
+  
+    <a class="property" href="property.FileChooser.local-only.html">local-only</a>
+  
+    <a class="property" href="property.FileChooser.preview-widget.html">preview-widget</a>
+  
+    <a class="property" href="property.FileChooser.preview-widget-active.html">preview-widget-active</a>
+  
+    <a class="property" href="property.FileChooser.select-multiple.html">select-multiple</a>
+  
+    <a class="property" href="property.FileChooser.show-hidden.html">show-hidden</a>
+  
+    <a class="property" href="property.FileChooser.use-preview-label.html">use-preview-label</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.FileChooser.confirm-overwrite.html">confirm-overwrite</a>
+  
+    <a class="signal" href="signal.FileChooser.current-folder-changed.html">current-folder-changed</a>
+  
+    <a class="signal" href="signal.FileChooser.file-activated.html">file-activated</a>
+  
+    <a class="signal" href="signal.FileChooser.selection-changed.html">selection-changed</a>
+  
+    <a class="signal" href="signal.FileChooser.update-preview.html">update-preview</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.2</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Interface</h3>
+    <h1><a href="index.html">Gtk</a><span class="sep"></span>FileChooser</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="iface.FileChooser.html#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkfilechooser.c#L28">[src]</a>
+          
+        </h4>
+
+        <pre><code>interface Gtk.FileChooser : GObject.Object</code></pre>
+
+        <div class="docblock">
+          <p><code>GtkFileChooser</code> is an interface that can be implemented by file
+selection widgets.  In <span class="caps">GTK</span>+, the main objects that implement this
+interface are <code>GtkFileChooserWidget</code>, <code>GtkFileChooserDialog</code>, and
+<code>GtkFileChooserButton</code>.  You do not need to write an object that
+implements the <code>GtkFileChooser</code> interface unless you are trying to
+adapt an existing file selector to expose a standard programming&nbsp;interface.</p>
+<p><code>GtkFileChooser</code> allows for shortcuts to various places in the filesystem.
+In the default implementation these are displayed in the left pane. It
+may be a bit confusing at first that these shortcuts come from various
+sources and in various flavours, so lets explain the terminology&nbsp;here:</p>
+<ul>
+<li>
+<p>Bookmarks: are created by the user, by dragging folders from the
+  right pane to the left pane, or by using the “Add”. Bookmarks
+  can be renamed and deleted by the&nbsp;user.</p>
+</li>
+<li>
+<p>Shortcuts: can be provided by the application. For example, a Paint
+  program may want to add a shortcut for a Clipart folder. Shortcuts
+  cannot be modified by the&nbsp;user.</p>
+</li>
+<li>
+<p>Volumes: are provided by the underlying filesystem abstraction. They are
+  the “roots” of the&nbsp;filesystem.</p>
+</li>
+</ul>
+<h1 id="file-names-and-encodings">File Names and Encodings<a class="md-anchor" href="iface.FileChooser.html#file-names-and-encodings" title="Permanent link"></a></h1>
+<p>When the user is finished selecting files in a
+<code>GtkFileChooser</code>, your program can get the selected names
+either as filenames or as URIs.  For URIs, the normal escaping
+rules are applied if the <span class="caps">URI</span> contains non-<span class="caps">ASCII</span> characters.
+However, filenames are always returned in
+the character set specified by the
+<code>G_FILENAME_ENCODING</code> environment variable.
+Please see the GLib documentation for more details about this&nbsp;variable.</p>
+<p>This means that while you can pass the result of
+<code>gtk_file_chooser_get_filename()</code> to <code>g_open()</code> or g_fopen(),
+you may not be able to directly set it as the text of a
+<code>GtkLabel</code> widget unless you convert it first to <span class="caps">UTF</span>-8,
+which all <span class="caps">GTK</span>+ widgets expect. You should use <code>g_filename_to_utf8()</code>
+to convert filenames into strings that can be passed to <span class="caps">GTK</span>+&nbsp;widgets.</p>
+<h1 id="adding-a-preview-widget">Adding a Preview Widget<a class="md-anchor" href="iface.FileChooser.html#adding-a-preview-widget" title="Permanent link"></a></h1>
+<p>You can add a custom preview widget to a file chooser and then
+get notification about when the preview needs to be updated.
+To install a preview widget, use
+gtk_file_chooser_set_preview_widget().  Then, connect to the
+<code>GtkFileChooser::update-preview</code> signal to get notified when
+you need to update the contents of the&nbsp;preview.</p>
+<p>Your callback should use
+<code>gtk_file_chooser_get_preview_filename()</code> to see what needs
+previewing.  Once you have generated the preview for the
+corresponding file, you must call
+<code>gtk_file_chooser_set_preview_widget_active()</code> with a boolean
+flag that indicates whether your callback could successfully
+generate a&nbsp;preview.</p>
+<h2 id="example-using-a-preview-widget-gtkfilechooser-preview">Example: Using a Preview Widget ## {#gtkfilechooser-preview}<a class="md-anchor" href="iface.FileChooser.html#example-using-a-preview-widget-gtkfilechooser-preview" title="Permanent link"></a></h2>
+<div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="n">GtkImage</span><span class="w"> </span><span class="o">*</span><span class="n">preview</span><span class="p">;</span>
+
+<span class="w">  </span><span class="p">...</span>
+
+<span class="w">  </span><span class="n">preview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_image_new</span><span class="w"> </span><span class="p">();</span>
+
+<span class="w">  </span><span class="n">gtk_file_chooser_set_preview_widget</span><span class="w"> </span><span class="p">(</span><span class="n">my_file_chooser</span><span class="p">,</span><span class="w"> </span><span class="n">preview</span><span class="p">);</span>
+<span class="w">  </span><span class="n">g_signal_connect</span><span class="w"> </span><span class="p">(</span><span class="n">my_file_chooser</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;update-preview&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="n">G_CALLBACK</span><span class="w"> </span><span class="p">(</span><span class="n">update_preview_cb</span><span class="p">),</span><span class="w"> </span><span class="n">preview</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">static</span><span class="w"> </span><span class="kt">void</span>
+<span class="n">update_preview_cb</span><span class="w"> </span><span class="p">(</span><span class="n">GtkFileChooser</span><span class="w"> </span><span class="o">*</span><span class="n">file_chooser</span><span class="p">,</span><span class="w"> </span><span class="n">gpointer</span><span class="w"> </span><span class="n">data</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">preview</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">char</span><span class="w"> </span><span class="o">*</span><span class="n">filename</span><span class="p">;</span>
+<span class="w">  </span><span class="n">GdkPixbuf</span><span class="w"> </span><span class="o">*</span><span class="n">pixbuf</span><span class="p">;</span>
+<span class="w">  </span><span class="n">gboolean</span><span class="w"> </span><span class="n">have_preview</span><span class="p">;</span>
+
+<span class="w">  </span><span class="n">preview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GTK_WIDGET</span><span class="w"> </span><span class="p">(</span><span class="n">data</span><span class="p">);</span>
+<span class="w">  </span><span class="n">filename</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_file_chooser_get_preview_filename</span><span class="w"> </span><span class="p">(</span><span class="n">file_chooser</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">pixbuf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gdk_pixbuf_new_from_file_at_size</span><span class="w"> </span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="mi">128</span><span class="p">,</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">  </span><span class="n">have_preview</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">pixbuf</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">);</span>
+<span class="w">  </span><span class="n">g_free</span><span class="w"> </span><span class="p">(</span><span class="n">filename</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">gtk_image_set_from_pixbuf</span><span class="w"> </span><span class="p">(</span><span class="n">GTK_IMAGE</span><span class="w"> </span><span class="p">(</span><span class="n">preview</span><span class="p">),</span><span class="w"> </span><span class="n">pixbuf</span><span class="p">);</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pixbuf</span><span class="p">)</span>
+<span class="w">    </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">pixbuf</span><span class="p">);</span>
+
+<span class="w">  </span><span class="n">gtk_file_chooser_set_preview_widget_active</span><span class="w"> </span><span class="p">(</span><span class="n">file_chooser</span><span class="p">,</span><span class="w"> </span><span class="n">have_preview</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<h1 id="adding-extra-widgets">Adding Extra Widgets<a class="md-anchor" href="iface.FileChooser.html#adding-extra-widgets" title="Permanent link"></a></h1>
+<p>You can add extra widgets to a file chooser to provide options
+that are not present in the default design.  For example, you
+can add a toggle button to give the user the option to open a
+file in read-only mode.  You can use
+<code>gtk_file_chooser_set_extra_widget()</code> to insert additional
+widgets in a file&nbsp;chooser.</p>
+<p>An example for adding extra&nbsp;widgets:</p>
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="n">GtkWidget</span><span class="w"> </span><span class="o">*</span><span class="n">toggle</span><span class="p">;</span>
+
+<span class="w">  </span><span class="p">...</span>
+
+<span class="w">  </span><span class="n">toggle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_check_button_new_with_label</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Open file read-only&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_widget_show</span><span class="w"> </span><span class="p">(</span><span class="n">toggle</span><span class="p">);</span>
+<span class="w">  </span><span class="n">gtk_file_chooser_set_extra_widget</span><span class="w"> </span><span class="p">(</span><span class="n">my_file_chooser</span><span class="p">,</span><span class="w"> </span><span class="n">toggle</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>If you want to set more than one extra widget in the file
+chooser, you can a container such as a <code>GtkBox</code> or a <code>GtkGrid</code>
+and include your widgets in it.  Then, set the container as
+the whole extra&nbsp;widget.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    <div class="toggle-wrapper prerequisite">
+      <h4 id="prerequisite">
+        Prerequisite
+        <a href="iface.FileChooser.html#prerequisite" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <p>In order to implement FileChooser, your type must inherit from<a data-namespace="GObject" data-link="class.Object.html" href="javascript:void(0)" class="external"><code>GObject</code></a>.</p>
+      </div>
+    </div>
+
+    
+    <div class="implementations toggle-wrapper default-hide">
+      <h4 id="implementations">Implementations<a href="iface.FileChooser.html#implementations" class="anchor"></a></h4>
+      <div class="docblock">
+        <ul>
+          <li><a href="class.FileChooserButton.html">GtkFileChooserButton</a></li>
+        
+          <li><a href="class.FileChooserDialog.html">GtkFileChooserDialog</a></li>
+        
+          <li><a href="class.FileChooserNative.html">GtkFileChooserNative</a></li>
+        
+          <li><a href="class.FileChooserWidget.html">GtkFileChooserWidget</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="methods toggle-wrapper">
+      <h4 id="methods">
+        Instance methods
+        <a href="iface.FileChooser.html#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.FileChooser.add_choice.html">gtk_file_chooser_add_choice</a></h6>
+          <div class="docblock">
+            <p>Adds a &#8216;choice&#8217; to the file chooser. This is typically implemented
+as a combobox or, for boolean choices, as a checkbutton. You can select
+a value using <code>gtk_file_chooser_set_choice()</code> before the dialog is shown,
+and you can obtain the user-selected value in the ::response signal handler
+using&nbsp;gtk_file_chooser_get_choice().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.22</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.add_filter.html">gtk_file_chooser_add_filter</a></h6>
+          <div class="docblock">
+            <p>Adds <code>filter</code> to the list of filters that the user can select between.
+When a filter is selected, only files that are passed by that
+filter are&nbsp;displayed.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.add_shortcut_folder.html">gtk_file_chooser_add_shortcut_folder</a></h6>
+          <div class="docblock">
+            <p>Adds a folder to be displayed with the shortcut folders in a file chooser.
+Note that shortcut folders do not get saved, as they are provided by the
+application.  For example, you can use this to add a
+“/usr/share/mydrawprogram/Clipart” folder to the volume&nbsp;list.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.add_shortcut_folder_uri.html">gtk_file_chooser_add_shortcut_folder_uri</a></h6>
+          <div class="docblock">
+            <p>Adds a folder <span class="caps">URI</span> to be displayed with the shortcut folders in a file
+chooser.  Note that shortcut folders do not get saved, as they are provided
+by the application.  For example, you can use this to add a
+“file:///usr/share/mydrawprogram/Clipart” folder to the volume&nbsp;list.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_action.html">gtk_file_chooser_get_action</a></h6>
+          <div class="docblock">
+            <p>Gets the type of operation that the file chooser is performing; see&nbsp;gtk_file_chooser_set_action().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_choice.html">gtk_file_chooser_get_choice</a></h6>
+          <div class="docblock">
+            <p>Gets the currently selected option in the &#8216;choice&#8217; with the given <span class="caps">ID</span>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.22</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_create_folders.html">gtk_file_chooser_get_create_folders</a></h6>
+          <div class="docblock">
+            <p>Gets whether file choser will offer to create new folders.
+See&nbsp;gtk_file_chooser_set_create_folders().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.18</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_current_folder.html">gtk_file_chooser_get_current_folder</a></h6>
+          <div class="docblock">
+            <p>Gets the current folder of <code>chooser</code> as a local filename.
+See&nbsp;gtk_file_chooser_set_current_folder().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_current_folder_file.html">gtk_file_chooser_get_current_folder_file</a></h6>
+          <div class="docblock">
+            <p>Gets the current folder of <code>chooser</code> as <code>GFile</code>.
+See&nbsp;gtk_file_chooser_get_current_folder_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_current_folder_uri.html">gtk_file_chooser_get_current_folder_uri</a></h6>
+          <div class="docblock">
+            <p>Gets the current folder of <code>chooser</code> as an <span class="caps">URI</span>.
+See&nbsp;gtk_file_chooser_set_current_folder_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_current_name.html">gtk_file_chooser_get_current_name</a></h6>
+          <div class="docblock">
+            <p>Gets the current name in the file selector, as entered by the user in the
+text entry for&nbsp;“Name”.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_do_overwrite_confirmation.html">gtk_file_chooser_get_do_overwrite_confirmation</a></h6>
+          <div class="docblock">
+            <p>Queries whether a file chooser is set to confirm for overwriting when the user
+types a file name that already&nbsp;exists.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_extra_widget.html">gtk_file_chooser_get_extra_widget</a></h6>
+          <div class="docblock">
+            <p>Gets the current extra widget; see&nbsp;gtk_file_chooser_set_extra_widget().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_file.html">gtk_file_chooser_get_file</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>GFile</code> for the currently selected file in
+the file selector. If multiple files are selected,
+one of the files will be returned at&nbsp;random.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_filename.html">gtk_file_chooser_get_filename</a></h6>
+          <div class="docblock">
+            <p>Gets the filename for the currently selected file in
+the file selector. The filename is returned as an absolute path. If
+multiple files are selected, one of the filenames will be returned at&nbsp;random.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_filenames.html">gtk_file_chooser_get_filenames</a></h6>
+          <div class="docblock">
+            <p>Lists all the selected files and subfolders in the current folder of
+<code>chooser</code>. The returned names are full absolute paths. If files in the current
+folder cannot be represented as local filenames they will be ignored. (See&nbsp;gtk_file_chooser_get_uris()).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_files.html">gtk_file_chooser_get_files</a></h6>
+          <div class="docblock">
+            <p>Lists all the selected files and subfolders in the current folder of <code>chooser</code>
+as <code>GFile</code>. An internal function, see&nbsp;gtk_file_chooser_get_uris().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_filter.html">gtk_file_chooser_get_filter</a></h6>
+          <div class="docblock">
+            <p>Gets the current filter; see&nbsp;gtk_file_chooser_set_filter().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_local_only.html">gtk_file_chooser_get_local_only</a></h6>
+          <div class="docblock">
+            <p>Gets whether only local files can be selected in the
+file selector. See&nbsp;gtk_file_chooser_set_local_only().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_preview_file.html">gtk_file_chooser_get_preview_file</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>GFile</code> that should be previewed in a custom preview
+Internal function, see&nbsp;gtk_file_chooser_get_preview_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_preview_filename.html">gtk_file_chooser_get_preview_filename</a></h6>
+          <div class="docblock">
+            <p>Gets the filename that should be previewed in a custom preview
+widget. See&nbsp;gtk_file_chooser_set_preview_widget().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_preview_uri.html">gtk_file_chooser_get_preview_uri</a></h6>
+          <div class="docblock">
+            <p>Gets the <span class="caps">URI</span> that should be previewed in a custom preview
+widget. See&nbsp;gtk_file_chooser_set_preview_widget().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_preview_widget.html">gtk_file_chooser_get_preview_widget</a></h6>
+          <div class="docblock">
+            <p>Gets the current preview widget; see&nbsp;gtk_file_chooser_set_preview_widget().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_preview_widget_active.html">gtk_file_chooser_get_preview_widget_active</a></h6>
+          <div class="docblock">
+            <p>Gets whether the preview widget set by <code>gtk_file_chooser_set_preview_widget()</code>
+should be shown for the current filename. See&nbsp;gtk_file_chooser_set_preview_widget_active().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_select_multiple.html">gtk_file_chooser_get_select_multiple</a></h6>
+          <div class="docblock">
+            <p>Gets whether multiple files can be selected in the file
+selector. See&nbsp;gtk_file_chooser_set_select_multiple().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_show_hidden.html">gtk_file_chooser_get_show_hidden</a></h6>
+          <div class="docblock">
+            <p>Gets whether hidden files and folders are displayed in the file selector.
+See&nbsp;gtk_file_chooser_set_show_hidden().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.6</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_uri.html">gtk_file_chooser_get_uri</a></h6>
+          <div class="docblock">
+            <p>Gets the <span class="caps">URI</span> for the currently selected file in
+the file selector. If multiple files are selected,
+one of the filenames will be returned at&nbsp;random.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_uris.html">gtk_file_chooser_get_uris</a></h6>
+          <div class="docblock">
+            <p>Lists all the selected files and subfolders in the current folder of
+<code>chooser</code>. The returned names are full absolute&nbsp;URIs.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.get_use_preview_label.html">gtk_file_chooser_get_use_preview_label</a></h6>
+          <div class="docblock">
+            <p>Gets whether a stock label should be drawn with the name of the previewed
+file.  See&nbsp;gtk_file_chooser_set_use_preview_label().</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.list_filters.html">gtk_file_chooser_list_filters</a></h6>
+          <div class="docblock">
+            <p>Lists the current set of user-selectable filters; see
+gtk_file_chooser_add_filter(),&nbsp;gtk_file_chooser_remove_filter().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.list_shortcut_folder_uris.html">gtk_file_chooser_list_shortcut_folder_uris</a></h6>
+          <div class="docblock">
+            <p>Queries the list of shortcut folders in the file chooser, as set by&nbsp;gtk_file_chooser_add_shortcut_folder_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.list_shortcut_folders.html">gtk_file_chooser_list_shortcut_folders</a></h6>
+          <div class="docblock">
+            <p>Queries the list of shortcut folders in the file chooser, as set by&nbsp;gtk_file_chooser_add_shortcut_folder().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.remove_choice.html">gtk_file_chooser_remove_choice</a></h6>
+          <div class="docblock">
+            <p>Removes a &#8216;choice&#8217; that has been added with&nbsp;gtk_file_chooser_add_choice().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.22</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.remove_filter.html">gtk_file_chooser_remove_filter</a></h6>
+          <div class="docblock">
+            <p>Removes <code>filter</code> from the list of filters that the user can select&nbsp;between.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.remove_shortcut_folder.html">gtk_file_chooser_remove_shortcut_folder</a></h6>
+          <div class="docblock">
+            <p>Removes a folder from a file chooser’s list of shortcut&nbsp;folders.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.remove_shortcut_folder_uri.html">gtk_file_chooser_remove_shortcut_folder_uri</a></h6>
+          <div class="docblock">
+            <p>Removes a folder <span class="caps">URI</span> from a file chooser’s list of shortcut&nbsp;folders.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.select_all.html">gtk_file_chooser_select_all</a></h6>
+          <div class="docblock">
+            <p>Selects all the files in the current folder of a file&nbsp;chooser.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.select_file.html">gtk_file_chooser_select_file</a></h6>
+          <div class="docblock">
+            <p>Selects the file referred to by <code>file</code>. An internal function. See&nbsp;_gtk_file_chooser_select_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.select_filename.html">gtk_file_chooser_select_filename</a></h6>
+          <div class="docblock">
+            <p>Selects a filename. If the file name isn’t in the current
+folder of <code>chooser</code>, then the current folder of <code>chooser</code> will
+be changed to the folder containing <code>filename</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.select_uri.html">gtk_file_chooser_select_uri</a></h6>
+          <div class="docblock">
+            <p>Selects the file to by <code>uri</code>. If the <span class="caps">URI</span> doesn’t refer to a
+file in the current folder of <code>chooser</code>, then the current folder of
+<code>chooser</code> will be changed to the folder containing <code>filename</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_action.html">gtk_file_chooser_set_action</a></h6>
+          <div class="docblock">
+            <p>Sets the type of operation that the chooser is performing; the
+user interface is adapted to suit the selected action. For example,
+an option to create a new folder might be shown if the action is
+<code>GTK_FILE_CHOOSER_ACTION_SAVE</code> but not if the action is
+<code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_choice.html">gtk_file_chooser_set_choice</a></h6>
+          <div class="docblock">
+            <p>Selects an option in a &#8216;choice&#8217; that has been added with
+gtk_file_chooser_add_choice(). For a boolean choice, the
+possible options are &#8220;true&#8221; and&nbsp;&#8220;false&#8221;.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.22</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_create_folders.html">gtk_file_chooser_set_create_folders</a></h6>
+          <div class="docblock">
+            <p>Sets whether file choser will offer to create new folders.
+This is only relevant if the action is not set to be
+<code>GTK_FILE_CHOOSER_ACTION_OPEN</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.18</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_current_folder.html">gtk_file_chooser_set_current_folder</a></h6>
+          <div class="docblock">
+            <p>Sets the current folder for <code>chooser</code> from a local filename.
+The user will be shown the full contents of the current folder,
+plus user interface elements for navigating to other&nbsp;folders.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_current_folder_file.html">gtk_file_chooser_set_current_folder_file</a></h6>
+          <div class="docblock">
+            <p>Sets the current folder for <code>chooser</code> from a <code>GFile</code>.
+Internal function, see&nbsp;gtk_file_chooser_set_current_folder_uri().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_current_folder_uri.html">gtk_file_chooser_set_current_folder_uri</a></h6>
+          <div class="docblock">
+            <p>Sets the current folder for <code>chooser</code> from an <span class="caps">URI</span>.
+The user will be shown the full contents of the current folder,
+plus user interface elements for navigating to other&nbsp;folders.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_current_name.html">gtk_file_chooser_set_current_name</a></h6>
+          <div class="docblock">
+            <p>Sets the current name in the file selector, as if entered
+by the user. Note that the name passed in here is a <span class="caps">UTF</span>-8
+string rather than a filename. This function is meant for
+such uses as a suggested name in a “Save As&#8230;” dialog.  You can
+pass “Untitled.doc” or a similarly suitable suggestion for the <code>name</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_do_overwrite_confirmation.html">gtk_file_chooser_set_do_overwrite_confirmation</a></h6>
+          <div class="docblock">
+            <p>Sets whether a file chooser in <code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode will present
+a confirmation dialog if the user types a file name that already exists.  This
+is <code>FALSE</code> by&nbsp;default.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_extra_widget.html">gtk_file_chooser_set_extra_widget</a></h6>
+          <div class="docblock">
+            <p>Sets an application-supplied widget to provide extra options to the&nbsp;user.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_file.html">gtk_file_chooser_set_file</a></h6>
+          <div class="docblock">
+            <p>Sets <code>file</code> as the current filename for the file chooser, by changing
+to the file’s parent folder and actually selecting the file in list.  If
+the <code>chooser</code> is in <code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode, the file’s base name
+will also appear in the dialog’s file name&nbsp;entry.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_filename.html">gtk_file_chooser_set_filename</a></h6>
+          <div class="docblock">
+            <p>Sets <code>filename</code> as the current filename for the file chooser, by changing to
+the file’s parent folder and actually selecting the file in list; all other
+files will be unselected.  If the <code>chooser</code> is in
+<code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode, the file’s base name will also appear in
+the dialog’s file name&nbsp;entry.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_filter.html">gtk_file_chooser_set_filter</a></h6>
+          <div class="docblock">
+            <p>Sets the current filter; only the files that pass the
+filter will be displayed. If the user-selectable list of filters
+is non-empty, then the filter should be one of the filters
+in that list. Setting the current filter when the list of
+filters is empty is useful if you want to restrict the displayed
+set of files without letting the user change&nbsp;it.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_local_only.html">gtk_file_chooser_set_local_only</a></h6>
+          <div class="docblock">
+            <p>Sets whether only local files can be selected in the
+file selector. If <code>local_only</code> is <code>TRUE</code> (the default),
+then the selected file or files are guaranteed to be
+accessible through the operating systems native file
+system and therefore the application only
+needs to worry about the filename functions in
+<code>GtkFileChooser</code>, like gtk_file_chooser_get_filename(),
+rather than the <span class="caps">URI</span> functions like&nbsp;gtk_file_chooser_get_uri(),.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_preview_widget.html">gtk_file_chooser_set_preview_widget</a></h6>
+          <div class="docblock">
+            <p>Sets an application-supplied widget to use to display a custom preview
+of the currently selected file. To implement a preview, after setting the
+preview widget, you connect to the <code>GtkFileChooser::update-preview</code>
+signal, and call <code>gtk_file_chooser_get_preview_filename()</code> or
+<code>gtk_file_chooser_get_preview_uri()</code> on each change. If you can
+display a preview of the new file, update your widget and
+set the preview active using gtk_file_chooser_set_preview_widget_active().
+Otherwise, set the preview&nbsp;inactive.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_preview_widget_active.html">gtk_file_chooser_set_preview_widget_active</a></h6>
+          <div class="docblock">
+            <p>Sets whether the preview widget set by
+<code>gtk_file_chooser_set_preview_widget()</code> should be shown for the
+current filename. When <code>active</code> is set to false, the file chooser
+may display an internally generated preview of the current file
+or it may display no preview at all. See
+<code>gtk_file_chooser_set_preview_widget()</code> for more&nbsp;details.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_select_multiple.html">gtk_file_chooser_set_select_multiple</a></h6>
+          <div class="docblock">
+            <p>Sets whether multiple files can be selected in the file selector.  This is
+only relevant if the action is set to be <code>GTK_FILE_CHOOSER_ACTION_OPEN</code> or
+<code>GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_show_hidden.html">gtk_file_chooser_set_show_hidden</a></h6>
+          <div class="docblock">
+            <p>Sets whether hidden files and folders are displayed in the file&nbsp;selector.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.6</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_uri.html">gtk_file_chooser_set_uri</a></h6>
+          <div class="docblock">
+            <p>Sets the file referred to by <code>uri</code> as the current file for the file chooser,
+by changing to the <span class="caps">URI</span>’s parent folder and actually selecting the <span class="caps">URI</span> in the
+list.  If the <code>chooser</code> is <code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode, the <span class="caps">URI</span>’s base
+name will also appear in the dialog’s file name&nbsp;entry.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.set_use_preview_label.html">gtk_file_chooser_set_use_preview_label</a></h6>
+          <div class="docblock">
+            <p>Sets whether the file chooser should display a stock label with the name of
+the file that is being previewed; the default is <code>TRUE</code>.  Applications that
+want to draw the whole preview area themselves should set this to <code>FALSE</code> and
+display the name themselves in their preview&nbsp;widget.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.unselect_all.html">gtk_file_chooser_unselect_all</a></h6>
+          <div class="docblock">
+            <p>Unselects all the files in the current folder of a file&nbsp;chooser.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.unselect_file.html">gtk_file_chooser_unselect_file</a></h6>
+          <div class="docblock">
+            <p>Unselects the file referred to by <code>file</code>. If the file is not in the current
+directory, does not exist, or is otherwise not currently selected, does&nbsp;nothing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.unselect_filename.html">gtk_file_chooser_unselect_filename</a></h6>
+          <div class="docblock">
+            <p>Unselects a currently selected filename. If the filename
+is not in the current directory, does not exist, or
+is otherwise not currently selected, does&nbsp;nothing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.FileChooser.unselect_uri.html">gtk_file_chooser_unselect_uri</a></h6>
+          <div class="docblock">
+            <p>Unselects the file referred to by <code>uri</code>. If the file
+is not in the current directory, does not exist, or
+is otherwise not currently selected, does&nbsp;nothing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+    <div class="properties toggle-wrapper">
+      <h4 id="properties">
+        Properties
+        <a href="iface.FileChooser.html#properties" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.FileChooser.action.html">Gtk.FileChooser:action</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.create-folders.html">Gtk.FileChooser:create-folders</a></h6>
+          <div class="docblock">
+            <p>Whether a file chooser not in <code>GTK_FILE_CHOOSER_ACTION_OPEN</code> mode
+will offer the user to create new&nbsp;folders.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.18</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.do-overwrite-confirmation.html">Gtk.FileChooser:do-overwrite-confirmation</a></h6>
+          <div class="docblock">
+            <p>Whether a file chooser in <code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode
+will present an overwrite confirmation dialog if the user
+selects a file name that already&nbsp;exists.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.extra-widget.html">Gtk.FileChooser:extra-widget</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.filter.html">Gtk.FileChooser:filter</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.local-only.html">Gtk.FileChooser:local-only</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.preview-widget.html">Gtk.FileChooser:preview-widget</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.preview-widget-active.html">Gtk.FileChooser:preview-widget-active</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.select-multiple.html">Gtk.FileChooser:select-multiple</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.show-hidden.html">Gtk.FileChooser:show-hidden</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="property.FileChooser.use-preview-label.html">Gtk.FileChooser:use-preview-label</a></h6>
+          <div class="docblock">
+            No description available.
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="iface.FileChooser.html#signals" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.FileChooser.confirm-overwrite.html">Gtk.FileChooser::confirm-overwrite</a></h6>
+          <div class="docblock">
+            <p>This signal gets emitted whenever it is appropriate to present a
+confirmation dialog when the user has selected a file name that
+already exists.  The signal only gets emitted when the file
+chooser is in <code>GTK_FILE_CHOOSER_ACTION_SAVE</code> mode.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.FileChooser.current-folder-changed.html">Gtk.FileChooser::current-folder-changed</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the current folder in a <code>GtkFileChooser</code>
+changes.  This can happen due to the user performing some action that
+changes folders, such as selecting a bookmark or visiting a folder on the
+file list.  It can also happen as a result of calling a function to
+explicitly change the current folder in a file&nbsp;chooser.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.FileChooser.file-activated.html">Gtk.FileChooser::file-activated</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the user &#8220;activates&#8221; a file in the file
+chooser.  This can happen by double-clicking on a file in the file list, or
+by pressing <code>Enter</code>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.FileChooser.selection-changed.html">Gtk.FileChooser::selection-changed</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when there is a change in the set of selected files
+in a <code>GtkFileChooser</code>.  This can happen when the user modifies the selection
+with the mouse or the keyboard, or when explicitly calling functions to
+change the&nbsp;selection.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="signal.FileChooser.update-preview.html">Gtk.FileChooser::update-preview</a></h6>
+          <div class="docblock">
+            <p>This signal is emitted when the preview in a file chooser should be
+regenerated.  For example, this can happen when the currently selected file
+changes.  You should use this signal if you want your file chooser to have
+a preview&nbsp;widget.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="iface.FileChooser.html#description"><span class="link-text">Description</span></a></li>
+      
+      <ul class="toc-list">
+      
+      
+        <li class="toc-list-item"><a href="iface.FileChooser.html#file-names-and-encodings"><span class="link-text">File Names and Encodings</span></a></li>
+      
+        <li class="toc-list-item"><a href="iface.FileChooser.html#adding-a-preview-widget"><span class="link-text">Adding a Preview Widget</span></a></li>
+      
+        <li class="toc-list-item"><a href="iface.FileChooser.html#adding-extra-widgets"><span class="link-text">Adding Extra Widgets</span></a></li>
+      
+      
+      </ul>
+      
+      
+
+      
+<li class="toc-list-item"><a href="iface.FileChooser.html#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="iface.FileChooser.html#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="iface.FileChooser.html#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

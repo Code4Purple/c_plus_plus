@@ -1,0 +1,978 @@
+<!--
+SPDX-FileCopyrightText: GTK Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gtk.IconTheme</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="gtk-logo.svg"/>
+  <meta property="og:image:alt" content="Gtk-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gtk.IconTheme"/>
+  <meta property="og:description" content="Reference for Gtk.IconTheme"/>
+  <meta name="twitter:title" content="Gtk.IconTheme"/>
+  <meta name="twitter:description" content="Reference for Gtk.IconTheme"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Gtk" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="gtk-logo.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gtk</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 3.24</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.IconTheme.html#description">IconTheme</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.IconTheme.new.html">new</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Functions</h5>
+  <div class="links">
+  
+    <a class="func" href="type_func.IconTheme.add_builtin_icon.html">add_builtin_icon</a>
+  
+    <a class="func" href="type_func.IconTheme.get_default.html">get_default</a>
+  
+    <a class="func" href="type_func.IconTheme.get_for_screen.html">get_for_screen</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.IconTheme.add_resource_path.html">add_resource_path</a>
+  
+    <a class="method" href="method.IconTheme.append_search_path.html">append_search_path</a>
+  
+    <a class="method" href="method.IconTheme.choose_icon.html">choose_icon</a>
+  
+    <a class="method" href="method.IconTheme.choose_icon_for_scale.html">choose_icon_for_scale</a>
+  
+    <a class="method" href="method.IconTheme.get_example_icon_name.html">get_example_icon_name</a>
+  
+    <a class="method" href="method.IconTheme.get_icon_sizes.html">get_icon_sizes</a>
+  
+    <a class="method" href="method.IconTheme.get_search_path.html">get_search_path</a>
+  
+    <a class="method" href="method.IconTheme.has_icon.html">has_icon</a>
+  
+    <a class="method" href="method.IconTheme.list_contexts.html">list_contexts</a>
+  
+    <a class="method" href="method.IconTheme.list_icons.html">list_icons</a>
+  
+    <a class="method" href="method.IconTheme.load_icon.html">load_icon</a>
+  
+    <a class="method" href="method.IconTheme.load_icon_for_scale.html">load_icon_for_scale</a>
+  
+    <a class="method" href="method.IconTheme.load_surface.html">load_surface</a>
+  
+    <a class="method" href="method.IconTheme.lookup_by_gicon.html">lookup_by_gicon</a>
+  
+    <a class="method" href="method.IconTheme.lookup_by_gicon_for_scale.html">lookup_by_gicon_for_scale</a>
+  
+    <a class="method" href="method.IconTheme.lookup_icon.html">lookup_icon</a>
+  
+    <a class="method" href="method.IconTheme.lookup_icon_for_scale.html">lookup_icon_for_scale</a>
+  
+    <a class="method" href="method.IconTheme.prepend_search_path.html">prepend_search_path</a>
+  
+    <a class="method" href="method.IconTheme.rescan_if_needed.html">rescan_if_needed</a>
+  
+    <a class="method" href="method.IconTheme.set_custom_theme.html">set_custom_theme</a>
+  
+    <a class="method" href="method.IconTheme.set_screen.html">set_screen</a>
+  
+    <a class="method" href="method.IconTheme.set_search_path.html">set_search_path</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Signals</h5>
+  <div class="links">
+  
+    <a class="signal" href="signal.IconTheme.changed.html">changed</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.IconTheme.changed.html">changed</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.2</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Gtk</a><span class="sep" role="presentation"></span>IconTheme</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="class.IconTheme.html#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkicontheme.c#L67">[src]</a>
+          
+        </h4>
+
+        <pre><code>class Gtk.IconTheme : GObject.Object
+{
+  /* No available fields */
+}</pre></code>
+
+        <div class="docblock">
+          <p><code>GtkIconTheme</code> provides a facility for looking up icons by name
+and size. The main reason for using a name rather than simply
+providing a filename is to allow different icons to be used
+depending on what “icon theme” is selected
+by the user. The operation of icon themes on Linux and Unix
+follows the <a href="http://www.freedesktop.org/Standards/icon-theme-spec">Icon Theme Specification</a>
+There is a fallback icon theme, named <code>hicolor</code>, where applications
+should install their icons, but additional icon themes can be installed
+as operating system vendors and users&nbsp;choose.</p>
+<p>Named icons are similar to the deprecated [Stock Items][gtkstock],
+and the distinction between the two may be a bit confusing.
+A few things to keep in&nbsp;mind:</p>
+<ul>
+<li>
+<p>Stock images usually are used in conjunction with
+  [Stock Items][gtkstock], such as <code>GTK_STOCK_OK</code> or
+  <code>GTK_STOCK_OPEN</code>. Named icons are easier to set up and therefore
+  are more useful for new icons that an application wants to
+  add, such as application icons or window&nbsp;icons.</p>
+</li>
+<li>
+<p>Stock images can only be loaded at the symbolic sizes defined
+  by the <code>GtkIconSize</code> enumeration, or by custom sizes defined
+  by gtk_icon_size_register(), while named icons are more flexible
+  and any pixel size can be&nbsp;specified.</p>
+</li>
+<li>
+<p>Because stock images are closely tied to stock items, and thus
+  to actions in the user interface, stock images may come in
+  multiple variants for different widget states or writing&nbsp;directions.</p>
+</li>
+</ul>
+<p>A good rule of thumb is that if there is a stock image for what
+you want to use, use it, otherwise use a named icon. It turns
+out that internally stock images are generally defined in
+terms of one or more named icons. (An example of the
+more than one case is icons that depend on writing direction;
+<code>GTK_STOCK_GO_FORWARD</code> uses the two themed icons
+“gtk-stock-go-forward-ltr” and&nbsp;“gtk-stock-go-forward-rtl”.)</p>
+<p>In many cases, named themes are used indirectly, via <code>GtkImage</code>
+or stock items, rather than directly, but looking up icons
+directly is also simple. The <code>GtkIconTheme</code> object acts
+as a database of all the icons in the current theme. You
+can create new <code>GtkIconTheme</code> objects, but it’s much more
+efficient to use the standard icon theme for the <code>GdkScreen</code>
+so that the icon information is shared with other people
+looking up&nbsp;icons.</p>
+<div class="highlight"><pre><span></span><span class="n">GError</span><span class="w"> </span><span class="o">*</span><span class="n">error</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">NULL</span><span class="p">;</span>
+<span class="n">GtkIconTheme</span><span class="w"> </span><span class="o">*</span><span class="n">icon_theme</span><span class="p">;</span>
+<span class="n">GdkPixbuf</span><span class="w"> </span><span class="o">*</span><span class="n">pixbuf</span><span class="p">;</span>
+
+<span class="n">icon_theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_icon_theme_get_default</span><span class="w"> </span><span class="p">();</span>
+<span class="n">pixbuf</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">gtk_icon_theme_load_icon</span><span class="w"> </span><span class="p">(</span><span class="n">icon_theme</span><span class="p">,</span>
+<span class="w">                                   </span><span class="s">&quot;my-icon-name&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">// icon name</span>
+<span class="w">                                   </span><span class="mi">48</span><span class="p">,</span><span class="w"> </span><span class="c1">// icon size</span>
+<span class="w">                                   </span><span class="mi">0</span><span class="p">,</span><span class="w">  </span><span class="c1">// flags</span>
+<span class="w">                                   </span><span class="o">&amp;</span><span class="n">error</span><span class="p">);</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">pixbuf</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">g_warning</span><span class="w"> </span><span class="p">(</span><span class="s">&quot;Couldn’t load icon: %s&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">error</span><span class="o">-&gt;</span><span class="n">message</span><span class="p">);</span>
+<span class="w">    </span><span class="n">g_error_free</span><span class="w"> </span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="k">else</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Use the pixbuf</span>
+<span class="w">    </span><span class="n">g_object_unref</span><span class="w"> </span><span class="p">(</span><span class="n">pixbuf</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
+</pre></div>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+    <div class="toggle-wrapper hierarchy">
+      <h4 id="hierarchy">
+        Hierarchy
+        <a href="class.IconTheme.html#hierarchy" class="anchor"></a>
+      </h4>
+      <div class="docblock" alt="Hierarchy for Gtk.IconTheme">
+        <!-- Generated by graphviz version 8.1.0 (20230707.0739)
+ -->
+<!-- Title: hierarchy Pages: 1 -->
+<svg width="107pt" height="116pt"
+ viewBox="0.00 0.00 106.50 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>hierarchy</title>
+<!-- this -->
+<g id="node1" class="node">
+<title>this</title>
+<g id="a_node1"><a xlink:title="GtkIconTheme">
+<path fill="none" stroke="black" d="M86.5,-36C86.5,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 86.5,0 86.5,0 92.5,0 98.5,-6 98.5,-12 98.5,-12 98.5,-24 98.5,-24 98.5,-30 92.5,-36 86.5,-36"/>
+<text text-anchor="middle" x="49.25" y="-11.82" font-family="Times,serif" font-size="14.00">GtkIconTheme</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0 -->
+<g id="node2" class="node">
+<title>ancestor_0</title>
+<g id="a_node2"><a xlink:title="GObject.Object">
+<path fill="none" stroke="black" d="M68.12,-108C68.12,-108 30.38,-108 30.38,-108 24.38,-108 18.38,-102 18.38,-96 18.38,-96 18.38,-84 18.38,-84 18.38,-78 24.38,-72 30.38,-72 30.38,-72 68.12,-72 68.12,-72 74.12,-72 80.12,-78 80.12,-84 80.12,-84 80.12,-96 80.12,-96 80.12,-102 74.12,-108 68.12,-108"/>
+<text text-anchor="middle" x="49.25" y="-83.83" font-family="Times,serif" font-size="14.00">GObject</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0&#45;&#45;this -->
+<g id="edge1" class="edge">
+<title>ancestor_0&#45;&#45;this</title>
+<path fill="none" stroke="black" d="M49.25,-71.7C49.25,-60.85 49.25,-46.92 49.25,-36.1"/>
+</g>
+</g>
+</svg>
+
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="class.IconTheme.html#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="class.IconTheme.html#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.IconTheme.new.html">gtk_icon_theme_new</a></h6>
+          <div class="docblock">
+            <p>Creates a new icon theme object. Icon theme objects are used
+to lookup up an icon by name in a particular icon theme.
+Usually, you’ll want to use <code>gtk_icon_theme_get_default()</code>
+or <code>gtk_icon_theme_get_for_screen()</code> rather than creating
+a new icon theme object for&nbsp;scratch.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="type-functions">
+        Functions
+        <a href="class.IconTheme.html#type-functions" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="deprecated">
+        <h6><a href="type_func.IconTheme.add_builtin_icon.html">gtk_icon_theme_add_builtin_icon</a></h6>
+        <div class="docblock">
+          <p>Registers a built-in icon for icon theme lookups. The idea
+of built-in icons is to allow an application or library
+that uses themed icons to function requiring files to
+be present in the file system. For instance, the default
+images for all of <span class="caps">GTK</span>+’s stock icons are registered
+as&nbsp;built-icons.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem deprecated">deprecated: 3.14</span>&nbsp;<span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.IconTheme.get_default.html">gtk_icon_theme_get_default</a></h6>
+        <div class="docblock">
+          <p>Gets the icon theme for the default screen. See&nbsp;gtk_icon_theme_get_for_screen().</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      <div class="">
+        <h6><a href="type_func.IconTheme.get_for_screen.html">gtk_icon_theme_get_for_screen</a></h6>
+        <div class="docblock">
+          <p>Gets the icon theme object associated with <code>screen</code>; if this
+function has not previously been called for the given
+screen, a new icon theme object will be created and
+associated with the screen. Icon theme objects are
+fairly expensive to create, so using this function
+is usually a better choice than calling than <code>gtk_icon_theme_new()</code>
+and setting the screen yourself; by using this function
+a single icon theme object will be shared between&nbsp;users.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.4</span></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="class.IconTheme.html#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.IconTheme.add_resource_path.html">gtk_icon_theme_add_resource_path</a></h6>
+          <div class="docblock">
+            <p>Adds a resource path that will be looked at when looking
+for icons, similar to search&nbsp;paths.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.append_search_path.html">gtk_icon_theme_append_search_path</a></h6>
+          <div class="docblock">
+            <p>Appends a directory to the search path.
+See&nbsp;gtk_icon_theme_set_search_path().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.choose_icon.html">gtk_icon_theme_choose_icon</a></h6>
+          <div class="docblock">
+            <p>Looks up a named icon and returns a <code>GtkIconInfo</code> containing
+information such as the filename of the icon. The icon
+can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the&nbsp;pixbuf.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.choose_icon_for_scale.html">gtk_icon_theme_choose_icon_for_scale</a></h6>
+          <div class="docblock">
+            <p>Looks up a named icon for a particular window scale and returns
+a <code>GtkIconInfo</code> containing information such as the filename of the
+icon. The icon can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the&nbsp;pixbuf.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.get_example_icon_name.html">gtk_icon_theme_get_example_icon_name</a></h6>
+          <div class="docblock">
+            <p>Gets the name of an icon that is representative of the
+current theme (for instance, to use when presenting
+a list of themes to the&nbsp;user.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.get_icon_sizes.html">gtk_icon_theme_get_icon_sizes</a></h6>
+          <div class="docblock">
+            <p>Returns an array of integers describing the sizes at which
+the icon is available without scaling. A size of -1 means
+that the icon is available in a scalable format. The array
+is&nbsp;zero-terminated.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.6</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.get_search_path.html">gtk_icon_theme_get_search_path</a></h6>
+          <div class="docblock">
+            <p>Gets the current search path. See&nbsp;gtk_icon_theme_set_search_path().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.has_icon.html">gtk_icon_theme_has_icon</a></h6>
+          <div class="docblock">
+            <p>Checks whether an icon theme includes an icon
+for a particular&nbsp;name.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.list_contexts.html">gtk_icon_theme_list_contexts</a></h6>
+          <div class="docblock">
+            <p>Gets the list of contexts available within the current
+hierarchy of icon themes.
+See <code>gtk_icon_theme_list_icons()</code> for details about&nbsp;contexts.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.list_icons.html">gtk_icon_theme_list_icons</a></h6>
+          <div class="docblock">
+            <p>Lists the icons in the current icon theme. Only a subset
+of the icons can be listed by providing a context string.
+The set of values for the context string is system dependent,
+but will typically include such values as “Applications” and
+“MimeTypes”. Contexts are explained in the
+<a href="http://www.freedesktop.org/wiki/Specifications/icon-theme-spec">Icon Theme Specification</a>.
+The standard contexts are listed in the
+<a href="http://www.freedesktop.org/wiki/Specifications/icon-naming-spec">Icon Naming Specification</a>.
+Also see&nbsp;gtk_icon_theme_list_contexts().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.load_icon.html">gtk_icon_theme_load_icon</a></h6>
+          <div class="docblock">
+            <p>Looks up an icon in an icon theme, scales it to the given size
+and renders it into a pixbuf. This is a convenience function;
+if more details about the icon are needed, use
+<code>gtk_icon_theme_lookup_icon()</code> followed by&nbsp;gtk_icon_info_load_icon().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.load_icon_for_scale.html">gtk_icon_theme_load_icon_for_scale</a></h6>
+          <div class="docblock">
+            <p>Looks up an icon in an icon theme for a particular window scale,
+scales it to the given size and renders it into a pixbuf. This is a
+convenience function; if more details about the icon are needed,
+use <code>gtk_icon_theme_lookup_icon()</code> followed by&nbsp;gtk_icon_info_load_icon().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.load_surface.html">gtk_icon_theme_load_surface</a></h6>
+          <div class="docblock">
+            <p>Looks up an icon in an icon theme for a particular window scale,
+scales it to the given size and renders it into a cairo surface. This is a
+convenience function; if more details about the icon are needed,
+use <code>gtk_icon_theme_lookup_icon()</code> followed by&nbsp;gtk_icon_info_load_surface().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.lookup_by_gicon.html">gtk_icon_theme_lookup_by_gicon</a></h6>
+          <div class="docblock">
+            <p>Looks up an icon and returns a <code>GtkIconInfo</code> containing information
+such as the filename of the icon. The icon can then be rendered
+into a pixbuf using&nbsp;gtk_icon_info_load_icon().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.lookup_by_gicon_for_scale.html">gtk_icon_theme_lookup_by_gicon_for_scale</a></h6>
+          <div class="docblock">
+            <p>Looks up an icon and returns a <code>GtkIconInfo</code> containing information
+such as the filename of the icon. The icon can then be rendered into
+a pixbuf using&nbsp;gtk_icon_info_load_icon().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.lookup_icon.html">gtk_icon_theme_lookup_icon</a></h6>
+          <div class="docblock">
+            <p>Looks up a named icon and returns a <code>GtkIconInfo</code> containing
+information such as the filename of the icon. The icon
+can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon()
+combines these two steps if all you need is the&nbsp;pixbuf.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.lookup_icon_for_scale.html">gtk_icon_theme_lookup_icon_for_scale</a></h6>
+          <div class="docblock">
+            <p>Looks up a named icon for a particular window scale and returns a
+<code>GtkIconInfo</code> containing information such as the filename of the
+icon. The icon can then be rendered into a pixbuf using
+gtk_icon_info_load_icon(). (gtk_icon_theme_load_icon() combines
+these two steps if all you need is the&nbsp;pixbuf.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.prepend_search_path.html">gtk_icon_theme_prepend_search_path</a></h6>
+          <div class="docblock">
+            <p>Prepends a directory to the search path.
+See&nbsp;gtk_icon_theme_set_search_path().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.rescan_if_needed.html">gtk_icon_theme_rescan_if_needed</a></h6>
+          <div class="docblock">
+            <p>Checks to see if the icon theme has changed; if it has, any
+currently cached information is discarded and will be reloaded
+next time <code>icon_theme</code> is&nbsp;accessed.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.set_custom_theme.html">gtk_icon_theme_set_custom_theme</a></h6>
+          <div class="docblock">
+            <p>Sets the name of the icon theme that the <code>GtkIconTheme</code> object uses
+overriding system configuration. This function cannot be called
+on the icon theme objects returned from <code>gtk_icon_theme_get_default()</code>
+and&nbsp;gtk_icon_theme_get_for_screen().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.set_screen.html">gtk_icon_theme_set_screen</a></h6>
+          <div class="docblock">
+            <p>Sets the screen for an icon theme; the screen is used
+to track the user’s currently configured icon theme,
+which might be different for different&nbsp;screens.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.IconTheme.set_search_path.html">gtk_icon_theme_set_search_path</a></h6>
+          <div class="docblock">
+            <p>Sets the search path for the icon theme object. When looking
+for an icon theme, <span class="caps">GTK</span>+ will search for a subdirectory of
+one or more of the directories in <code>path</code> with the same name
+as the icon theme containing an index.theme file. (Themes from
+multiple of the path elements are combined to allow themes to be
+extended by adding icons in the user’s home&nbsp;directory.).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.4</span></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="class.IconTheme.html#signals" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="signal.IconTheme.changed.html">Gtk.IconTheme::changed</a></h6>
+          <div class="docblock">
+            <p>Emitted when the current icon theme is switched or <span class="caps">GTK</span>+ detects
+that a change has occurred in the contents of the current
+icon&nbsp;theme.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="class.IconTheme.html#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct GtkIconThemeClass {
+  GObjectClass parent_class;
+  void (* changed) (
+    GtkIconTheme* icon_theme
+  );
+  void (* _gtk_reserved1) (
+void
+  );
+  void (* _gtk_reserved2) (
+void
+  );
+  void (* _gtk_reserved3) (
+void
+  );
+  void (* _gtk_reserved4) (
+void
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: GObjectClass</code></dt>
+          <dd><p>The parent&nbsp;class.</p></dd>
+        
+          <dt><code>changed: void (* changed) (
+    GtkIconTheme* icon_theme
+  )</code></dt>
+          <dd><p>Signal emitted when the current icon theme is switched or
+   <span class="caps">GTK</span>+ detects that a change has occurred in the contents of the
+   current icon&nbsp;theme.</p></dd>
+        
+          <dt><code>_gtk_reserved1: void (* _gtk_reserved1) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved2: void (* _gtk_reserved2) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved3: void (* _gtk_reserved3) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved4: void (* _gtk_reserved4) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="class.IconTheme.html#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-changed"><a href="vfunc.IconTheme.changed.html">Gtk.IconThemeClass.changed</a></h6>
+        <div class="docblock">
+          <p>Signal emitted when the current icon theme is switched or
+   <span class="caps">GTK</span>+ detects that a change has occurred in the contents of the
+   current icon&nbsp;theme.</p>
+        </div>
+        <div class="docblock">
+          <p></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="class.IconTheme.html#description"><span class="link-text">Description</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="class.IconTheme.html#hierarchy"><span class="link-text">Hierarchy</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="class.IconTheme.html#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+<li class="toc-list-item"><a href="class.IconTheme.html#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="class.IconTheme.html#type-functions"><span class="link-text">Functions</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="class.IconTheme.html#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="class.IconTheme.html#signals"><span class="link-text">Signals</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="class.IconTheme.html#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>

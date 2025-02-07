@@ -1,0 +1,1064 @@
+<!--
+SPDX-FileCopyrightText: GTK Development Team
+
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gtk.Builder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta charset="utf-8" />
+
+  
+  <meta property="og:type" content="website"/>
+
+  
+  <meta property="og:image:width" content="256"/>
+  <meta property="og:image:height" content="256"/>
+  <meta property="og:image:secure_url" content="gtk-logo.svg"/>
+  <meta property="og:image:alt" content="Gtk-3.0"/>
+  
+
+  
+  <meta property="og:title" content="Gtk.Builder"/>
+  <meta property="og:description" content="Reference for Gtk.Builder"/>
+  <meta name="twitter:title" content="Gtk.Builder"/>
+  <meta name="twitter:description" content="Reference for Gtk.Builder"/>
+
+
+  
+  <meta name="twitter:card" content="summary"/>
+
+  
+  
+  
+  <link rel="search" type="application/opensearchdescription+xml" title="Gtk" href="opensearch.xml">
+  
+  
+
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  
+
+  
+  <script src="urlmap.js"></script>
+  
+  
+  <script src="fzy.js"></script>
+  <script src="search.js"></script>
+  
+  <script src="main.js"></script>
+
+  
+</head>
+
+<body>
+  <div id="body-wrapper" tabindex="-1">
+
+    <nav class="sidebar devhelp-hidden">
+      
+      <div class="section">
+        <a href="index.html"><img src="gtk-logo.svg" class="logo"/></a>
+      </div>
+      
+      
+      <div class="search section">
+        <form id="search-form" autocomplete="off">
+          <input id="search-input" type="text" name="do-not-autocomplete" placeholder="Click, or press 's' to search" autocomplete="off"/>
+        </form>
+      </div>
+      
+      <div class="section namespace">
+        <h3><a href="index.html">Gtk</a></h3>
+        <p>API Version: 3.0</p>
+        
+        <p>Library Version: 3.24</p>
+        
+      </div>
+      
+<div class="section">
+  <h5>Type</h5>
+  <div class="links">
+    <a class="current" href="class.Builder.html#description">Builder</a>
+  </div>
+</div>
+
+
+  
+<div class="section">
+  <h5>Constructors</h5>
+  <div class="links">
+  
+    <a class="ctor" href="ctor.Builder.new.html">new</a>
+  
+    <a class="ctor" href="ctor.Builder.new_from_file.html">new_from_file</a>
+  
+    <a class="ctor" href="ctor.Builder.new_from_resource.html">new_from_resource</a>
+  
+    <a class="ctor" href="ctor.Builder.new_from_string.html">new_from_string</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Instance methods</h5>
+  <div class="links">
+  
+    <a class="method" href="method.Builder.add_callback_symbol.html">add_callback_symbol</a>
+  
+    <a class="method" href="method.Builder.add_callback_symbols.html">add_callback_symbols</a>
+  
+    <a class="method" href="method.Builder.add_from_file.html">add_from_file</a>
+  
+    <a class="method" href="method.Builder.add_from_resource.html">add_from_resource</a>
+  
+    <a class="method" href="method.Builder.add_from_string.html">add_from_string</a>
+  
+    <a class="method" href="method.Builder.add_objects_from_file.html">add_objects_from_file</a>
+  
+    <a class="method" href="method.Builder.add_objects_from_resource.html">add_objects_from_resource</a>
+  
+    <a class="method" href="method.Builder.add_objects_from_string.html">add_objects_from_string</a>
+  
+    <a class="method" href="method.Builder.connect_signals.html">connect_signals</a>
+  
+    <a class="method" href="method.Builder.connect_signals_full.html">connect_signals_full</a>
+  
+    <a class="method" href="method.Builder.expose_object.html">expose_object</a>
+  
+    <a class="method" href="method.Builder.extend_with_template.html">extend_with_template</a>
+  
+    <a class="method" href="method.Builder.get_application.html">get_application</a>
+  
+    <a class="method" href="method.Builder.get_object.html">get_object</a>
+  
+    <a class="method" href="method.Builder.get_objects.html">get_objects</a>
+  
+    <a class="method" href="method.Builder.get_translation_domain.html">get_translation_domain</a>
+  
+    <a class="method" href="method.Builder.get_type_from_name.html">get_type_from_name</a>
+  
+    <a class="method" href="method.Builder.lookup_callback_symbol.html">lookup_callback_symbol</a>
+  
+    <a class="method" href="method.Builder.set_application.html">set_application</a>
+  
+    <a class="method" href="method.Builder.set_translation_domain.html">set_translation_domain</a>
+  
+    <a class="method" href="method.Builder.value_from_string.html">value_from_string</a>
+  
+    <a class="method" href="method.Builder.value_from_string_type.html">value_from_string_type</a>
+  
+  </div>
+</div>
+
+
+
+  
+<div class="section">
+  <h5>Properties</h5>
+  <div class="links">
+  
+    <a class="property" href="property.Builder.translation-domain.html">translation-domain</a>
+  
+  </div>
+</div>
+
+
+
+  
+
+
+  
+
+
+  
+<div class="section">
+  <h5>Virtual methods</h5>
+  <div class="links">
+  
+    <a class="method" href="vfunc.Builder.get_type_from_name.html">get_type_from_name</a>
+  
+  </div>
+</div>
+
+
+
+
+      <div class="section generator">
+        <p>Generated by <a href="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</a> 2024.2</p>
+      </div>
+    </nav>
+
+    <button id="btn-to-top" class="hidden"><span class="up-arrow"></span></button>
+
+    
+<section id="main" class="content">
+  <header>
+    <h3>Class</h3>
+    <h1 aria-label="Name"><a href="index.html">Gtk</a><span class="sep" role="presentation"></span>Builder</h1>
+  </header>
+
+  <section>
+    <summary>
+      <div class="docblock">
+        <p></p>
+      </div>
+
+      <div class="toggle-wrapper">
+        <h4 id="description" style="display:flex;">
+          Description
+          <a href="class.Builder.html#description" class="anchor"></a>
+          
+          <a class="srclink" title="go to source location" href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkbuilder.c#L21">[src]</a>
+          
+        </h4>
+
+        <pre><code>class Gtk.Builder : GObject.Object
+{
+  GtkBuilderPrivate* priv
+}</pre></code>
+
+        <div class="docblock">
+          <p>A GtkBuilder is an auxiliary object that reads textual descriptions
+of a user interface and instantiates the described objects. To create
+a GtkBuilder from a user interface description, call
+gtk_builder_new_from_file(), <code>gtk_builder_new_from_resource()</code> or&nbsp;gtk_builder_new_from_string().</p>
+<p>In the (unusual) case that you want to add user interface
+descriptions from multiple sources to the same GtkBuilder you can
+call <code>gtk_builder_new()</code> to get an empty builder and populate it by
+(multiple) calls to gtk_builder_add_from_file(),
+<code>gtk_builder_add_from_resource()</code> or&nbsp;gtk_builder_add_from_string().</p>
+<p>A GtkBuilder holds a reference to all objects that it has constructed
+and drops these references when it is finalized. This finalization can
+cause the destruction of non-widget objects or widgets which are not
+contained in a toplevel window. For toplevel windows constructed by a
+builder, it is the responsibility of the user to call <code>gtk_widget_destroy()</code>
+to get rid of them and all the widgets they&nbsp;contain.</p>
+<p>The functions <code>gtk_builder_get_object()</code> and <code>gtk_builder_get_objects()</code>
+can be used to access the widgets in the interface by the names assigned
+to them inside the <span class="caps">UI</span> description. Toplevel windows returned by these
+functions will stay around until the user explicitly destroys them
+with gtk_widget_destroy(). Other widgets will either be part of a
+larger hierarchy constructed by the builder (in which case you should
+not have to worry about their lifecycle), or without a parent, in which
+case they have to be added to some container to make use of them.
+Non-widget objects need to be reffed with <code>g_object_ref()</code> to keep them
+beyond the lifespan of the&nbsp;builder.</p>
+<p>The function <code>gtk_builder_connect_signals()</code> and variants thereof can be
+used to connect handlers to the named signals in the&nbsp;description.</p>
+<h1 id="gtkbuilder-ui-definitions-builder-ui">GtkBuilder UI Definitions # {<code>BUILDER</code>-UI}<a class="md-anchor" href="class.Builder.html#gtkbuilder-ui-definitions-builder-ui" title="Permanent link"></a></h1>
+<p>GtkBuilder parses textual descriptions of user interfaces which are
+specified in an <span class="caps">XML</span> format which can be roughly described by the
+<span class="caps">RELAX</span> <span class="caps">NG</span> schema below. We refer to these descriptions as “GtkBuilder
+<span class="caps">UI</span> definitions” or just “<span class="caps">UI</span> definitions” if the context is clear.
+Do not confuse GtkBuilder <span class="caps">UI</span> Definitions with
+[GtkUIManager <span class="caps">UI</span> Definitions][<span class="caps">XML</span>-<span class="caps">UI</span>], which are more limited in scope.
+It is common to use <code>.ui</code> as the filename extension for files containing
+GtkBuilder <span class="caps">UI</span>&nbsp;definitions.</p>
+<p><a href="https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/gtkbuilder.rnc"><span class="caps">RELAX</span> <span class="caps">NG</span> Compact&nbsp;Syntax</a></p>
+<p>The toplevel element is <code>&lt;interface&gt;</code>. It optionally takes a “domain”
+attribute, which will make the builder look for translated strings
+using <code>dgettext()</code> in the domain specified. This can also be done by
+calling <code>gtk_builder_set_translation_domain()</code> on the builder.
+Objects are described by <code>&lt;object&gt;</code> elements, which can contain
+<code>&lt;property&gt;</code> elements to set properties, <code>&lt;signal&gt;</code> elements which
+connect signals to handlers, and <code>&lt;child&gt;</code> elements, which describe
+child objects (most often widgets inside a container, but also e.g.
+actions in an action group, or columns in a tree model). A <code>&lt;child&gt;</code>
+element contains an <code>&lt;object&gt;</code> element which describes the child object.
+The target toolkit version(s) are described by <code>&lt;requires&gt;</code> elements,
+the “lib” attribute specifies the widget library in question (currently
+the only supported value is “gtk+”) and the “version” attribute specifies
+the target version in the form <code>&lt;major&gt;.&lt;minor&gt;</code>. The builder will error
+out if the version requirements are not&nbsp;met.</p>
+<p>Typically, the specific kind of object represented by an <code>&lt;object&gt;</code>
+element is specified by the “class” attribute. If the type has not
+been loaded yet, <span class="caps">GTK</span>+ tries to find the <code>get_type()</code> function from the
+class name by applying heuristics. This works in most cases, but if
+necessary, it is possible to specify the name of the <code>get_type()</code> function
+explictly with the &#8220;type-func&#8221; attribute. As a special case, GtkBuilder
+allows to use an object that has been constructed by a <code>GtkUIManager</code> in
+another part of the <span class="caps">UI</span> definition by specifying the id of the <code>GtkUIManager</code>
+in the “constructor” attribute and the name of the object in the “id”&nbsp;attribute.</p>
+<p>Objects may be given a name with the “id” attribute, which allows the
+application to retrieve them from the builder with gtk_builder_get_object().
+An id is also necessary to use the object as property value in other
+parts of the <span class="caps">UI</span> definition. <span class="caps">GTK</span>+ reserves ids starting and ending
+with <code>___</code> (3 underscores) for its own&nbsp;purposes.</p>
+<p>Setting properties of objects is pretty straightforward with the
+<code>&lt;property&gt;</code> element: the “name” attribute specifies the name of the
+property, and the content of the element specifies the value.
+If the “translatable” attribute is set to a true value, <span class="caps">GTK</span>+ uses
+<code>gettext()</code> (or <code>dgettext()</code> if the builder has a translation domain set)
+to find a translation for the value. This happens before the value
+is parsed, so it can be used for properties of any type, but it is
+probably most useful for string properties. It is also possible to
+specify a context to disambiguate short strings, and comments which
+may help the&nbsp;translators.</p>
+<p>GtkBuilder can parse textual representations for the most common
+property types: characters, strings, integers, floating-point numbers,
+booleans (strings like “<span class="caps">TRUE</span>”, “t”, “yes”, “y”, “1” are interpreted
+as <code>TRUE</code>, strings like “<span class="caps">FALSE</span>”, “f”, “no”, “n”, “0” are interpreted
+as <code>FALSE</code>), enumerations (can be specified by their name, nick or
+integer value), flags (can be specified by their name, nick, integer
+value, optionally combined with “|”, e.g. “GTK_VISIBLE|GTK_REALIZED”)
+and colors (in a format understood by&nbsp;gdk_rgba_parse()).</p>
+<p>GVariants can be specified in the format understood by g_variant_parse(),
+and pixbufs can be specified as a filename of an image file to&nbsp;load.</p>
+<p>Objects can be referred to by their name and by default refer to
+objects declared in the local xml fragment and objects exposed via
+gtk_builder_expose_object(). In general, GtkBuilder allows forward
+references to objects — declared in the local xml; an object doesn’t
+have to be constructed before it can be referred to. The exception
+to this rule is that an object has to be constructed before it can
+be used as the value of a construct-only&nbsp;property.</p>
+<p>It is also possible to bind a property value to another object&#8217;s
+property value using the attributes
+&#8220;bind-source&#8221; to specify the source object of the binding,
+&#8220;bind-property&#8221; to specify the source property and optionally
+&#8220;bind-flags&#8221; to specify the binding flags.
+Internally builder implements this using GBinding objects.
+For more information see <code>g_object_bind_property()</code></p>
+<p>Signal handlers are set up with the <code>&lt;signal&gt;</code> element. The “name”
+attribute specifies the name of the signal, and the “handler” attribute
+specifies the function to connect to the signal. By default, <span class="caps">GTK</span>+ tries
+to find the handler using g_module_symbol(), but this can be changed by
+passing a custom <code>GtkBuilderConnectFunc</code> to
+gtk_builder_connect_signals_full(). The remaining attributes, “after”,
+“swapped” and “object”, have the same meaning as the corresponding
+parameters of the <code>g_signal_connect_object()</code> or
+<code>g_signal_connect_data()</code> functions. A “last_modification_time”
+attribute is also allowed, but it does not have a meaning to the&nbsp;builder.</p>
+<p>Sometimes it is necessary to refer to widgets which have implicitly
+been constructed by <span class="caps">GTK</span>+ as part of a composite widget, to set
+properties on them or to add further children (e.g. the <code>vbox</code> of
+a <code>GtkDialog</code>). This can be achieved by setting the “internal-child”
+property of the <code>&lt;child&gt;</code> element to a true value. Note that GtkBuilder
+still requires an <code>&lt;object&gt;</code> element for the internal child, even if it
+has already been&nbsp;constructed.</p>
+<p>A number of widgets have different places where a child can be added
+(e.g. tabs vs. page content in notebooks). This can be reflected in
+a <span class="caps">UI</span> definition by specifying the “type” attribute on a <code>&lt;child&gt;</code>
+The possible values for the “type” attribute are described in the
+sections describing the widget-specific portions of <span class="caps">UI</span>&nbsp;definitions.</p>
+<h1 id="a-gtkbuilder-ui-definition">A GtkBuilder UI Definition<a class="md-anchor" href="class.Builder.html#a-gtkbuilder-ui-definition" title="Permanent link"></a></h1>
+<div class="highlight"><pre><span></span><span class="nt">&lt;interface&gt;</span>
+<span class="w">  </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkDialog&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;dialog1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;child</span><span class="w"> </span><span class="na">internal-child=</span><span class="s">&quot;vbox&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkBox&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;vbox1&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;border-width&quot;</span><span class="nt">&gt;</span>10<span class="nt">&lt;/property&gt;</span>
+<span class="w">        </span><span class="nt">&lt;child</span><span class="w"> </span><span class="na">internal-child=</span><span class="s">&quot;action_area&quot;</span><span class="nt">&gt;</span>
+<span class="w">          </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkButtonBox&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;hbuttonbox1&quot;</span><span class="nt">&gt;</span>
+<span class="w">            </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;border-width&quot;</span><span class="nt">&gt;</span>20<span class="nt">&lt;/property&gt;</span>
+<span class="w">            </span><span class="nt">&lt;child&gt;</span>
+<span class="w">              </span><span class="nt">&lt;object</span><span class="w"> </span><span class="na">class=</span><span class="s">&quot;GtkButton&quot;</span><span class="w"> </span><span class="na">id=</span><span class="s">&quot;ok_button&quot;</span><span class="nt">&gt;</span>
+<span class="w">                </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;label&quot;</span><span class="nt">&gt;</span>gtk-ok<span class="nt">&lt;/property&gt;</span>
+<span class="w">                </span><span class="nt">&lt;property</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;use-stock&quot;</span><span class="nt">&gt;</span>TRUE<span class="nt">&lt;/property&gt;</span>
+<span class="w">                </span><span class="nt">&lt;signal</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;clicked&quot;</span><span class="w"> </span><span class="na">handler=</span><span class="s">&quot;ok_button_clicked&quot;</span><span class="nt">/&gt;</span>
+<span class="w">              </span><span class="nt">&lt;/object&gt;</span>
+<span class="w">            </span><span class="nt">&lt;/child&gt;</span>
+<span class="w">          </span><span class="nt">&lt;/object&gt;</span>
+<span class="w">        </span><span class="nt">&lt;/child&gt;</span>
+<span class="w">      </span><span class="nt">&lt;/object&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/child&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/object&gt;</span>
+<span class="nt">&lt;/interface&gt;</span>
+</pre></div>
+
+<p>Beyond this general structure, several object classes define their
+own <span class="caps">XML</span> <span class="caps">DTD</span> fragments for filling in the <span class="caps">ANY</span> placeholders in the <span class="caps">DTD</span>
+above. Note that a custom element in a <code>&lt;child&gt;</code> element gets parsed by
+the custom tag handler of the parent object, while a custom element in
+an <code>&lt;object&gt;</code> element gets parsed by the custom tag handler of the&nbsp;object.</p>
+<p>These <span class="caps">XML</span> fragments are explained in the documentation of the
+respective&nbsp;objects.</p>
+<p>Additionally, since 3.10 a special <code>&lt;template&gt;</code> tag has been added
+to the format allowing one to define a widget class’s components.
+See the [GtkWidget documentation][composite-templates] for&nbsp;details.</p>
+        </div>
+
+        <div class="docblock">
+          
+          
+          
+        </div>
+
+        
+      </div>
+    </summary>
+
+    
+    <div class="toggle-wrapper hierarchy">
+      <h4 id="hierarchy">
+        Hierarchy
+        <a href="class.Builder.html#hierarchy" class="anchor"></a>
+      </h4>
+      <div class="docblock" alt="Hierarchy for Gtk.Builder">
+        <!-- Generated by graphviz version 8.1.0 (20230707.0739)
+ -->
+<!-- Title: hierarchy Pages: 1 -->
+<svg width="85pt" height="116pt"
+ viewBox="0.00 0.00 84.75 116.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
+<title>hierarchy</title>
+<!-- this -->
+<g id="node1" class="node">
+<title>this</title>
+<g id="a_node1"><a xlink:title="GtkBuilder">
+<path fill="none" stroke="black" d="M64.75,-36C64.75,-36 12,-36 12,-36 6,-36 0,-30 0,-24 0,-24 0,-12 0,-12 0,-6 6,0 12,0 12,0 64.75,0 64.75,0 70.75,0 76.75,-6 76.75,-12 76.75,-12 76.75,-24 76.75,-24 76.75,-30 70.75,-36 64.75,-36"/>
+<text text-anchor="middle" x="38.38" y="-11.82" font-family="Times,serif" font-size="14.00">GtkBuilder</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0 -->
+<g id="node2" class="node">
+<title>ancestor_0</title>
+<g id="a_node2"><a xlink:title="GObject.Object">
+<path fill="none" stroke="black" d="M57.25,-108C57.25,-108 19.5,-108 19.5,-108 13.5,-108 7.5,-102 7.5,-96 7.5,-96 7.5,-84 7.5,-84 7.5,-78 13.5,-72 19.5,-72 19.5,-72 57.25,-72 57.25,-72 63.25,-72 69.25,-78 69.25,-84 69.25,-84 69.25,-96 69.25,-96 69.25,-102 63.25,-108 57.25,-108"/>
+<text text-anchor="middle" x="38.38" y="-83.83" font-family="Times,serif" font-size="14.00">GObject</text>
+</a>
+</g>
+</g>
+<!-- ancestor_0&#45;&#45;this -->
+<g id="edge1" class="edge">
+<title>ancestor_0&#45;&#45;this</title>
+<path fill="none" stroke="black" d="M38.38,-71.7C38.38,-60.85 38.38,-46.92 38.38,-36.1"/>
+</g>
+</g>
+</svg>
+
+      </div>
+    </div>
+    
+
+    
+    <div class="toggle-wrapper ancestors">
+      <h4 id="ancestors">
+        Ancestors
+        <a href="class.Builder.html#ancestors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <ul>
+        
+          
+          <li class="class"><a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a></li>
+          
+        
+        </ul>
+      </div>
+    </div>
+    
+
+    
+
+    
+
+    
+    <div class="toggle-wrapper constructors">
+      <h4 id="constructors">
+        Constructors
+        <a href="class.Builder.html#constructors" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="ctor.Builder.new.html">gtk_builder_new</a></h6>
+          <div class="docblock">
+            <p>Creates a new empty builder&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="ctor.Builder.new_from_file.html">gtk_builder_new_from_file</a></h6>
+          <div class="docblock">
+            <p>Builds the [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+in the file <code>filename</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="ctor.Builder.new_from_resource.html">gtk_builder_new_from_resource</a></h6>
+          <div class="docblock">
+            <p>Builds the [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+at <code>resource_path</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="ctor.Builder.new_from_string.html">gtk_builder_new_from_string</a></h6>
+          <div class="docblock">
+            <p>Builds the user interface described by <code>string</code> (in the
+[GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]&nbsp;format).</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="methods">
+        Instance methods
+        <a href="class.Builder.html#methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="method.Builder.add_callback_symbol.html">gtk_builder_add_callback_symbol</a></h6>
+          <div class="docblock">
+            <p>Adds the <code>callback_symbol</code> to the scope of <code>builder</code> under the given <code>callback_name</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_callback_symbols.html">gtk_builder_add_callback_symbols</a></h6>
+          <div class="docblock">
+            <p>A convenience function to add many callbacks instead of calling
+<code>gtk_builder_add_callback_symbol()</code> for each&nbsp;symbol.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_from_file.html">gtk_builder_add_from_file</a></h6>
+          <div class="docblock">
+            <p>Parses a file containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+and merges it with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_from_resource.html">gtk_builder_add_from_resource</a></h6>
+          <div class="docblock">
+            <p>Parses a resource file containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+and merges it with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_from_string.html">gtk_builder_add_from_string</a></h6>
+          <div class="docblock">
+            <p>Parses a string containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+and merges it with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_objects_from_file.html">gtk_builder_add_objects_from_file</a></h6>
+          <div class="docblock">
+            <p>Parses a file containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+building only the requested objects and merges
+them with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_objects_from_resource.html">gtk_builder_add_objects_from_resource</a></h6>
+          <div class="docblock">
+            <p>Parses a resource file containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+building only the requested objects and merges
+them with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.4</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.add_objects_from_string.html">gtk_builder_add_objects_from_string</a></h6>
+          <div class="docblock">
+            <p>Parses a string containing a [GtkBuilder <span class="caps">UI</span> definition][<span class="caps">BUILDER</span>-<span class="caps">UI</span>]
+building only the requested objects and merges
+them with the current contents of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.14</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.connect_signals.html">gtk_builder_connect_signals</a></h6>
+          <div class="docblock">
+            <p>This method is a simpler variation of gtk_builder_connect_signals_full().
+It uses symbols explicitly added to <code>builder</code> with prior calls to
+gtk_builder_add_callback_symbol(). In the case that symbols are not
+explicitly added; it uses <code>GModule</code>’s introspective features (by opening the module <code>NULL</code>)
+to look at the application’s symbol table. From here it tries to match
+the signal handler names given in the interface description with
+symbols in the application and connects the signals. Note that this
+function can only be called once, subsequent calls will do&nbsp;nothing.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.connect_signals_full.html">gtk_builder_connect_signals_full</a></h6>
+          <div class="docblock">
+            <p>This function can be thought of the interpreted language binding
+version of gtk_builder_connect_signals(), except that it does not
+require GModule to function&nbsp;correctly.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.expose_object.html">gtk_builder_expose_object</a></h6>
+          <div class="docblock">
+            <p>Add <code>object</code> to the <code>builder</code> object pool so it can be referenced just like any
+other object built by&nbsp;builder.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.8</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.extend_with_template.html">gtk_builder_extend_with_template</a></h6>
+          <div class="docblock">
+            <p>Main private entry point for building composite container
+components from template <span class="caps">XML</span>.</p>
+          </div>
+          <div class="docblock">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.get_application.html">gtk_builder_get_application</a></h6>
+          <div class="docblock">
+            <p>Gets the <code>GtkApplication</code> associated with the&nbsp;builder.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.get_object.html">gtk_builder_get_object</a></h6>
+          <div class="docblock">
+            <p>Gets the object named <code>name</code>. Note that this function does not
+increment the reference count of the returned&nbsp;object.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.get_objects.html">gtk_builder_get_objects</a></h6>
+          <div class="docblock">
+            <p>Gets all objects that have been constructed by <code>builder</code>. Note that
+this function does not increment the reference counts of the returned&nbsp;objects.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.get_translation_domain.html">gtk_builder_get_translation_domain</a></h6>
+          <div class="docblock">
+            <p>Gets the translation domain of <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.get_type_from_name.html">gtk_builder_get_type_from_name</a></h6>
+          <div class="docblock">
+            <p>Looks up a type by name, using the virtual function that
+<code>GtkBuilder</code> has for that purpose. This is mainly used when
+implementing the <code>GtkBuildable</code> interface on a&nbsp;type.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.lookup_callback_symbol.html">gtk_builder_lookup_callback_symbol</a></h6>
+          <div class="docblock">
+            <p>Fetches a symbol previously added to <code>builder</code>
+with&nbsp;gtk_builder_add_callback_symbols().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.set_application.html">gtk_builder_set_application</a></h6>
+          <div class="docblock">
+            <p>Sets the application associated with <code>builder</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 3.10</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.set_translation_domain.html">gtk_builder_set_translation_domain</a></h6>
+          <div class="docblock">
+            <p>Sets the translation domain of <code>builder</code>.
+See <code>GtkBuilder:translation-domain</code>.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.value_from_string.html">gtk_builder_value_from_string</a></h6>
+          <div class="docblock">
+            <p>This function demarshals a value from a string. This function
+calls <code>g_value_init()</code> on the <code>value</code> argument, so it need not be
+initialised&nbsp;beforehand.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+        <div class="">
+          <h6><a href="method.Builder.value_from_string_type.html">gtk_builder_value_from_string_type</a></h6>
+          <div class="docblock">
+            <p>Like gtk_builder_value_from_string(), this function demarshals
+a value from a string, but takes a <code>GType</code> instead of <code>GParamSpec</code>.
+This function calls <code>g_value_init()</code> on the <code>value</code> argument, so it
+need not be initialised&nbsp;beforehand.</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+      </div>
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-methods"><h5 style="display:block;">Methods inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (43)</h5>
+          <div class="docblock">
+          
+            <div class="docblock">
+              <p>Please see&nbsp;<a class="external" href="javascript:void(0)" data-link="class.Object.html#methods" data-namespace="GObject">GObject</a>&nbsp;for a full list of methods.</em></p>
+            </div>
+          
+          </div>
+        </div>
+        
+      
+
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper properties">
+      <h4 id="properties">
+        Properties
+        <a href="class.Builder.html#properties" class="anchor"></a>
+      </h4>
+
+      
+      <div class="docblock">
+      
+        <div class="">
+          <h6><a href="property.Builder.translation-domain.html">Gtk.Builder:translation-domain</a></h6>
+          <div class="docblock">
+            <p>The translation domain used when translating property values that
+have been marked as translatable in interface descriptions.
+If the translation domain is <code>NULL</code>, <code>GtkBuilder</code> uses gettext(),
+otherwise&nbsp;g_dgettext().</p>
+          </div>
+          <div class="docblock">
+            <p><span class="emblem available">since: 2.12</span></p>
+          </div>
+        </div>
+      
+      </div>
+      
+
+      
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="signals toggle-wrapper">
+      <h4 id="signals">
+        Signals
+        <a href="class.Builder.html#signals" class="anchor"></a>
+      </h4>
+
+      
+
+      
+        
+        <div class="toggle-wrapper default-hide ancestor-signals"><h5 style="display:block;">Signals inherited from <a class="external" href="javascript:void(0)" data-link="class.Object.html" data-namespace="GObject">GObject</a> (1)</h5>
+          <div class="docblock">
+          <h6><a class="external" href="javascript:void(0)" data-namespace="GObject" data-link="signal.Object.notify.html">GObject::notify</a></h6>
+            <div class="docblock">
+              <p>The notify signal is emitted on an object when one of its properties has
+its value set through g_object_set_property(), g_object_set(), et&nbsp;al.</p>
+            </div>
+          </div>
+        </div>
+        
+      
+
+      
+
+    </div>
+    
+
+    
+    <div class="class toggle-wrapper default-hide">
+      <h4 id="class-struct">
+        Class structure
+        <a href="class.Builder.html#class-struct" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+        <pre><code>struct GtkBuilderClass {
+  GObjectClass parent_class;
+  GType (* get_type_from_name) (
+    GtkBuilder* builder,
+    const char* type_name
+  );
+  void (* _gtk_reserved1) (
+void
+  );
+  void (* _gtk_reserved2) (
+void
+  );
+  void (* _gtk_reserved3) (
+void
+  );
+  void (* _gtk_reserved4) (
+void
+  );
+  void (* _gtk_reserved5) (
+void
+  );
+  void (* _gtk_reserved6) (
+void
+  );
+  void (* _gtk_reserved7) (
+void
+  );
+  void (* _gtk_reserved8) (
+void
+  );
+  
+}</code></pre>
+      </div>
+
+      <div class="docblock">
+        <p>No description available.</p>
+      </div>
+
+      
+      <div class="docblock">
+        <h6>Class members</h6>
+
+        <dl class="members">
+        
+          <dt><code>parent_class: GObjectClass</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>get_type_from_name: GType (* get_type_from_name) (
+    GtkBuilder* builder,
+    const char* type_name
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved1: void (* _gtk_reserved1) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved2: void (* _gtk_reserved2) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved3: void (* _gtk_reserved3) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved4: void (* _gtk_reserved4) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved5: void (* _gtk_reserved5) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved6: void (* _gtk_reserved6) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved7: void (* _gtk_reserved7) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+          <dt><code>_gtk_reserved8: void (* _gtk_reserved8) (
+void
+  )</code></dt>
+          <dd><p>No description available.</p></dd>
+        
+        </dd>
+      </div>
+      
+    </div>
+    
+
+    
+    <div class="toggle-wrapper methods">
+      <h4 id="virtual-methods">
+        Virtual methods
+        <a href="class.Builder.html#virtual-methods" class="anchor"></a>
+      </h4>
+
+      <div class="docblock">
+      
+      <div class="">
+        <h6 id="vfunc-get_type_from_name"><a href="vfunc.Builder.get_type_from_name.html">Gtk.BuilderClass.get_type_from_name</a></h6>
+        <div class="docblock">
+          <p>Looks up a type by name, using the virtual function that
+<code>GtkBuilder</code> has for that purpose. This is mainly used when
+implementing the <code>GtkBuildable</code> interface on a&nbsp;type.</p>
+        </div>
+        <div class="docblock">
+          <p><span class="emblem available">since: 2.12</span></p>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+
+    
+
+  </section>
+</section>
+
+
+    
+<div id="toc" class="toc">
+  <nav aria-labelledby="toc-title">
+    <p id="toc-title">Content</p>
+    <ul class="toc-list">
+      <li class="toc-list-item"><a href="class.Builder.html#description"><span class="link-text">Description</span></a></li>
+      
+      <ul class="toc-list">
+      
+      
+        <li class="toc-list-item"><a href="class.Builder.html#gtkbuilder-ui-definitions-builder-ui"><span class="link-text">GtkBuilder UI Definitions # {BUILDER-UI}</span></a></li>
+      
+        <li class="toc-list-item"><a href="class.Builder.html#a-gtkbuilder-ui-definition"><span class="link-text">A GtkBuilder UI Definition</span></a></li>
+      
+      
+      </ul>
+      
+      
+      <li class="toc-list-item"><a href="class.Builder.html#hierarchy"><span class="link-text">Hierarchy</span></a></li>
+      
+      
+      <li class="toc-list-item"><a href="class.Builder.html#ancestors"><span class="link-text">Ancestors</span></a></li>
+      
+      
+      
+<li class="toc-list-item"><a href="class.Builder.html#constructors"><span class="link-text">Constructors</span></a></li>
+
+
+      
+
+      
+<li class="toc-list-item"><a href="class.Builder.html#methods"><span class="link-text">Methods</span></a></li>
+
+
+      
+<li class="toc-list-item"><a href="class.Builder.html#properties"><span class="link-text">Properties</span></a></li>
+
+
+      
+
+      
+
+      
+<li class="toc-list-item"><a href="class.Builder.html#virtual-methods"><span class="link-text">Virtual methods</span></a></li>
+
+
+    </ul>
+  </nav>
+</div>
+
+
+    <section id="search" class="content hidden"></section>
+
+    <footer>
+    
+    </footer>
+  </div>
+</body>
+</html>
