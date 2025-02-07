@@ -1,3 +1,0 @@
-# Starting App...
-
-wget -r -np -k -p -E -nH --cut-dirs=1 https://docs.gtk.org/gtk3/
