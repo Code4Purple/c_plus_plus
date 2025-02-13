@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Update the package database
-sudo pacman -Sy
+#sudo pacman -Sy
 
 # Install Firefox
 sudo pacman -S --noconfirm firefox
