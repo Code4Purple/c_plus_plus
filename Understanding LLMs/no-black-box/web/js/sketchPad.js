@@ -28,7 +28,8 @@ class SketchPad{
         this.canvas.onmousemove=(evt)=>{
             if(this.isDrawing){
                 const mouse = this.#getMouse(evt);
-                this.path=[mouse];
+                //this.path=[mouse];
+                this.path.push(mouse);
                 console.log(this.path.length);
                 this.#redraw();
             }
