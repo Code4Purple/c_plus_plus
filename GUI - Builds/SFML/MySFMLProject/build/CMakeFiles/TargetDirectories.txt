@@ -1,0 +1,3 @@
+/home/kowalski/Desktop/c_plus_plus/GUI - Builds/SFML/MySFMLProject/build/CMakeFiles/MySFMLProject.dir
+/home/kowalski/Desktop/c_plus_plus/GUI - Builds/SFML/MySFMLProject/build/CMakeFiles/edit_cache.dir
+/home/kowalski/Desktop/c_plus_plus/GUI - Builds/SFML/MySFMLProject/build/CMakeFiles/rebuild_cache.dir
