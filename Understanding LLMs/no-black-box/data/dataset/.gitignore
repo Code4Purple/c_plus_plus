@@ -6,4 +6,4 @@
 *.json
 
 # Ignore the samples.json file in the data/dataset directory
-!samples.json
+samples.json
