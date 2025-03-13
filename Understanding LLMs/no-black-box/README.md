@@ -6,6 +6,15 @@ Java Script	-- n/a
 Node.js 	-- version : v23.9.0
 npm install canvas - node-canvas
 
+-------------------------------------------------------
+
+		Create these folders
+
+		mkdir common/js_objects
+		mkdir data/dataset/img
+		mkdir data/dataset/img
+
+
 
 --------------------------------------------------------
 
@@ -15,3 +24,4 @@ npm install canvas - node-canvas
 		2. 
 
 --------------------------------------------------------
+
