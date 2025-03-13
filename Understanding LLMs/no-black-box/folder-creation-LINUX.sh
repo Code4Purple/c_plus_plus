@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sleep3
+sleep 3
 mkdir common/js_objects
 sleep 3
 mkdir data/dataset/img
