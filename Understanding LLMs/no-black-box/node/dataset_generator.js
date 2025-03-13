@@ -1,13 +1,11 @@
 const draw = require('../common/draw.js');
+const constants = require('../common/constants.js');
 
-const constants ={};
+const {createCanvas} = require('canvas');
+const canvas = createCanvas(400,400);
+const ctx = canvas.getContext('2d');
 
-constants.DATA_DIR="../data";
-constants.RAW_DIR=constants.DATA_DIR+"/raw";
-constants.DATASET_DIR=constants.DATA_DIR+"/dataset";
-constants.JSON_DIR=constants.DATASET_DIR+"/json";
-constants.IMG_DIR=constants.DATASET_DIR+"/img";
-constants.SAMPLES=constants.DATASET_DIR+"/samples.jscon";
+// Moved all the constants to a separate file
 
 const fs=require('fs');
 
@@ -52,6 +50,7 @@ fs.writeFileSync (constants.SAMPLES,
 );
 
 function generateImage (outFile, paths){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
     draw.paths(ctx, paths);
 
     const buffer = canvas.toBuffer('image/png');
