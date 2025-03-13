@@ -1,5 +1,6 @@
 const draw = require('../common/draw.js');
 const constants = require('../common/constants.js');
+const utils = require('../common/utils.js');
 
 const {createCanvas} = require('canvas');
 const canvas = createCanvas(400,400);
@@ -38,8 +39,8 @@ fileNames.forEach(fn => {
             drawings[label]
         );
 
-
-
+        // print progress
+        utils.printProgress(id, fileNames.length*8);
         id++;
     }
 });
