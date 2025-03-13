@@ -2,4 +2,5 @@
 *.png
 
 # Ignore all the .json files in the data/dataset directory
-data/dataset/*.json
+#data/dataset/*.json
+*.json
