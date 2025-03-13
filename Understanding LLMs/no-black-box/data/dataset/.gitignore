@@ -4,3 +4,6 @@
 # Ignore all the .json files in the data/dataset directory
 #data/dataset/*.json
 *.json
+
+# Ignore the samples.json file in the data/dataset directory
+!samples.json
