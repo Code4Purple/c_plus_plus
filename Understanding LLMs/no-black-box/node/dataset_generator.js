@@ -50,6 +50,13 @@ fs.writeFileSync (constants.SAMPLES,
     JSON.stringify(samples)
 );
 
+// sample.js generation
+fs.writeFileSync(constants.SAMPLES_JS,
+    "const samples="+JSON.stringify(samples)+";"
+    
+);
+
+// img files creation
 function generateImage (outFile, paths){
     ctx.clearRect(0,0,canvas.width,canvas.height);
     draw.paths(ctx, paths);

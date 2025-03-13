@@ -7,3 +7,6 @@
 
 # Ignore the samples.json file in the data/dataset directory
 samples.json
+
+# Ignore the samples.js fiile in the common/js_objects directory
+../common/js_objects/samples.js
