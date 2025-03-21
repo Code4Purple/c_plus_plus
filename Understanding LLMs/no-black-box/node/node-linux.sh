@@ -79,6 +79,7 @@ while [ $value -lt 10 ]; do
         sleep 2
 
         cd ../ || exit
+        ls
         echo "Starting the data_generator.js file..."
         node node/data_generator.js
         echo " "
