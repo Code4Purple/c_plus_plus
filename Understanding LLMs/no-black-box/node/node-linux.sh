@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Back-End Windows UI- Version 1"
+echo "Back-End Linux UI- Version 1"
 sleep 2
 
 value=0
@@ -80,7 +80,7 @@ while [ $value -lt 10 ]; do
 
         cd ../node || exit
         echo "Starting the data_generator.js file..."
-        node data_generator.js
+        node ../data/dataset/data_generator.js
         echo " "
         node feature_extractor.js
         echo " "
