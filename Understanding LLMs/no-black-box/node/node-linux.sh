@@ -36,6 +36,7 @@ while [ $value -lt 10 ]; do
         rm -rf img
         echo "REMOVED THE JSON FOLDER"
         rm -rf json
+        echo "REMOVED THE SAMPLE.JSON FILE"0
         rm -f sample.json
         echo "REMOVED THE FEATURES.JSON FILE"
         rm -f features.json

@@ -40,11 +40,11 @@ if %input%==1 (
     echo "Removing the data within the dataset folder..."
     cd ../data/dataset
     echo "REMOVED THE IMG FOLDER"
-    rmdir img
+    rmdir /s /q "img"
     echo "REMOVED THE JSON FOLDER"
-    rmdir img /s /q
+    rmdir /s /q "json"
     timeout /t 2 /nobreak >nul
-    rmdir json /s /q
+    echo "REMOVED THE SAMPLE.JSON FILE"
     del sample.json
     echo "REMVOED THE FEATURES.JSON FILE"
     del features.json
@@ -54,9 +54,10 @@ if %input%==1 (
 
     cd ../../common
     echo "REMOVED THE JS_OBJECTS FOLDER"
-    rmdir js_objects
+    rmdir /s /q "js_objects"
     timeout /t 2 /nobreak >nul
 
+    echo " "
     echo "DATA RESET TO ZERO"
     timeout /t 2 /nobreak >nul
     echo " "
@@ -97,5 +98,6 @@ if %input%==3 (
     node feature_extractor.js
     echo " "
     echo "DATA STRUCTURE BUILD COMPLETE With Full Data"
+    echo " "
     goto while_loop
 )
