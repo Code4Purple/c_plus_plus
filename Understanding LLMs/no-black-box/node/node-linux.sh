@@ -78,10 +78,11 @@ while [ $value -lt 10 ]; do
         mkdir -p js_objects
         sleep 2
 
-        cd ../node || exit
+        cd ../ || exit
         echo "Starting the data_generator.js file..."
-        node ../node/data_generator.js
+        node node/data_generator.js
         echo " "
+        cd node || exit
         node feature_extractor.js
         echo " "
         echo "DATA STRUCTURE BUILD COMPLETE With Full Data"
