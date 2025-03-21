@@ -8,6 +8,6 @@
 samples.json
 
 # Ignore the samples.js file in the common/js_objects directory
-/common/js_objects/samples.js
+#/common/js_objects/samples.js
 /common/js_objects
 
