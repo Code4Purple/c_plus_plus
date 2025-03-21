@@ -45,7 +45,7 @@ if %input%==1 (
     rmdir /s /q "json"
     timeout /t 2 /nobreak >nul
     echo "REMOVED THE SAMPLE.JSON FILE"
-    del sample.json
+    del samples.json
     echo "REMVOED THE FEATURES.JSON FILE"
     del features.json
     echo " "
