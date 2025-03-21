@@ -80,7 +80,7 @@ while [ $value -lt 10 ]; do
 
         cd ../node || exit
         echo "Starting the data_generator.js file..."
-        node ../data/dataset/data_generator.js
+        node ../node/data_generator.js
         echo " "
         node feature_extractor.js
         echo " "
