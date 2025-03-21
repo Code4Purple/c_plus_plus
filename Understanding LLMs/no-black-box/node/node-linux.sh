@@ -81,11 +81,12 @@ while [ $value -lt 10 ]; do
         cd ../ || exit
         echo "Starting the data_generator.js file..."
         cd node || exit
-        node data_generator.js
+        node dataset_generator.js
         echo " "
         #cd node || exit
         node feature_extractor.js
         echo " "
         echo "DATA STRUCTURE BUILD COMPLETE With Full Data"
+        echo " "
     fi
 done

@@ -92,7 +92,7 @@ if %input%==3 (
     
     echo "Starting the data_generator.js file..."
     cd ../node
-    node data_generator.js
+    node dataset_generator.js
     echo " "
     node feature_extractor.js
     echo " "
