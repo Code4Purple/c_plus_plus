@@ -46,6 +46,12 @@ codes.remove("10-91")
 
 if len(codes) == 66:
     print("Ten Codes -- Passed")
+    # Writing the codes array to a file
+    with open("tenCodes-CODES.txt", "w") as file:
+        for code in codes:
+            file.write(code + "\n")
+
+
 
 meanings = []
 meanings.append("Receiving poorly")
