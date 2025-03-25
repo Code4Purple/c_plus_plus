@@ -1,4 +1,4 @@
-bookmark :	https://youtu.be/vDDjtwQDw2k?t=7301
+bookmark :	https://youtu.be/vDDjtwQDw2k?t=7526
 
 -------------------------------------------------------
 
