@@ -1,0 +1,66 @@
+Receiving Pooply
+Receiving Well
+Administrative Assginment
+Acknowledgement / OK
+Out of Service
+In Service
+Repeat
+Consider Suspect Dangerous
+Escort / Convoy
+Community Policing
+Transport Prisoner / Subj
+Locations
+Check Registration / Stolen Only
+Check Warrants / Records
+DUI Test Required
+Mentally Ill Person
+Send Backup (Emergency?)
+Supsicous Person
+Domestic Disturbance
+Intoxicated Person
+Want OFC for Inv / Asst
+Disorderly Person
+MVA - Property Damage
+MVA - Personal Injury
+Ambulance Request
+Wrecker Request
+VHI Blocking Right of Way
+Theft
+Stabbing 
+Shooting 
+Hold Up / Robbery
+Person with a Weapon
+Fight / Assualt
+Prowler
+Person Indectly Exposed
+Blood Run
+Fire Call
+Person Screaming 
+Suicidal Person
+DOA (Death On Arrival)
+Dangerous / Injured Animal
+Bomb Threat
+Rape
+Kidnapping
+Residential Burglary
+Non Residential Burglary
+Item / VHI Stolen
+Hazardous Liquid / Gas Leak
+Missing Person
+Gang Activity
+Criminal Vice Activity
+Occult Activity
+Child Abuse
+Shots Fired
+Prisoner Escape
+Safety Hazard
+911 Hangup
+Drowning
+Fixed Post
+Traffic Violation
+Personal Relief
+Meal Break
+Business Check
+On the Scene
+Give Complaint Number / Assignment Done
+Give Complaint Number / Leave on Call 
