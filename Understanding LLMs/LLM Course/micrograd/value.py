@@ -24,6 +24,10 @@ a= Value(2.0)
 b = Value(-3.0)
 c = Value(10.0)
 d = a * b + c
+d2 = a * b
+
+
 print(d)       #  Value(data=4.0)
 print(d._prev) # {Value(data=10.0), Value(data=-6.0)}
 print(d._op)   # +
+
