@@ -19,10 +19,10 @@ int main() {
 
         // Integers (Whole Number)
         int age = 21;
-        int x = 7.5; // this will display : 7 not 7.5
+        int z = 7.5; // this will display : 7 not 7.5
 
         // double (number including decimal)
-        double price = x;   // this will display the 7.5 data
+        double price = z;   // this will display the 7.5 data
 
         // single character
         char grade = 'A';
