@@ -1,4 +1,16 @@
 #include <iostream>
+#include <vector>
+
+// basic example of a vector and what typedef is used for 
+//typedef std::vector<std::pair<std::string, int>> pairlist_t; 
+// the name_t to show the nickname and shows the code that it is a typedef
+
+typedef std::string text_t;
+typedef int number_t;
+
+// might also see the following
+using text_t = std::string;
+using number_t = int;
 
 int main(){
 
@@ -8,7 +20,9 @@ int main(){
         helps with readability and reduces typos.
     */
 
-    // Bookmark : https://youtu.be/-TkoO8Z07hI?list=PLmZlEEZLifKuSr0hrFgx2KrWz2d7xJs5P&t=1933
+    text_t firstName = "Bro";
+    std::cout << firstName << std::endl;
+    
 
     return 0;
 }
