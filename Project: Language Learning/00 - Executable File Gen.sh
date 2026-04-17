@@ -14,6 +14,7 @@ g++ -o "06 - Arithmetic Operators.exe" "06 - Arithmetic Operators.cpp"
 g++ -o "07 - Type conversion.exe" "07 - Type conversion.cpp"
 g++ -o "08 - User input.exe" "08 - User input.cpp" 
 g++ -o "09 - Useful math related functions.exe" "09 - Useful math related functions.cpp"
+g++ -o "10 - Hypotenuse calculator practice program.exe" "10 - Hypotenuse calculator practice program.cpp" 
 
 for FILE in *.exe; do
     echo ".EXE File Created: $FILE"
