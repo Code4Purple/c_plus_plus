@@ -7,9 +7,11 @@ int main(){
     double y = 4;
     double z;
 
-    z = std::max(x,y); 
+    // min / max deosnt need the <cmath> but the others do
+    
+    z = std::max(x,y); // max value of the two variables
     std::cout << "Max: " << z << '\n';
-    z = std::min(x,y);
+    z = std::min(x,y); // min value of the two variables
     std::cout << "Min: " << z << '\n';
 
     z = pow(2,3); // 2 to the power of 3
