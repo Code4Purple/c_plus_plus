@@ -1,24 +1,47 @@
 #!/bin/bash
 
+# 1. Define the list of files to compile
+files=(
+    "01 - Hello World"
+    "02 - Variables & Basic Data Types"
+    "03 - Const Keyword"
+    "04 - Namespaces"
+    "05 - Typedef & type aliases"
+    "06 - Arithmetic Operators"
+    "07 - Type conversion"
+    "08 - User input"
+    "09 - Useful math related functions"
+    "10 - Hypotenuse calculator practice program"
+    "11 - If statements"
+    "12 - Switches"
+    "13 - Console calculator program"
+    "14 - Ternary operator"
+    "15 - Logical operators"
+    "16 - Temperature conversion program"
+)
 
-# Just add the new completed chapter to the list below to auto all the chapters exe creation
+# 2. Get the total count for the progress tracker
+total=${#files[@]}
+current=0
 
-rm -r *.exe
-
-g++ -o "01 - Hello World".exe "01 - Hello World".cpp
-g++ -o "02 - Variables & Basic Data Types".exe "02 - Variables & Basic Data Types".cpp
-g++ -o "03 - Const Keyword".exe "03 - Const Keyword".cpp
-g++ -o "04 - Namespaces".exe "04 - Namespaces".cpp
-g++ -o "05 - Typedef & type aliases".exe "05 - Typedef & type aliases".cpp
-g++ -o "06 - Arithmetic Operators.exe" "06 - Arithmetic Operators.cpp" 
-g++ -o "07 - Type conversion.exe" "07 - Type conversion.cpp"
-g++ -o "08 - User input.exe" "08 - User input.cpp" 
-g++ -o "09 - Useful math related functions.exe" "09 - Useful math related functions.cpp"
-g++ -o "10 - Hypotenuse calculator practice program.exe" "10 - Hypotenuse calculator practice program.cpp" 
-g++ -o "11 - If statements.exe" "11 - If statements.cpp" 
-g++ -o "12 - Switches.exe" "12 - Switches.cpp" 
-
-for FILE in *.exe; do
-    echo ".EXE File Created: $FILE"
-    sleep 5
+# 3. Loop through the list, compile, and print progress
+for name in "${files[@]}"; do
+    ((current++))
+    
+    echo "[$current/$total] Compiling: $name.cpp..."
+    
+    # Run the compilation command
+    g++ -o "$name.exe" "$name.cpp"
+    
+    # Check if the compilation succeeded before printing
+    if [ $? -eq 0 ]; then
+        echo "   -> Success! Created: $name.exe"
+    else
+        echo "   -> ERROR: Failed to compile $name.cpp"
+    fi
+    
+    echo "----------------------------------------"
+    sleep 1
 done
+
+echo "All compilation tasks completed."
