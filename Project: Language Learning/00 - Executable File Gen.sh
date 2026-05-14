@@ -18,7 +18,7 @@ files=(
     "14 - Ternary operator"
     "15 - Logical operators"
     "16 - Temperature conversion program"
-    "17 - Useful string methods"
+    "17 - Useful string methods in C++"
 )
 
 # 2. Get the total count for the progress tracker

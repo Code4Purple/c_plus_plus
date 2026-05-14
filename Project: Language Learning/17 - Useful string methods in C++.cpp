@@ -3,8 +3,8 @@
 int main(){
 
     std::string name;
+    std::string name_bk;
     std::string last_name;
-    std::string full_name;
     std::cout << "Enter your first name: ";
     std::getline(std::cin,name);
     std::cout << "Enter you last name: ";
@@ -19,30 +19,30 @@ int main(){
         std::cout << "You didnt enter your name" << std::endl;;
     }
     else{
+        name_bk = name;
         std::cout << "Welcome " << name << std::endl;
-        name.clear() // clears the saved string variable name 
+        name.clear(); // clears the saved string variable name 
         std::cout << "Welcome " << name << std::endl;
     }
 
     // appends to the string's variable name
-    full_name.append(name);
-    full_name.append(" ");
-    full_name.append(last_name);
-    std::cout << full_name << std::endl;
-
+    
+    name_bk.append(" ");
+    name_bk.append(last_name);
+    std::cout << name_bk << std::endl;
     // find a char within the string
-    std::cout << name.at(0); // should be a B or b
+    std::cout << name_bk.at(0) << std::endl;; // should be a B or b
     
     // insert anything into the string at a locate within the string 
-    name.insert(0,"@");
-    std::cout << name << std::endl;
+    name_bk.insert(0,"@");
+    std::cout << name_bk << std::endl;
 
     // to find the 1st letter and/or space within the string
-    std::cout << full_name.find(" ") << std::endl;
+    std::cout << name_bk.find(" ") << std::endl;
 
     // this will remove from char zero to char 5 within the string 
-    full_name.erase(0,5);
-    std::cout << full_name << std::endl;
+    name_bk.erase(0,5);
+    std::cout << name_bk << std::endl;
         
     return 0;
 }
