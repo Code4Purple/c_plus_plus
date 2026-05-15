@@ -27,6 +27,7 @@ files=(
     "23 - Random number generator"
     "24 - Random event generator"
     "25 - Number guessing game"
+    "26 - User defined functions"
 
 )
 
