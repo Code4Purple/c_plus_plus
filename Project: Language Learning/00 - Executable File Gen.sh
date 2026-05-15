@@ -23,6 +23,9 @@ files=(
     "19 - Do while loops"
     "20 - For loops"
     "21 - Break & continue"
+    "22 - Nested Loops"
+    "23 - Random number generator"
+    "24 - Random event generator"
 
 )
 
