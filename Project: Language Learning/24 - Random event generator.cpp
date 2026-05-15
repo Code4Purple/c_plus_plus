@@ -4,7 +4,7 @@
 int main(){
 
     srand(time(0));
-    int random_number = ramd() % 5 + 1;
+    int random_number = rand() % 5 + 1;
 
     switch(random_number){
         case 1:
