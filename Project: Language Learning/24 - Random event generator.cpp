@@ -3,7 +3,7 @@
 
 int main(){
 
-    srand(time(0))
+    srand(time(0));
     int random_number = ramd() % 5 + 1;
 
     switch(random_number){
@@ -15,7 +15,7 @@ int main(){
             break;
         case 3:
             std::cout << "You win a free lunch!\n";
-            break
+            break;
         case 4: 
             std::cout << "You win a car!\n";
             break;
