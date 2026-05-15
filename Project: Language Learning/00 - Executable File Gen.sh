@@ -23,7 +23,7 @@ files=(
     "19 - Do while loops"
     "20 - For loops"
     "21 - Break & continue"
-    "22 - Nested Loops"
+    "22 - Nested loops"
     "23 - Random number generator"
     "24 - Random event generator"
     "25 - Number guessing game"
