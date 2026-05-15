@@ -16,8 +16,8 @@ int main(){
     int red_dice = (rand() % 6) + 1;
     int green_dice = (rand() % 6) + 1;
 
-    std::cout << "Blue Dice:  " << blue_dice << ', ';
-    std::cout << "Red Dice:   " << red_dice << ', ';
+    std::cout << "Blue Dice:  " << blue_dice << ", ";
+    std::cout << "Red Dice:   " << red_dice << ", " ;
     std::cout << "Green Dice: " << green_dice << std::endl;
 
     return 0;
