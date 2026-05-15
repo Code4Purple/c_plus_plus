@@ -19,6 +19,11 @@ files=(
     "15 - Logical operators"
     "16 - Temperature conversion program"
     "17 - Useful string methods in C++"
+    "18 - While loops"
+    "19 - Do while loops"
+    "20 - For loops"
+    "21 - Break & continue"
+
 )
 
 # 2. Get the total count for the progress tracker
