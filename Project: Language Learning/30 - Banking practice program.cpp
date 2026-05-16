@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <limits>
 
 double showBalance(double balance);
 double deposit();
@@ -23,8 +24,13 @@ int main(){
         std::cin >> choice;
         
         // keeps words from breaking the system
-        std::cin.clear();
-        fflush(stdin);
+        //std::cin.clear();
+        //fflush(stdin);
+
+        // No words just numbers
+        std::cin.clear(); // 1. Reset error flags
+        // 2. Discard everything currently in the buffer until the next newline
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         
         switch(choice){
             case 1: showBalance(balance);
@@ -38,8 +44,6 @@ int main(){
             case 4: std::cout << "Thanks for visiting!\n";
                 break;
             default: std::cout << "Invalid choice\n";
-                
-
         }
 
         
