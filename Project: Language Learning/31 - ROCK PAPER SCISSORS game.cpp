@@ -12,7 +12,8 @@ int main(){
 
     player = getUserChoice();
     std::cout << "player selected: ";
-    showChoice(player);    
+    showChoice(player); 
+    computer = getComputerChoice();
 
     return 0;
 }
@@ -38,7 +39,9 @@ char getUserChoice(){
 }
 
 char getComputerChoice(){
-    return 0;
+    char computer;
+    std::srand(time(nullptr));
+    int pcSelect = (std::rand() % 3) + 1;
 }
 
 void showChoice(char choice){
@@ -50,7 +53,7 @@ void showChoice(char choice){
         case 'p' : std::cout << "paper" << std::endl;
             break;
     }
-    return 0;
+
 }
 
 void chooseWinner(char player, char computer){
