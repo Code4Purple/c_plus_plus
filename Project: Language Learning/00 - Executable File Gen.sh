@@ -28,6 +28,9 @@ files=(
     "24 - Random event generator"
     "25 - Number guessing game"
     "26 - User defined functions"
+    "27 - Return keyword"
+    "28 - Overloaded functions"
+    
 
 )
 
