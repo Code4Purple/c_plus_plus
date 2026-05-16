@@ -31,6 +31,6 @@ void square(double length){
 }
 
 std::string concatStrings(std::string s1, std::string s2){
-        std::string full_name = s1 + " " + s2
+        std::string full_name = s1 + " " + s2;
         return full_name;
 }
