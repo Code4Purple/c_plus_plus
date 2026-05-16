@@ -30,7 +30,8 @@ files=(
     "26 - User defined functions"
     "27 - Return keyword"
     "28 - Overloaded functions"
-    
+    "29 - Variable scope"
+    "30 - Banking practice program"
 
 )
 
