@@ -32,7 +32,7 @@ files=(
     "28 - Overloaded functions"
     "29 - Variable scope"
     "30 - Banking practice program"
-
+    "31 - ROCK PAPER SCISSORS game"
 )
 
 # 2. Get the total count for the progress tracker

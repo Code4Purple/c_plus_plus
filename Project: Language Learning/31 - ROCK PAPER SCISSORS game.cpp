@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cctype> // required for std::tolower
+#include <ctime> // required for std::srand(time(0));
 
 char getUserChoice();
 char getComputerChoice();
@@ -14,6 +15,7 @@ int main(){
     std::cout << "player selected: ";
     showChoice(player); 
     computer = getComputerChoice();
+    chooseWinner(player,computer);
 
     return 0;
 }
@@ -40,7 +42,7 @@ char getUserChoice(){
 
 char getComputerChoice(){
     char computer;
-    std::srand(time(nullptr));
+    std::srand(time(0));
     int pcSelect = (std::rand() % 3) + 1;
     
     switch(pcSelect){
@@ -73,17 +75,42 @@ void showChoice(char choice){
 }
 
 void chooseWinner(char player, char computer){
-    if(player == computer){
-        std::cout << "Both of you TIED!" << std::endl;
-    }
-    else if(player == 'r' && computer == 's' || computer == 'r' && player == 's'){
-        std::cout << "Rock beats Scissors" << std::endl;
-        if(computer == 'r'){
-            std::cout << "Computer Wins!" << std::endl;
-        }
-        else{
-            std::cout << "Player Wins!" << std::endl;
-        }
-        
+
+    switch(player){
+        case 'r': 
+            if(computer == 'r'){
+                std::cout << "It is a Tie!\n";
+            }
+            else if(computer == 'p'){
+                std::cout << "You lose!\n";
+            }
+            else{
+                std::cout << "You win!\n";
+            }
+            break;
+
+        case 'p':
+            if(computer == 'p'){
+                std::cout << "It is a Tie!\n";
+            }
+            else if(computer == 's'){
+                std::cout << "You lose!\n";
+            }
+            else{
+                std::cout << "You win!\n";
+            }
+            break;
+
+        case 's':
+            if(computer == 'S'){
+                std::cout << "It is a Tie!\n";
+            }
+            else if(computer == 'r'){
+                std::cout << "You lose!\n";
+            }
+            else{
+                std::cout << "You win!\n";
+            }
+            break;
     }
 }
