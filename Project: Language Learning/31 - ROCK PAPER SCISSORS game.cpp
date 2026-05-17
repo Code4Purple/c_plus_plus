@@ -31,7 +31,7 @@ char getUserChoice(){
         std::cout << "player selection: ";
         std::cin >> player;
         // Convert and update the variable
-        player =  static_cast<char>(std::tolower(letter));
+        player =  static_cast<char>(std::tolower(player));
             
     }while(player != 'r' && player != 'p' && player != 's');
 
@@ -42,6 +42,22 @@ char getComputerChoice(){
     char computer;
     std::srand(time(nullptr));
     int pcSelect = (std::rand() % 3) + 1;
+    
+    switch(pcSelect){
+        case 1: 
+            computer = 'r';
+            break;
+        case 2: 
+            computer = 'p';
+            break;
+        case 3: 
+            computer = 's';
+            break;
+        default: std::cout << "ERROR: Computer pick FAILED" << std::endl;
+            break;
+    }
+
+    return computer;
 }
 
 void showChoice(char choice){
@@ -57,5 +73,17 @@ void showChoice(char choice){
 }
 
 void chooseWinner(char player, char computer){
-    return 0;
+    if(player == computer){
+        std::cout << "Both of you TIED!" << std::endl;
+    }
+    else if(player == 'r' && computer == 's' || computer == 'r' && player == 's'){
+        std::cout << "Rock beats Scissors" << std::endl;
+        if(computer == 'r'){
+            std::cout << "Computer Wins!" << std::endl;
+        }
+        else{
+            std::cout << "Player Wins!" << std::endl;
+        }
+        
+    }
 }
