@@ -30,15 +30,6 @@ int main(){
     std::cout << dogNames[1] << ", ";
     std::cout << dogNames[2] << '\n';
 
-    // 3rd way to do arrays
-    std::string carSize[3];
-    carSize[0] = "sedan";
-    carSize[1] = "suv";
-    carSize[2] = "truck";
-
-    std::cout << "Car Size (Array 3)" << "\n";
-    std::cout << carSize[0] << ", ";
-    std::cout << carSize[1] << ", ";
-    std::cout << carSize[2] << '\n';
+   
     return 0;
 }
