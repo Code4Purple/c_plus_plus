@@ -33,8 +33,9 @@ files=(
     "29 - Variable scope"
     "30 - Banking practice program"
     "31 - ROCK PAPER SCISSORS game"
-    "Arra
-
+    "32 - Arrays"
+    "33 - Sizeof() operator"
+    "34 - Iterate over an array"
 )
 
 # 2. Get the total count for the progress tracker
