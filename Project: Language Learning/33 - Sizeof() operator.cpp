@@ -7,7 +7,11 @@ int main(){
                     variable, data type, class, ohjects, etc.
     */
 
-    
+    double gpa = 2.5;
+    std::cout << sizeof(gpa) << " bytes\n":
+
+    std::string name = "Bruce";
+    std::cout << sizeof(name) << " bytes\n";
 
     return 0;
 }
