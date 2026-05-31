@@ -6,8 +6,14 @@ int main(){
                         iterable data set
     */
 
+    std::string heros[] = {"Ben 10","Batman","Superman","The Flash"};
+
+    // You can add mpre to the array and the for loop with print until the end of the array itself 
+    for(std::string heros : heros){
+        std::cout << heros << '\n';
+    }
+    
     return 0;
 }
 
 
-// https://youtu.be/-TkoO8Z07hI?t=11153
