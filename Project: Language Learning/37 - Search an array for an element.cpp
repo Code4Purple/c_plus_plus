@@ -44,4 +44,5 @@ int searchArray(int array[], int size, int element){
     }
     return -1;
 
+    // bookmark : https://youtu.be/-TkoO8Z07hI?t=12040
 }
