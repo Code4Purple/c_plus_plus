@@ -22,13 +22,15 @@ int main(){
     //index = searchArray(numbers, size, myNum);
     index = searchArray(heros,size,myString);
     
-    if(index != -1){
+    /*if(index != -1){
         //std::cout << myNum << " is at index " << index;
         std::cout << myString << " is at index " << index;
     }
     else {
         std::cout << myString << " is not in the array";
-    }
+    }*/
+
+    
 
     return 0;
 }
