@@ -7,16 +7,17 @@ int main(){
     int array[] = {10,1,3,6,2,4,5,9,8,7};
     int size = sizeof(array)/sizeof(array[0]);
 
-    std::cout << "Unsorted Array :";
+    
+    std::cout << "Unsorted Array       : ";
     for(int i = 0; i < size; i++){
-        std::cout << i << " ";
+        std::cout << array[i] << " ";
     }
 
-    //sort(array,size);
+    sort(array,size);
 
-    std::cout << "\nBubble Sorted Array: ";
+    std::cout << "\nBubble Sorted Array  : ";
     for(int i = 0; i < size; i++){
-        std::cout << i << " ";
+        std::cout << array[i] << " ";
     }
 
     return 0;
