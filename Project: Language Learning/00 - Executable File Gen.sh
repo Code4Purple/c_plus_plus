@@ -36,6 +36,9 @@ files=(
     "32 - Arrays"
     "33 - Sizeof() operator"
     "34 - Iterate over an array"
+    "35 - Foreach loop"
+    "36 - Pass array to a function"
+    "37 - Search an array for an element"
 )
 
 # 2. Get the total count for the progress tracker

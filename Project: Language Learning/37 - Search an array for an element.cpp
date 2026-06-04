@@ -1,6 +1,7 @@
 #include <iostream>
 
-int searchArray(int array[], int size, int element);
+//int searchArray(int array[], int size, int element);
+int searchArray(std::string array[], int size, std::string element);
 
 int main(){
 
@@ -17,32 +18,41 @@ int main(){
     
     std::cout << "Enter element to search for: ";
     //std::cin >> myNum;
-    std::cin >> myString; 
+    getline(std::cin, myString);
     
     //index = searchArray(numbers, size, myNum);
     index = searchArray(heros,size,myString);
     
-    /*if(index != -1){
+    if(index != -1){
         //std::cout << myNum << " is at index " << index;
-        std::cout << myString << " is at index " << index;
+        std::cout << myString << " is at index " << index << std::endl;
     }
     else {
-        std::cout << myString << " is not in the array";
-    }*/
+        std::cout << myString << " is not in the array" << std::endl;
+    }
 
     
 
     return 0;
 }
 
-int searchArray(int array[], int size, int element){
+/*int searchArray(int array[], int size, int element){
 
     for(int i = 0; i < size; i++){
         if(array[i] == element){
             return i;
         }
     }
-    return -1;
+    return -1; */
+
+int searchArray(std::string array[], int size, std::string element){
+
+    for(int i = 0; i < size; i++){
+        if(array[i] == element){
+            return i;
+        }
+    }
+    return -1; 
 
     // bookmark : https://youtu.be/-TkoO8Z07hI?t=12040
 }

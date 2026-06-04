@@ -1,21 +1,22 @@
 #include <iostream>
 
-double getTotal(double prices[]);
+double getTotal(double price[],int size);
 
 int main(){
 
     double prices[] = {49.49, 15.05, 75, 9.99};
-    double total = getTotal(prices);
-    std::cout << "$" << total;
+    int size = sizeof(prices)/sizeof(prices[0]);
+    double total = getTotal(prices, size);
+    std::cout << "$" << total << std::endl;
 
     return 0;
 }
 
-double getTotal(double prices[]){
+double getTotal(double price[],int size){
     double sum = 0;
 
-    for(int i = 0; i < sizeof(prices)/sizeof(prices[0]); i++){
-        sum += prices[i];
+    for(int i = 0; i < size; i++){
+        sum += price[i];
     }
 
     return sum;
