@@ -54,5 +54,5 @@ int searchArray(std::string array[], int size, std::string element){
     }
     return -1; 
 
-    // bookmark : https://youtu.be/-TkoO8Z07hI?t=12040
+    
 }
