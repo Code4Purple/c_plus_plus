@@ -11,13 +11,13 @@ int main(){
                                 {"A. C", "B. C+", "C. C--","D. B++"},
                                 {"A. yes", "B. no", "C. sometimes", "D. What's Earth?"}};
 
-    char answerKry[] = {'C', 'B', 'A','B'};
+    char answerKey[] = {'C', 'B', 'A','B'};
 
     int sizeQ = sizeof(questions)/sizeof(questions[0]);
     char guess;
     int score;
 
-    for(int i = 0; i < size; i++){
+    for(int i = 0; i < sizeQ; i++){
         std::cout << "***********************************\n";
         std::cout << questions[i] << '\n';
         std::cout << "***********************************\n";
@@ -26,7 +26,7 @@ int main(){
             std::cout << options[i][j] << '\n';
         }
         std::cin >> guess;
-        guess = toupper(guess)
+        guess = toupper(guess);
 
         if(guess == answerKey[i]){
             std::cout << "✅\n";
@@ -39,11 +39,11 @@ int main(){
     }
 
     std::cout << "***********************************\n";
-    std::cout << "*            FINAL SCORE            *";
+    std::cout << "*            FINAL SCORE          *\n";
     std::cout << "***********************************\n";
-    std::cout << "✅ Answers : " << score << '\n';
-    std::cout << "# of ❓    :" << size << '\n';
-    std::cout << "Score       : " << (score/(double)size)*100 << "%"; 
+    std::cout << "✅ Answers  : " << score << '\n';
+    std::cout << "# of ❓     : " << sizeQ << '\n';
+    std::cout << "Score       : " << (score/(double)sizeQ)*100 << "%\n"; 
     std::cout << "***********************************\n";
     
     return 0;
