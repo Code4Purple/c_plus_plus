@@ -13,7 +13,7 @@ int main(){
         }
     }
     
-    std::cout << "Your superheros team of 5 are..." << std::endl;
+    std::cout << "Your superheros team of 5 max are..." << std::endl;
     for (std::string hero : heros){
         if(hero == "q" ){
             break;
