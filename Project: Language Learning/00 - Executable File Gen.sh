@@ -39,6 +39,10 @@ files=(
     "35 - Foreach loop"
     "36 - Pass array to a function"
     "37 - Search an array for an element"
+    "38 - Sort an array"
+    "39 - Fill() function"
+    "40 - Fill an array with user input"
+    "41 - Multidimensional arrays"
 )
 
 # 2. Get the total count for the progress tracker

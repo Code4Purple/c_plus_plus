@@ -26,7 +26,7 @@ int main(){
 
     // The for loop() example 
     int rows = sizeof(heros)/sizeof(heros[0]);
-    int colums = sizeof(heros[0]/heros[0][0]);
+    int colums = sizeof(heros[0])/size(heros[0][0]);
 
     for(int i = 0; i < rows; i++){
        // std::cout << heros[i] << std::endl; // this will only give memory addresses only to the reference of the array
