@@ -44,6 +44,7 @@ files=(
     "40 - Fill an array with user input"
     "41 - Multidimensional arrays"
     "42 - QUIZ GAME"
+    "43 - Memory addresses"
 )
 
 # 2. Get the total count for the progress tracker
