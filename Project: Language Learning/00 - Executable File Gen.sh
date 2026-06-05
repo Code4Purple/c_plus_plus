@@ -45,6 +45,7 @@ files=(
     "41 - Multidimensional arrays"
     "42 - QUIZ GAME"
     "43 - Memory addresses"
+    "44 - Pass by VALUE vs pass by REFERENCE"
 )
 
 # 2. Get the total count for the progress tracker
