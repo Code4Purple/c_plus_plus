@@ -46,6 +46,23 @@ files=(
     "42 - QUIZ GAME"
     "43 - Memory addresses"
     "44 - Pass by VALUE vs pass by REFERENCE"
+    "45 - Const parameters"
+    #"46 - Credit card validator program"
+    #"47 - Pointers"
+    #"48 - Null pointers"
+    #"49 - TIC TAC TOE game"
+    #"50 - Dynamic memory"
+    #"51 - Recursion"
+    #"52 - Function templates"
+    #"53 - Structs"
+    #"54 - Pass structs as arguments"
+    #"55 - Enums"
+    #"56 - Object Oriented Programming"
+    #"57 - Constructors"
+    #"58 - Constructor overloading"
+    #"59 - Getters & setters"
+    #"60 - Inheritance"
+
 )
 
 # 2. Get the total count for the progress tracker

@@ -10,11 +10,11 @@ int main(){
                             useful for references and pointers
     */
 
-    std::sting name = "Batmam";
+
+    std::string name = "Batmam";
     int age = 35;
 
-    printInfo(nmae, age);
-    https://youtu.be/-TkoO8Z07hI?t=14853
+    printInfo(name, age);
     return 0;
 }
 
