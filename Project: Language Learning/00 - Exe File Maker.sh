@@ -47,7 +47,7 @@ files=(
     "43 - Memory addresses"
     "44 - Pass by VALUE vs pass by REFERENCE"
     "45 - Const parameters"
-    #"46 - Credit card validator program"
+    "46 - Credit card validator program"
     #"47 - Pointers"
     #"48 - Null pointers"
     #"49 - TIC TAC TOE game"
