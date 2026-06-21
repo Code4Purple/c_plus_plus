@@ -25,7 +25,7 @@ int main(){
         std::cout << "ERROR ADDRESS WASNT ASSGINED" << "\n";
     }
     else{
-        std::cout << "Address was assgined!\n"
+        std::cout << "Address was assgined!\n";
     }
 
     return 0;

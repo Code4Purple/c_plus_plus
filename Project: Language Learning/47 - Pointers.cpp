@@ -10,7 +10,7 @@ int main(){
         * = dereference operator
     */
 
-    std::string name = "Batman"
+    std::string name = "Batman";
     std::string *pName = &name;
     std::cout << pName;
 
