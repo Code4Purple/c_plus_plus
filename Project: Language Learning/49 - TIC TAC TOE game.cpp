@@ -1,7 +1,15 @@
 #include <iostream>
+#include <ctime>
+
+void drawBoard(char *spaces);
+void playerMove(char *spaces, char player);
+void computerMove(char *spaces, char computer);
+bool checkWinner(char *spaces, char player, char computer);
+bool checkTie(char *spaces);
 
 int main(){
 
-
     return 0;
 }
+
+// Bookmarked : https://youtu.be/-TkoO8Z07hI?t=16120
