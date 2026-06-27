@@ -50,7 +50,7 @@ files=(
     "46 - Credit card validator program"
     "47 - Pointers"
     "48 - Null pointers"
-    #"49 - TIC TAC TOE game"
+    "49 - TIC TAC TOE game"
     #"50 - Dynamic memory"
     #"51 - Recursion"
     #"52 - Function templates"
