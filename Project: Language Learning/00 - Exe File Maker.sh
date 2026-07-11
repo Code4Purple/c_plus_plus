@@ -80,13 +80,18 @@ for name in "${files[@]}"; do
     
     # Check if the compilation succeeded before printing
     if [ $? -eq 0 ]; then
-        echo "   -> Success! Created: $name.exe"
+        #echo " " 
+        echo "        ✅ -> Success! Created: $name.exe"
     else
-        echo "   -> ERROR: Failed to compile $name.cpp"
+        #echo " "
+        echo "        ❌ -> ERROR: Failed to compile $name.cpp"
+        break
     fi
     
     echo "----------------------------------------"
-    sleep 1
+    #sleep 1
+    sleep 0.5s
 done
 
 echo "All compilation tasks completed."
+    
