@@ -89,8 +89,8 @@ for name in "${files[@]}"; do
     fi
     
     echo "----------------------------------------"
-    #sleep 1
-    sleep 0.5s
+    sleep 1
+    #sleep 0.5s
 done
 
 echo "All compilation tasks completed."

@@ -3,6 +3,32 @@
 # 1. Define the list of files to compile
 files=(
     #"<name of the c++ file"
+    #"01 - Stacks.cpp"
+    #"02 - Queues.cpp"
+    #"03 - Priority Queues"
+    #"04 - Linked Lists"
+    #"05 - Dynamic Arrays"
+    #"06 - LinkLists vs ArrayLists"
+    #"07 - Big O notation"
+    #"08 - Linear search"
+    #"09 - Binary search"
+    #"10 - Interpolation search"
+    #"11 - Bubble sort"
+    #"12 - Selection sort"
+    #"13 - Insertion sort"
+    #"14 - Recursion"
+    #"15 - Merge sort"
+    #"16 - Quick sort"
+    #"17 - Hash Tables"
+    #"18 - Graphs intro"
+    #"19 - Adjacency matrix"
+    #"20 - Adjacency list "
+    #"21 - Depth First Search"
+    #"22 - Breadth First Search"
+    #"23 - Tree data structure intro"
+    #"24 - Binary search tree"
+    #"25 - Tree traversal"
+    #"26 - Calculate execution time"
 )
 
 # 2. Get the total count for the progress tracker
@@ -20,13 +46,17 @@ for name in "${files[@]}"; do
     
     # Check if the compilation succeeded before printing
     if [ $? -eq 0 ]; then
-        echo "   -> Success! Created: $name.exe"
+        #echo " " 
+        echo "        ✅ -> Success! Created: $name.exe"
     else
-        echo "   -> ERROR: Failed to compile $name.cpp"
+        #echo " "
+        echo "        ❌ -> ERROR: Failed to compile $name.cpp"
+        break
     fi
     
     echo "----------------------------------------"
     sleep 1
+    #sleep 0.5s
 done
 
 echo "All compilation tasks completed."
