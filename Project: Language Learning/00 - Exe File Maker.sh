@@ -57,11 +57,11 @@ files=(
     "53 - Structs"
     "54 - Pass structs as arguments"
     "55 - Enums"
-    #"56 - Object Oriented Programming"
-    #"57 - Constructors"
-    #"58 - Constructor overloading"
-    #"59 - Getters & setters"
-    #"60 - Inheritance"
+    "56 - Object Oriented Programming"
+    "57 - Constructors"
+    "58 - Constructor overloading"
+    "59 - Getters & setters"
+    "60 - Inheritance"
 
 )
 
