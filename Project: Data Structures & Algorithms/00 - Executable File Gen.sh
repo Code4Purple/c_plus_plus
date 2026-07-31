@@ -3,8 +3,8 @@
 # 1. Define the list of files to compile
 files=(
     #"<name of the c++ file"
-    #"01 - Stacks.cpp"
-    #"02 - Queues.cpp"
+    "01 - Stacks"
+    #"02 - Queues"
     #"03 - Priority Queues"
     #"04 - Linked Lists"
     #"05 - Dynamic Arrays"
