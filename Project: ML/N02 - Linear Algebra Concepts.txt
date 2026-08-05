@@ -1,0 +1,11 @@
+FILES USED WITH NOTES: 05 - 06
+
+Linear Algebra Concepts
+    Tasks:
+        A. Grasp fundamentals Concepts for effective Machine Learning implementation.
+        B. Explore the realtionship between linear algebra and ML taks today.
+        C. Vector & matrix operations are essential for deep ML understanding.
+        D. Linear algebra provides the mathematical foundation for ML techniques.
+        E. Experimenting with data enchances the application of linear algebra in ML.
+
+    

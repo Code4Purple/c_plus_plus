@@ -1,3 +1,5 @@
+FILES USED WITH NOTES: 01 - 04
+
 Machine Learning Introduction (ML)
     Empowers machines to learn from data
     Improve performance without explicit programming
@@ -8,4 +10,12 @@ explicit instructions to dictate the program's behavior.
 
 ML algorithms identify patterns in data, which they use to make predictions or
 decisions without human intervention. 
+
+Machine Learning Overview
+    Machine Learning encompasses a variety of techniques and algorithms that can
+    solve complex problems across different domains.
+
+    Understanding the fundamentals is crucial for successfully applying 
+    Machine Learning to real-world challenges and innovations.
+
 
